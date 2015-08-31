@@ -1,6 +1,6 @@
 #BI281H
 
-##Lectures given to class
+##Discussions had in class
 
 ##Notes:
 This is built on the reveal.js platform (check it out!):
