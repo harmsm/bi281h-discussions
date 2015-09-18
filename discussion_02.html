@@ -28,15 +28,16 @@
 			link.type = 'text/css';
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
+
 		</script>
 
-        <!-- CUSTOMIZE STYLESHEET HERE -->
+    <!-- CUSTOMIZE STYLESHEET HERE -->
 		<link rel="stylesheet" href="presentation-data/css/override.css">
 	</head>
 
 	<body>
 
-        <!-- CUSTOMIZE SLIDES HERE -->
+    <!-- CUSTOMIZE SLIDES HERE -->
 		<div class="reveal">
 			<!-- Any section element inside of this container is a slide -->
 			<div class="slides">
@@ -50,8 +51,8 @@
 					<h4>Conceptual goals</h4>
 					<ul>
 						<li class="fragment">Know the main chemical forces that undergird life</li>
-						<li class="fragment">How the four main classes of biomolecules differ in these properties</li>
-						<li class="fragment">and how these differences lead to their biological roles.</li>
+						<li class="fragment">How the four main classes of biomolecules differ in these properties.</li>
+						<li class="fragment">How these differences lead to their biological roles.</li>
 					</ul>
 
 					<h4>Skill goals</h4>
@@ -61,46 +62,87 @@
 					</ul>
 				</section>
 
+				<section>
+
+					<font size=6>
+						<p>How hydrophobic is the molecule?</p>
+						<p>What interactions can it make?</p>
+						<p>What sorts of biological functions might it fulfill?</p>
+					</font>
+
+					<div class="panel fragment">
+
+						<div class="row" align="middle">
+							<div class="col-xs-1"> <h4>A</h4> </div>
+							<div class="col-xs-5">
+								<img src="../presentation-data/02/img/glucose.png" class="img-responsive" height="50%" width="50%"></img>
+							</div>
+							<div class="col-xs-1"> <h4>B</h4> </div>
+							<div class="col-xs-5">
+								<img src="../presentation-data/02/img/adenosine.png" class="img-responsive" height="70%" width="70%"></img>
+							</div>
+						</div>
+
+						<div class="row" align="middle">
+							<div class="col-xs-1"> <h4>C</h4> </div>
+							<div class="col-xs-5">
+								<img src="../presentation-data/02/img/glutamic-acid.png" class="img-responsive" height="50%" width="50%"></img>
+							</div>
+							<div class="col-xs-1"> <h4>D</h4> </div>
+							<div class="col-xs-5">
+								<img src="../presentation-data/02/img/cholesterol.png" class="img-responsive" height="80%" width="80%"></img>
+							</div>
+						</div>
+
+					</div>
+
+				</section>
 
 				<section>
-  				<h4>Bootstrap-based slide layout</h4>
-          <div class="row" align="middle">
-          	<div class="col-xs-6">
-            	<p>Column 1</p>
-            </div>
-            <div class="col-xs-6">
-            	<p>Column 2</p>
-            </div>
-          </div>
-          <h4>A list that builds</h4>
-          <ul>
-          	<li class="fragment">Item #1</li>
-            <li class="fragment">Item #2</li>
-          </ul>
-        </section>
+					<h3>Observations</h3>
+					<h4>Number of polar versus nonpolar</h4>
+					<h4>amphipathy: hates both aqueous and non-aqueous environments</h4>
+					<h4>reference states: more hydrophobic than this, less than this...</h4>
+				</section>
 
-        <section>
-        	<h4>Math!</h4>
-          When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
-        </section>
 
-        <section>
-      		<h4>Image embed</h4>
-          <div class="row" align="middle">
-          	<img class="img-responsive" height="50%" width="50%" data-src="presentation-data/img/test-image.png" />
-          </div>
-      	</section>
+				<section>
 
-        <section>
-        	<h4>Youtube</h4>
-          <iframe data-autoplay width="560" height="315" data-src="https://www.youtube.com/embed/GBaHPND2QJg" frameborder="0" allowfullscreen></iframe>
-        </section>
+					<div class="panel fragment">
 
-        <section>
-        	<h4>D3 embed</h4>
-          <button align="middle" onclick="transition()">Update</button>
-          <div id="d3embed"></div>
-        </section>
+						<div class="row" align="middle">
+							<div class="col-xs-1"> <h4>A</h4> </div>
+							<div class="col-xs-5">
+								<img src="../presentation-data/02/img/glucose.png" class="img-responsive" height="50%" width="50%"></img>
+								<br/>sugars
+							</div>
+							<div class="col-xs-1"> <h4>B</h4> </div>
+							<div class="col-xs-5">
+								<img src="../presentation-data/02/img/adenosine.png" class="img-responsive" height="70%" width="70%"></img>
+								<br/>nucleic acids
+							</div>
+						</div>
+
+						<div class="row" align="middle">
+							<div class="col-xs-1"> <h4>C</h4> </div>
+							<div class="col-xs-5">
+								<img src="../presentation-data/02/img/glutamic-acid.png" class="img-responsive" height="50%" width="50%"></img>
+								<br/>amino acids
+							</div>
+							<div class="col-xs-1"> <h4>D</h4> </div>
+							<div class="col-xs-5">
+								<img src="../presentation-data/02/img/cholesterol.png" class="img-responsive" height="80%" width="80%"></img>
+								<br/>lipids
+							</div>
+						</div>
+
+					</div>
+
+				</section>
+
+
+
+
 
 			</div>
 
@@ -156,7 +198,6 @@
                     { src: 'presentation-data/js/test-stream.js'}
 				]
 			});
-
 
 
 		</script>
