@@ -42,66 +42,190 @@
 			<div class="slides">
 
 				<section>
-					<h2>Players and Forces</h2>
-					<h4>2015-09-30</h4>
+					<h2>Why do proteins fold?</h2>
+					<h4>2015-10-09</h4>
 					<br/>
 				</section>
 				<section>
 					<h4>Conceptual goals</h4>
+
 					<ul>
-						<li class="fragment">Know the main chemical forces that undergird life</li>
-						<li class="fragment">How the four main classes of biomolecules differ in these properties</li>
-						<li class="fragment">and how these differences lead to their biological roles.</li>
+                        <li class="fragment">Understand how the hydrophobic effect drives polypeptide chain collapse</li>
+                        <li class="fragment">Understand that polar contacts lead to specific protein folds</li>
+                        <li class="fragment">Understand that different sequences create different sets of constraints and thus, different folds</li>
 					</ul>
 
 					<h4>Skill goals</h4>
 					<ul>
-						<li class="fragment">Reason about the relative importance of different molecular forces in an aqueous environment</li>
-						<li class="fragment">Identify the ability to participate in different interactions from structure.</li>
+                        <li class="fragment">Manipulate thermodynamic equations describing protein stability to calculate contributions of different forces</li>
+                        <li class="fragment">Reason correctly about interactions by thinking correctly about both sides of a reaction coordinate</li>
 					</ul>
 				</section>
 
+                <section data-background="#000000">
 
-				<section>
-  				<h4>Bootstrap-based slide layout</h4>
-          <div class="row" align="middle">
-          	<div class="col-xs-6">
-            	<p>Column 1</p>
-            </div>
-            <div class="col-xs-6">
-            	<p>Column 2</p>
-            </div>
-          </div>
-          <h4>A list that builds</h4>
-          <ul>
-          	<li class="fragment">Item #1</li>
-            <li class="fragment">Item #2</li>
-          </ul>
-        </section>
+                    <p>$$U \rightleftarrows F$$</p>
+                    <div class="row">
 
-        <section>
-        	<h4>Math!</h4>
-          When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
-        </section>
+                        <div class="col-xs-6">
+                            <iframe width="420" height="315" src="https://www.youtube.com/embed/H129GZ_rXlQ" frameborder="0" allowfullscreen></iframe>
+                            <!--
+                            <video class="video-responsive" data-autoplay mute loop>
+                                <source data-src="presentation-data/06/video/dynamic-helix.mp4" /> 
+                            <video>
+                            -->
+                        </div>
+                        <div class="col-xs-6">
+                            <iframe width="420" height="315" src="https://www.youtube.com/embed/bKl9g9RXBww" frameborder="0" allowfullscreen></iframe>
+                            <!--
+                            <video class="video-responsive" data-autoplay mute loop>
+                                <source data-src="presentation-data/06/video/fixed-helix.mp4" /> 
+                            </video>
+                            -->
+                        </div>
 
-        <section>
-      		<h4>Image embed</h4>
-          <div class="row" align="middle">
-          	<img class="img-responsive" height="50%" width="50%" data-src="presentation-data/img/test-image.png" />
-          </div>
-      	</section>
+                    </div>
 
-        <section>
-        	<h4>Youtube</h4>
-          <iframe data-autoplay width="560" height="315" data-src="https://www.youtube.com/embed/GBaHPND2QJg" frameborder="0" allowfullscreen></iframe>
-        </section>
+                    <ul class="fragment">
+                        <li>What changes between $U$ and $F$?</li>
+                    </ul>                   
+ 
+                </section>
 
-        <section>
-        	<h4>D3 embed</h4>
-          <button align="middle" onclick="transition()">Update</button>
-          <div id="d3embed"></div>
-        </section>
+                <section>
+                    <p>$$\Delta G = \Delta H - T \Delta S$$</p>
+                    <ul>
+                        <li>$\Delta H \approx$ change in interactions</li>
+                        <li>$\Delta S =$ change in randomness</li>
+                    </ul>
+                    <p class="fragment">How much do interactions and randomness change between $U$ and $F$?</p>
+                </section>
 
+                <section data-background="#000000">
+                    <p>Twelve alanine chain in water, sampled every 12.5 ps</p> 
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/kuigp3b1hwo" frameborder="0" allowfullscreen></iframe>
+                    <!--
+                    <video class="video-responsive" controls mute height="85%" width="85%">
+                        <source data-src="presentation-data/06/video/chain-collapse.mp4" /> 
+                    <video>
+                    -->
+                </section>
+
+                <section data-background="#000000">
+                    <p>Twelve alanine chain in water, sampled every 12.5 ps.  Smoothed.</p> 
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/zjrxq75hiu0" frameborder="0" allowfullscreen></iframe> 
+                    <!--
+                    <video class="video-responsive" controls mute height="85%" width="85%">
+                        <source data-src="presentation-data/06/video/chain-collapse_smoothed.mp4" /> 
+                    <video>
+                    -->
+                </section>
+
+                <section data-background="#000000">
+                    <p>What did you see in the simulations?</p>
+                    <p>What caused the chain to form an $\alpha$-helix?</p>
+                </section>
+
+                <section data-transition="fade">
+                    <p>Does the number of protein hydrogen bonds predict folding?</p>
+                    <div class="row">
+                        <!--<img class="img-responsive fragment" height="85%" width="85%" src="presentation-data/06/img/follow-hbonds.png">-->
+                        <img class="img-responsive fragment" height="85%" width="85%" src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/06/img/follow-hbonds.png">
+                    </div>
+                </section>
+
+                <section data-transition="fade">
+
+                    <p>Number of chain hydrogen bonds is about the same between the folded and unfolded states</p>
+                    <div class="row" align="center">
+                        <div class="col-xs-6">
+                            <!--<img class="img-responsive" height="65%" width="65%" src="presentation-data/06/img/unfolded-and-water.png" />-->
+                            <img class="img-responsive" height="65%" width="65%" src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/06/img/unfolded-and-water.png" />
+                        </div>
+                        <div class="col-xs-6">
+                            <!--<img class="img-responsive" height="55%" width="55%" src="presentation-data/06/img/folded-and-water.png" /> -->
+                            <img class="img-responsive" height="55%" width="55%" src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/06/img/folded-and-water.png" />
+                        </div>
+                    </div>
+                    <p class="fragment">What might be a better predictor?</p>
+
+                </section>
+
+                <section data-transition="fade">
+                    <p>Number of waters close to amino acid chain?</p>
+                    <div class="row">
+                        <!--<img class="img-responsive" src="presentation-data/06/img/follow-sasa-0.png">-->
+                        <img class="img-responsive" src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/06/img/follow-sasa-0.png">
+                    </div>
+                </section>
+
+                <section data-transition="fade">
+                    <p>Number of waters close to amino acid chain?</p>
+                    <div class="row">
+                        <!--<img class="img-responsive" src="presentation-data/06/img/follow-sasa-1.png">-->
+                        <img class="img-responsive" src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/06/img/follow-sasa-1.png">
+                    </div>
+                </section>
+
+               
+                 <section data-transition="fade">
+
+                    <p class="fragment">Folded state minimizes surface area interacting with water</p>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <!--<img class="img-responsive" src="presentation-data/06/img/unfolded-and-water_sasa.png" />-->
+                            <img class="img-responsive" src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/06/img/unfolded-and-water_sasa.png" />
+                        </div>
+                        <div class="col-xs-6">
+                            <!--<img class="img-responsive" src="presentation-data/06/img/folded-and-water_sasa.png" />-->
+                            <img class="img-responsive" src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/06/img/folded-and-water_sasa.png" />
+                        </div>
+                    </div>
+
+                </section>
+
+                <section>
+                    <h4>Discuss</h4>
+                    <p>Why is minimizing surface area interacting with water favorable?</p>
+                    <p>Is this driven by $\Delta S$ or $\Delta H$?  Why?</p>
+                </section>
+
+
+                <section>
+                    <p>But why do we get an $\alpha$-helix and not some other structure?</p>
+                    <p class="fragment">$\alpha$-helix makes sure hydrogen bonds are satisfied when they are removed from water</p>
+                </section>
+    
+                <section>
+                    <h4>Summary</h4>
+                    <ul>
+                        <li>Proteins collapse from disordered "unfolded" state to more ordered "folded" state</li>
+                        <li>Collapse is driven by hydrophobic effect
+                            <ul>
+                                <li>It is favorable to miminize contact with water</li>
+                                <li>The folded state has a surface area less than that of the unfolded state</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+        
+                <section>
+                    <h4>Summary (continued)</h4>
+               
+                    <ul> 
+                        <li>Protein folding is driven by an increase in entropy:
+                            <ul>
+                                <li>Enthalpy of system remains roughly constant ($\Delta H \approx 0$)</li>
+                                <li>Entropy goes <em>down</em> down when the chain folds ($\Delta S_{chain} > 0 $)</li>
+                                <li>Increased entropy of water release offsets loss of chain entropy ($\Delta S_{water} + \Delta S_{chain} < 0$)</li>
+                            </ul>
+                        </li>
+                        <li>The specific fold is determined by making sure hydrogen bonds (and other interactions) are satisfied even when collapsed</li>
+                    </ul>
+   
+                </section> 
+                    
+        
 			</div>
 
 		</div>
