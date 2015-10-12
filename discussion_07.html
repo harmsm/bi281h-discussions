@@ -41,66 +41,258 @@
 			<!-- Any section element inside of this container is a slide -->
 			<div class="slides">
 
+                <section>
+                   
+                    <p>First midterm: next Wednesday (10/21) 7 pm in Lillis 282</p> 
+                    <p>Midterm will cover up through the end of this week (lectures 1-9, homework 1-3, lab 1-3).</p>
+                    <p>Review session: this Wednesday (10/14) 7 pm in Willamette 110</p>
+
+                </section>
+
 				<section>
-					<h2>Players and Forces</h2>
-					<h4>2015-09-30</h4>
+					<h2>Folding and Molecular Specificty</h2>
+					<h4>2015-10-12</h4>
 					<br/>
 				</section>
 				<section>
 					<h4>Conceptual goals</h4>
 					<ul>
-						<li class="fragment">Know the main chemical forces that undergird life</li>
-						<li class="fragment">How the four main classes of biomolecules differ in these properties</li>
-						<li class="fragment">and how these differences lead to their biological roles.</li>
+                        <li class="fragment">Understand that different sequences create different sets of constraints and thus, different folds</li>
+                        <li class="fragment">Understand that highly specific molecular interactions are achieved through satisfying polar interactions in hydrophobic environments.</li>
 					</ul>
 
 					<h4>Skill goals</h4>
 					<ul>
-						<li class="fragment">Reason about the relative importance of different molecular forces in an aqueous environment</li>
-						<li class="fragment">Identify the ability to participate in different interactions from structure.</li>
+                        <li class="fragment">Use structure-based reasoning to predict relative affinities and specificities of different interactions.</li>
+                        <li class="fragment">Reason correctly about interactions by thinking correctly about both sides of a reaction coordinate.</li> 
 					</ul>
 				</section>
 
+                <section>
+                    <p>True or False</p> 
+                    <p>Hydrogen bonds are <em>un</em>important for protein function</p>
+                </section>
+                
+                <section>
+                    <p>The entropy gain of the hydrophobic effect comes from:</p> 
+                    <ol>
+                        <li>The number of conformations that can be taken by the protein chain</li>
+                        <li>The release of "constrained" water molecules at the protein/water interface</li>
+                        <li>Sidechain rotations</li>
+                        <li>This is not driven by entropy</li>
+                    </ol>
+                </section>
 
-				<section>
-  				<h4>Bootstrap-based slide layout</h4>
-          <div class="row" align="middle">
-          	<div class="col-xs-6">
-            	<p>Column 1</p>
-            </div>
-            <div class="col-xs-6">
-            	<p>Column 2</p>
-            </div>
-          </div>
-          <h4>A list that builds</h4>
-          <ul>
-          	<li class="fragment">Item #1</li>
-            <li class="fragment">Item #2</li>
-          </ul>
-        </section>
+                <section>
+                    <p>Roadmap</p>
+                    <ul>
+                        <li>Finish up folding</li>
+                        <li>Walk through binding</li>
+                    </ul>
+                </section>
 
-        <section>
-        	<h4>Math!</h4>
-          When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
-        </section>
+                <section>
+                    <p>We've talked about hydrogen bonds and hydrophobic folding...</p>
+                    <p class="fragment" style="color:red">BUT WHY DO WE GET SPECIFIC CONFORMATIONS?</p>
+                    <p class="fragment" style="color:red">WHAT ARE ALL THOSE SIDECHAINS DOING?</p>
+                </section>
+  
+                <section>
+                    <h4>A protein chain is under <em>many, competing</em> constraints that give rise to structure.</h4>
+                    
+                    <table style="width:100%;border:0">
+                        <tr>
+                            <td>Thesis:</td>
+                            <td class="fragment">The backbone shrinks away from water (hydrophobic effect)...</td>
+                        </tr>
+            
+                        <tr>
+                            <td>Antithesis:</td>
+                            <td class="fragment">but must to find hydrogen bond partners.</td>
+                        </tr>
+                   
+                        <tr>
+                            <td>Synthesis:</td>
+                            <td class="fragment"><em>This leads to secondary structures like $\alpha$-helices and $\beta$-sheets</em></p>
+                        </tr>
+                    </table>
+                </section>
 
-        <section>
-      		<h4>Image embed</h4>
-          <div class="row" align="middle">
-          	<img class="img-responsive" height="50%" width="50%" data-src="presentation-data/img/test-image.png" />
-          </div>
-      	</section>
+                <section>
+                    <h4>A protein chain is under <em>many, competing</em> constraints that give rise to structure.</h4>
 
-        <section>
-        	<h4>Youtube</h4>
-          <iframe data-autoplay width="560" height="315" data-src="https://www.youtube.com/embed/GBaHPND2QJg" frameborder="0" allowfullscreen></iframe>
-        </section>
+                    <table style="width:100%;border:0">
+                        <tr>
+                            <td>Thesis:</td>
+                            <td>Hydrophobic amino acids collapse together...</td>
+                        </tr>
+            
+                        <tr>
+                            <td>Antithesis:</td>
+                            <td class="fragment">but have to find a way to do so that doesn't leave a "hole"</td>
+                        </tr>
+                   
+                        <tr>
+                            <td>Synthesis:</td>
+                            <td class="fragment"><em>This leads to a hydrophobic "core" in most proteins.</em></td>
+                        </tr>
+                    </table>
 
-        <section>
-        	<h4>D3 embed</h4>
-          <button align="middle" onclick="transition()">Update</button>
-          <div id="d3embed"></div>
-        </section>
+                </section>
+
+                <section>
+                    <h4>A protein chain is under <em>many, competing</em> constraints that give rise to structure.</h4>
+                    
+                    <table style="width:100%;border:0">
+                        <tr>
+                            <td>Thesis:</td>
+                            <td>Charged and polar amino acids must form polar interactions...</td>
+                        </tr>
+            
+                        <tr>
+                            <td>Antithesis:</td>
+                            <td class="fragment">but this requires specific geometries between amino acids</td>
+                        </tr>
+                   
+                        <tr>
+                            <td>Synthesis:</td>
+                            <td class="fragment"><em>This gives the protein a specific shape.</em></td>
+                        </tr>
+                    </table>
+                </section>
+
+                <section> 
+                    <h4>A protein chain is under <em>many, competing</em> constraints that give rise to structure.</h4>
+    
+                    <table style="width:100%;border:0">
+                        <tr>
+                            <td>Thesis:</td>
+                            <td>Proline and Glycine disrupt secondary structure...</td>
+                        </tr>
+            
+                        <tr>
+                            <td>Antithesis:</td>
+                            <td class="fragment">but their neighbors in the protein sequence will strongly prefer secondary structure.</td>
+                        </tr>
+                   
+                        <tr>
+                            <td>Synthesis:</td>
+                            <td class="fragment"><em>This leads to turns that allow the protein to fold back on itself and form a compact shape.</em></td>
+                        </tr>
+                    </table>
+
+                </section>
+
+                <section>
+                    <h4>Key point: Different amino acid sequences will have different constraints and thus different folds</h4>
+                    <p>The structure that fulfills the most constraints (and thus has the lowest $\Delta G$) is the native state of the protein</p>
+                </section>
+
+                <section>
+
+                    <p>Things can be <em>very</em> complicated</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/07/img/orban-fold-switch.png" height="70%" width="70%" />
+                    <small>Alexander et al. (2009) <em>Proceedings of the National Academy of Science</em> 106(50):21149-21154</small>
+
+                </section>
+
+                <section>
+                    <p>The free energy of folding ($\Delta G_{fold}$) is usually:</p>
+                    <p class="fragment">$\approx -20$ to $-40\ kJ \cdot mol^{-1}$</fragment></p>
+                    <p class="fragment">This is about the strength of a single hydrogen bond!</p>
+
+                    <p class="fragment">Why might this be?</p>
+
+                </section>
+                
+                <section>
+                        <p>Proteins are marginally stable because:</p>
+                        <ul>
+                            <li>It is hard to keep optimizing each constraint without compromising others</li>
+                            <li>It's biologically reasonable to make such structures transient</li>
+                            <li>Evolution only makes them stable "enough" but can't optimize further</li>
+                        </ul>
+                </section>
+
+                <section>
+                    <p>Summary I</p>
+                    <ul>
+                        <li>Protein folding requires satisfying many constraints for each residue in the amino acid chain</li>
+                        <li>The <em>native state</em> is the structure that fulfills the most constraints simultaneously</li>
+                        <li>This native state is marginally stable ($\approx -20$ to $-40\ kJ \cdot mol^{-1}$)</li>
+                        <li>The "rules" of protein complicated and not fully worked out</li>
+                    </ul>
+                </section>
+               
+               
+                <section>
+                    <h4>How to proteins recognize <em>specific</em> molecules in their environment for function?</h4>
+                </section>
+    
+                <section  data-background="#000000">
+                    <p>The estrogen receptor binds <em>estradiol</em> in female metazoans</p>
+                    <iframe width="640" height="360" src="https://www.youtube.com/embed/jc1MAVoirFk" frameborder="0" allowfullscreen></iframe>
+                    <!--
+                    <video class="video-responsive" data-autoplay mute loop height="60%" width="60%"/> 
+                        <source data-src="presentation-data/07/video/estrogen-receptor.mp4" />
+                    <video>
+                    -->
+    
+                </section>
+               
+                <section>
+                    <p>Two key ideas:</p>
+                    <p><em>Specificity:</em> proteins can discriminate amongst targets in a cell</p>
+                    <p><em>Affinity:</em> to sense changes in target concentration, the affinity of the protein for the target must match changes in target concentration</p>
+   
+                </section>
+
+                <section  data-background="#000000">
+                    <p>Recognition occurs because the pocket has the right shape</p>
+                    <iframe width="640" height="360" src="https://www.youtube.com/embed/jc1MAVoirFk" frameborder="0" allowfullscreen></iframe>
+                    <!--
+                    <video class="video-responsive" data-autoplay mute loop height="60%" width="60%"/> 
+                        <source data-src="presentation-data/07/video/estrogen-receptor.mp4" />
+                    <video>
+                    -->
+        
+                </section>
+
+                <section>
+ 
+                    <p>BUT, the estrogen receptor can also discriminate these two hormones</p> 
+                    <div class="row">
+                        <div class="col-xs-5"><p class="fragment">estradiol (estrogen)</p></div>
+                        <div class="col-xs-7">
+                            <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/07/img/estradiol.svg" height="55%" width="55%"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-5"><p class="fragment">testosterone</p></div>
+                        <div class="col-xs-7">
+                            <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/07/img/testosterone.png" height="55%" width="55%"/>
+                        </div>
+                    </div>
+
+                    <p class="fragment">How is this achieved?</p>
+            
+                </section> 
+
+                <section>
+                    <p>The hydrophobic effect tends to favor binding all the time</p>
+                    <p>Polar contacts tend to have little favorable effect on binding</p> 
+                    <p>But mismatched polar contacts strongly <em>disfavor</em> binding</p>
+                </section>
+ 
+                <section>
+                    <p>Summary II</p>
+                    <ul>
+                        <li>Proteins can bind to specific molecules in the cellular environment</li>
+                        <li>Interactions are driven by the hydrophobic effect, but specificity is achieved by shape complementarity and polar contacts</li>
+                        <li style="color:gray">The strength of these interactions is quantified by the <em>Dissociation constant</em> ($K_{D}$)</li>
+                        <li style="color:gray">$K_{D}$ is tuned to the concentration of the molecule in the cell</li>
+                    </ul>
+                </section>
 
 			</div>
 
