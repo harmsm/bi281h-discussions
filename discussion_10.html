@@ -46,6 +46,31 @@
 					<h4>2015-10-19</h4>
 					<br/>
 				</section>
+
+                <section  data-background="#000000">
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/qX9tiIx8QAk" frameborder="0" allowfullscreen></iframe>
+                    <!--
+                    <video class="video-responsive" data-autoplay mute loop height="65%" width="65%"/> 
+                        <source data-src="presentation-data/10/video/bpti-movie.mp4" />
+                    <video>
+                    -->
+                </section>
+
+                <section>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/10/img/hydrolysis-scheme.png" height="120%" width="120%"/>
+                    <p class="fragment">What determines how fast this reaction can go? (and why?)</p>
+                </section>
+
+				<section>
+					<p>Hydrolysis of peptide bond has $\Delta G < 0$, but it's <em>slow</em></p>
+                    <p>rate constant = $k = 1.5 \times 10^{9}\ s^{-1}$</p>
+                    <p class="fragment">$k = 0.05\ years^{-1}$.  That means 20 years to break a bond!</p>
+                    <div class="fragment">
+                        <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/10/img/resonance-stabilized-peptide.png" /> 
+                        <p>(resonance structure stabilizes substrate structure)</p>
+                    </div>
+				</section>
+
 				<section>
 					<h4>Conceptual goals</h4>
 					<ul>
@@ -55,72 +80,54 @@
 					<h4>Skill goals</h4>
 					<ul>
 						<li class="fragment">Reason about how changes in free energy reaction coordinate lead to altered reaction rates. </li>
-						<li class="fragment">Manipulate basic Arrhenius equation to quantitatively relate changes in $ \Delta G^{\ddagger} $ to changes in rate. </li>
+						<li class="fragment">Manipulate basic Arrhenius equation to quantitatively relate changes in $ E_{a} $ to changes in rate. </li>
 					</ul>
 				</section>
 
 				<section>
-					<h4>Breakdown of peptide bond</h4>
+                    <p>Peptide hydrolysis goes from $k = 1.5 \times 10^{-9}\ s^{-1}$ in water (pH 7) to $k = 120\ s^{-1}$ with enzyme</p>
+                    <p>How much does the enzyme lower the energy barrier for this reaction?</p>
 				</section>
 
-				<section>
-					<h4>What factor(s) determine the rate of a chemical reaction?</h4>
-					<h4>What is the transition state for this reaction and why?</h4>
-				</section>
+                <section>
+                    <h4>Big point:</h4>
+                    <p>Construct a "path" of low energy intermediates to overcome the energy barrier</p>
+                </section>
 
-				<section>
-					<a href="http://localhost:8888/notebooks/Catalysts.ipynb#">Notebook</a>
-				</section>
+                <section>
+                    <p>Acid catalysis</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/10/img/0.png" height="60%" width="60%"/>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/10/img/1.png" height="85%" width="85%"/>
+                </section> 
+                
+                <section>
+                    <p>Covalent catalysis</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/10/img/2.png" />
+                </section>
+
+                <section>
+                    <p>Covalent catalysis</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/10/img/3.png" height="85%" width="85%"/>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/10/img/4.png" height="85%" width="85%"/>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/10/img/5.png" height="85%" width="85%"/>
+                </section> 
+                
+                <section>
+                    <h4>Big point:</h4>
+                    <p>Construct a "path" of low energy intermediates to overcome the energy barrier</p>
+                </section>
 
 				<section>
 					<h4>Key points</h4>
 					<ul>
-						<li>Enzymes catalyze spontaneous ($\Delta G < 0$) reactions</li>
-						<li>Reaction rates usually limited by transition state free energy</li>
-						<li>Enzymes speed up rates by stabilizing the transition state</li>
+						<li>Reaction rates are limited by the transition state free energy</li>
+                        <li>Enzymes speed up rates by lowering the energy barrier (small change in $E_{a}$, big change in rate)</li>
+                        <li>Transition states are high energy because they are chemically "wacky"</li>
+                        <li>Enzymes stabilize the transition state, lowering the energy barrier and increasing the rate</li>
+						<li>Enzymes can only speed up spontaneous ($\Delta G < 0$) reactions</li>
 					</ul>
 				</section>
 
-
-				<section>
-  				<h4>Bootstrap-based slide layout</h4>
-          <div class="row" align="middle">
-          	<div class="col-xs-6">
-            	<p>Column 1</p>
-            </div>
-            <div class="col-xs-6">
-            	<p>Column 2</p>
-            </div>
-          </div>
-          <h4>A list that builds</h4>
-          <ul>
-          	<li class="fragment">Item #1</li>
-            <li class="fragment">Item #2</li>
-          </ul>
-        </section>
-
-        <section>
-        	<h4>Math!</h4>
-          When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
-        </section>
-
-        <section>
-      		<h4>Image embed</h4>
-          <div class="row" align="middle">
-          	<img class="img-responsive" height="50%" width="50%" data-src="presentation-data/img/test-image.png" />
-          </div>
-      	</section>
-
-        <section>
-        	<h4>Youtube</h4>
-          <iframe data-autoplay width="560" height="315" data-src="https://www.youtube.com/embed/GBaHPND2QJg" frameborder="0" allowfullscreen></iframe>
-        </section>
-
-        <section>
-        	<h4>D3 embed</h4>
-          <button align="middle" onclick="transition()">Update</button>
-          <div id="d3embed"></div>
-        </section>
 
 			</div>
 
