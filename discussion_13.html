@@ -42,65 +42,186 @@
 			<div class="slides">
 
 				<section>
-					<h2>Players and Forces</h2>
-					<h4>2015-09-30</h4>
+					<h2>Enzyme regulation</h2>
+					<h4>2015-10-26</h4>
 					<br/>
 				</section>
+
 				<section>
 					<h4>Conceptual goals</h4>
 					<ul>
-						<li class="fragment">Know the main chemical forces that undergird life</li>
-						<li class="fragment">How the four main classes of biomolecules differ in these properties</li>
-						<li class="fragment">and how these differences lead to their biological roles.</li>
+                        <li class="fragment">Understand different ways to inhibit enzyme activity and how these possibilities can be discriminated experimentally.</li>
 					</ul>
 
 					<h4>Skill goals</h4>
 					<ul>
-						<li class="fragment">Reason about the relative importance of different molecular forces in an aqueous environment</li>
-						<li class="fragment">Identify the ability to participate in different interactions from structure.</li>
+                        <li class="fragment">Interpret changes to MM graphs in terms of regulatory mechansim, linking changes in graph to changes in chemistry.</li>
 					</ul>
 				</section>
 
+                <section>
+                    <p>Review: the mechanism of serine protease</p>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <img class="img-responsive" src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/11/img/0.png" />
+                        </div> 
+                        <div class="col-xs-4">
+                            <img class="img-responsive fragment" src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/11/img/1.png" />
+                        </div> 
+                        <div class="col-xs-4">
+                            <img class="img-responsive fragment" src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/11/img/2.png" />
+                        </div> 
+                    </div>
 
-				<section>
-  				<h4>Bootstrap-based slide layout</h4>
-          <div class="row" align="middle">
-          	<div class="col-xs-6">
-            	<p>Column 1</p>
-            </div>
-            <div class="col-xs-6">
-            	<p>Column 2</p>
-            </div>
-          </div>
-          <h4>A list that builds</h4>
-          <ul>
-          	<li class="fragment">Item #1</li>
-            <li class="fragment">Item #2</li>
-          </ul>
-        </section>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <img class="img-responsive fragment" src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/11/img/3.png" />
+                        </div> 
+                        <div class="col-xs-4">
+                            <img class="img-responsive fragment" src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/11/img/4.png" />
+                        </div> 
+                        <div class="col-xs-4">
+                            <img class="img-responsive fragment" src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/11/img/5.png" />
+                        </div> 
+                    </div>
 
-        <section>
-        	<h4>Math!</h4>
-          When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
-        </section>
+                </section>
 
-        <section>
-      		<h4>Image embed</h4>
-          <div class="row" align="middle">
-          	<img class="img-responsive" height="50%" width="50%" data-src="presentation-data/img/test-image.png" />
-          </div>
-      	</section>
+                <section>
 
-        <section>
-        	<h4>Youtube</h4>
-          <iframe data-autoplay width="560" height="315" data-src="https://www.youtube.com/embed/GBaHPND2QJg" frameborder="0" allowfullscreen></iframe>
-        </section>
+                    <p>What happens if we mutate Aspartic Acid 102 to an Alanine?</p>
+                    <ul>
+                        <li>To transtion state free energy?</li>
+                        <li>To $k_{cat}$ ?</li>
+                        <li>To $K_{M}$ ?</li>
+                    </ul>
 
-        <section>
-        	<h4>D3 embed</h4>
-          <button align="middle" onclick="transition()">Update</button>
-          <div id="d3embed"></div>
-        </section>
+                </section>
+
+                <section>
+                    <p>How can enzymes be regulated without introducing mutations?</p>
+                </section>
+
+                <section  data-background="#000000">
+                    <p>HIV protease inhibitor binds at the enzyme active site</p>
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/madRjiaJrk8" frameborder="0" allowfullscreen></iframe>
+                    <!--
+                    <video class="video-responsive" data-autoplay mute loop height="80%" width="80%"/> 
+                        <source data-src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/13/video/competitive-inhibitor.mp4" />
+                    </video>
+                    -->
+                </section>
+
+                <section>
+                    <p>A <em>competitive</em> inhibitor competes for the same site as the substrate and thus slows the enzyme down.</p>
+                    <p class="fragment">This leads to a increase in: <span class="fragment" style="color:blue">$K_{M}$</span></p>
+                    <p class="fragment">The inhibitor usually looks quite similar to the substrate but is less reactive</p>
+                </section>
+
+                <section>
+                    <h4>If you drink moonshine, doctors might give you even more alcohol!</h4>
+                    <p class="fragment">Methanol ($CH_{3}OH$) is not poisonous, but is converted to the potent poison formaldehyde ($CH_{2}O$) by the enzyme alcohol dehydrogenase. One treatment for methanol poisoning is to give the patient copious quantities of ethanol ($CH_{3}CH_{2}OH$).  Why might this be?</p>
+                    <p class="fragment" style="color:blue">Ethanol competes with methanol at this site, lowering the rate of formaldehyde production.  </p>
+                    <p class="fragment">Does this alter $k_{cat}$ or $K_{M}$? <span class="fragment" style="color:blue">$K_{M}$ because it <em>competes</em> for the same site.</span></p>
+                </section> 
+
+
+                <!-- Go to Michaelis-Menten graphic and have them predict how changing kcat and KM will alter graph -->
+
+                <section>
+
+                    <p>Sarin is a potent neurotoxin</p>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/13/img/sarin-structure.png" />
+                        </div>
+                        <div class="col-xs-8">
+                            <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/13/img/800px-Sarin_Biological_effects.svg.png" height="50%" width="50%"/>
+                        </div>
+                    </div>
+   
+                    <small>"Sarin Biological effects" by RicHard-59: <a href="https://commons.wikimedia.org/wiki/File:Sarin_Biological_effects.svg#/media/File:Sarin_Biological_effects.svg">wikimedia.org</a></small>
+
+                </section>
+
+                <section>
+
+                    <p>Sarin covalently modifies an active-site serine in acetylcholine esterase</p>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/13/img/sarin-wide-view.png" />
+                        </div>
+                        <div class="col-xs-6">
+                            <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/13/img/sarin-in-active-site.png" />
+                        </div>
+                    </div>
+   
+                    <small>PBD 2Y2V</small>
+
+                </section>
+
+                <section>
+                    <p>An <em>irreversible</em> or (<em>suicide</em>) inhibitor covalently modifies the active site, destroying the enzyme.</p>
+                    <p class="fragment">This leads to a drop in: <span class="fragment" style="color:blue">$[E]_{T}$</span></p>
+                    <p class="fragment">The inhibitor usually looks quite similar to the substrate</p>
+                </section>
+
+                <!-- Go to Michaelis-Menten graphic and have them predict how changing kcat and KM will alter graph -->
+
+                <section  data-background="#000000" data-transition="fade">
+
+                    <p>Hepatitis C Virus RNA polymerase binds RNA in its active site</p>
+                    <small>It's critical for viral replication</small> <br />
+
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/XtsvonUuqxI" frameborder="0" allowfullscreen></iframe>
+                    <!--
+                    <video class="video-responsive" data-autoplay mute loop height="90%" width="90%"/> 
+                        <source data-src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/13/video/hcv-polymerase-free.mp4" />
+                    </video>
+                    -->
+       
+                </section>
+
+                <section  data-background="#000000" data-transition="fade">
+
+                    <p>A non-competitive inhibitor inhibits activity by binding <em>away</em> from the active site</p>
+
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/IcogdLIZhdU" frameborder="0" allowfullscreen></iframe>
+                    <!--
+                    <video class="video-responsive" data-autoplay mute loop height="90%" width="90%"/> 
+                        <source data-src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/13/video/hcv-polymerase-inhibitor.mp4" />
+                    </video>
+                    -->
+       
+                </section>
+
+                <section>
+                    <p><img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/13/img/noncompetitive.jpg" height="150%" width="150%"/></p>
+                    <small>Image credit: <a href="http://bioap.wikispaces.com/Enzymes+2010">http://bioap.wikispaces.com</a></small>
+                </section>
+
+                <section>
+                    <p>A <em>noncompetitive</em> inihibitor binds distant from the active site, altering active site to turn off activity</p>
+                    <p class="fragment">This leads to a drop in: <span class="fragment" style="color:blue">$k_{cat}$</span></p>
+                    <p class="fragment">The inhibitor need not have any chemical similarity to the substrate</p>
+                </section>
+
+                <section>
+                    <p>This "allosteric" mechanism can also be used to turn <em>on</em> an enzyme: binding at a distant site puts enzyme in active form</p>
+                    <p class="fragment">This leads to an <em>increase</em> in <span style="color:blue">$k_{cat}$</span></p>
+                </section>
+
+                <!-- Go to Michaelis-Menten graphic and have them predict how changing kcat and KM will alter graph -->
+
+                <section>
+                    <p>Summary</p>
+                    <ul>
+                        <li class="fragment">A <em>competitive</em> inhibitor binds at the active site and competes with substrate. <span class="fragment" style="color:blue">This raises $K_{M}$</li>
+                        <li class="fragment">A <em>suicide</em> inhibitor irreversibly (covalently) modifies the active site and destroys the enzyme. <span class="fragment" style="color:blue">This lowers $[E]_{T}$</li>
+                        <li class="fragment">A <em>Non-competitive</em> inhibitor binds away from the active site and "magically" lowers activity. <span class="fragment" style="color:blue">This lowers $k_{cat}$</li>
+                        <li class="fragment">All three mechanisms are used biologically and in medicine.</li>
+                    </ul>
+                </section>
 
 			</div>
 
