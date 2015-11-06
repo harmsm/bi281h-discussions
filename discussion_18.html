@@ -42,65 +42,296 @@
 			<div class="slides">
 
 				<section>
-					<h2>Players and Forces</h2>
-					<h4>2015-09-30</h4>
+					<h2>Signaling</h2>
+					<h4>2015-11-06</h4>
 					<br/>
 				</section>
 				<section>
 					<h4>Conceptual goals</h4>
 					<ul>
-						<li class="fragment">Know the main chemical forces that undergird life</li>
-						<li class="fragment">How the four main classes of biomolecules differ in these properties</li>
-						<li class="fragment">and how these differences lead to their biological roles.</li>
+						<li class="fragment">Understand that cell signaling is done through cascades of interactions and reactions</li>
+						<li class="fragment">Understand the basic mechanism of a G-protein signaling</li>
 					</ul>
 
 					<h4>Skill goals</h4>
 					<ul>
-						<li class="fragment">Reason about the relative importance of different molecular forces in an aqueous environment</li>
-						<li class="fragment">Identify the ability to participate in different interactions from structure.</li>
+						<li class="fragment">Reason about how perturbations to a G-protein signaling cascade would lead to different outcomes</li>
 					</ul>
 				</section>
 
+                <section>
+                    <p>How can you sense your environment and pass on the signal?</p>
+                </section>
 
-				<section>
-  				<h4>Bootstrap-based slide layout</h4>
-          <div class="row" align="middle">
-          	<div class="col-xs-6">
-            	<p>Column 1</p>
-            </div>
-            <div class="col-xs-6">
-            	<p>Column 2</p>
-            </div>
-          </div>
-          <h4>A list that builds</h4>
-          <ul>
-          	<li class="fragment">Item #1</li>
-            <li class="fragment">Item #2</li>
-          </ul>
-        </section>
+                <section>
+                    <p>Olfactory sensory neurons detect odors in the environment</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/18/img/olfactory-bulb.jpg" height="125%" width="125%" />
+                </section>
 
-        <section>
-        	<h4>Math!</h4>
-          When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
-        </section>
+                <section>
+                    <p>Human olfactory sensing is <em>amazingly</em> sensitive and flexible</p>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/18/img/nose-1.png" height="75%" width="75%"/>
+                        </div>
+                        <div class="col-xs-6">
+                            <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/18/img/nose-2.png" height="75%" width="75%"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/18/img/nose-3.png" height="75%" width="75%"/>
+                        </div>
+                        <div class="col-xs-6">
+                            <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/18/img/nose-4.png" height="75%" width="75%"/>
+                        </div>
+                    </div>
+                </section>
 
-        <section>
-      		<h4>Image embed</h4>
-          <div class="row" align="middle">
-          	<img class="img-responsive" height="50%" width="50%" data-src="presentation-data/img/test-image.png" />
-          </div>
-      	</section>
+                <section>
+                    <p>G-protein coupled receptors (GPCRs) are at the heart of olfactory signaling</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/18/img/basic-gpcr.png" />
+                </section>
 
-        <section>
-        	<h4>Youtube</h4>
-          <iframe data-autoplay width="560" height="315" data-src="https://www.youtube.com/embed/GBaHPND2QJg" frameborder="0" allowfullscreen></iframe>
-        </section>
+                <section>
+                    <p>Each sensory neuron has one type of receptor and can recognize one smell</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/18/img/olfactory-bulb.jpg" height="125%" width="125%" />
+                </section>
 
-        <section>
-        	<h4>D3 embed</h4>
-          <button align="middle" onclick="transition()">Update</button>
-          <div id="d3embed"></div>
-        </section>
+                <section data-transition="fade">
+                    <p>Steps</p>
+                    <ul>
+                        <li>Trigger signal</li>
+                        <li>Amplify signal</li>
+                        <li>Pass on signal</li>
+                    </ul>
+                </section>
+
+                <section data-transition="fade">
+                    <p>Steps</p>
+                    <ul>
+                        <li style="color:red">Trigger signal</li>
+                        <li>Amplify signal</li>
+                        <li>Pass on signal</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4>Trigger signal, players:</h4>
+                    <p class="fragment">$GPCR$: G-Protein Coupled Receptor</p>
+                    <p class="fragment">$G$-protein (three subunits): $G_{\alpha}$, $G_{\beta}$, and $G_{\gamma}$</p>
+                    <p class="fragment">$GTP$: Guanosine triphosphate</p>
+                    <p class="fragment">$GDP$: Guanosine diphosphate</p>
+                </section>
+
+                <section>
+                    <p>$GTP \rightarrow GDP + P_{i}$</p>
+                    <div class="row">
+                        <div class="col-xs-5">
+                            <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/18/img/GTP.png" height="100%" width="100%"/>
+                            <br/>guanosine triphosphate
+                        </div>
+                        <div class="col-xs-1"></div>
+                        <div class="col-xs-6">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/18/img/phosphate.jpg" height="100%" width="100%"/>
+                                </div>
+                                <div class="col-xs-9">
+                                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/18/img/GDP.png" height="100%" width="100%"/>
+                                </div>
+                            </div>
+                            <br/>phosphate + guanosine diphosphate
+                        </div>
+                    </div>
+                </section>
+    
+                <section>
+                    <p>Initial state: $GPCR$ bound to $G \cdot GDP$ complex</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/18/img/activation-cycle_start.png" />
+                </section> 
+
+                <section>
+                    <p>Odor molecule binds to $GPCR$, inducing conformational change in $GPCR$ and $G$-protein</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/18/img/activation-cycle_0.png" />
+                </section> 
+
+                <section>
+                    <div class="row">
+                        <div class="col-xs-5">
+                            <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/18/img/activation-cycle_1.png" />
+                        </div>
+                        <div class="col-xs-7">
+                            <br/><br/><br/>
+                            <ul>
+                                <li>$G_{\alpha}$ now has higher affinity for $GTP$ than $GDP$</li>
+                                <li>$G_{\alpha}$ drops $GDP$ and picks up $GTP$</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section> 
+
+                <section>
+                    <p>$G_{\alpha} \cdot GTP$ has only weak affinity for $GPCR$ so it dissociates</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/18/img/activation-cycle_2.png" />
+                </section> 
+
+                <section>
+                    <p>$G_{\alpha}$ <em>slowly</em> catalyzes $GTP \rightarrow GDP + P_{i}$</p>
+                    <p class="fragment">Meanwhile, the odor molecule diffuses away</p>
+                </section>
+
+                <section>
+                    <div class="row">
+                        <div class="col-xs-5">
+                            <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/18/img/activation-cycle_3.png" />
+                        </div>
+                        <div class="col-xs-7">
+                            <br/><br/><br/>
+                            <ul>
+                                <li>$G_{\alpha} \cdot GDP$ has high affinity for $GPCR$ and binds</li>
+                                <li>system is now reset</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section> 
+
+                <section>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/18/img/activation-cycle.png" />
+                </section>
+
+                <section>
+                    <p>Steps</p>
+                    <ul>
+                        <li>Trigger signal</li>
+                        <li style="color:red">Amplify signal</li>
+                        <li>Pass on signal</li>
+                    </ul>
+                </section>
+ 
+                <section>
+                    <p>So what does $G_{\alpha} \cdot GTP$ do when it's wild and free in the cell?</p>
+                    <p class="fragment">$G_{\alpha} \cdot GTP$ allosterically activates adenylate cyclase</p>
+                    <p class="fragment">Adenylate cyclase starts catalyzing $ATP \rightarrow cAMP + PP_{i}$</p>
+                </section>
+
+                <section>
+                    <p>$ATP \rightarrow cAMP$</p>
+                    <div class="row">
+                        <div class="col-xs-7">
+                            <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/18/img/atp.png" height="100%" width="100%"/>
+                            <br/>adenosine triphosphate
+                        </div>
+                        <div class="col-xs-5">
+                            <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/18/img/camp.png" height="100%" width="100%"/>
+                            <br/>cyclic adenosine monophosphate
+                        </div>
+                    </div>
+                </section> 
+
+                <section>
+                    <p>$G_{\alpha} \cdot GTP$ activates adenylate cyclase, which makes a lot of $cAMP$</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/18/img/basic-gpcr.png" height="90%" width="90%"/>
+                    <p class="fragment" style="color:blue">1 $G_{\alpha}$, many $cAMP$: amplification!</p>
+                </section>
+
+                <section>
+                    <p>Steps</p>
+                    <ul>
+                        <li>Trigger signal</li>
+                        <li>Amplify signal</li>
+                        <li style="color:red">Pass on signal</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p>$cAMP$ binds to a gated $Na^{+}/Ca^{2+}$ channel, which opens and lets $Na^{+}$ rush into the cell</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/18/img/basic-gpcr.png" />
+                </section>
+
+                <section>
+                    <p>Gated ion channels respond to changes in electrical potential (voltage)</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/17/img/gated-channel-schem.png" height="60%" width="60%"/>
+                </section>
+
+                <section>
+                    <p>Gated ion channels respond to changes in electrical potential (voltage)</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/17/img/volt-mech.jpg" height="80%" width="80%"/>
+                </section>
+
+                <section>
+                    <p>This depolarizes the membrane and kicks off a nerve impulse</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/17/img/action-potential-propagation.png" height="35%" width="35%"/>
+                </section>
+
+                <section>
+                    <p>Steps</p>
+                    <ul>
+                        <li>Trigger signal: <span style="color:blue" class="fragment">$GPCR$ and $G$ protein</span></li>
+                        <li>Amplify signal: <span style="color:blue" class="fragment">adenylate cyclase, $cAMP$</span></li>
+                        <li>Pass on signal: <span style="color:blue" class="fragment">$Na^{+}/Ca^{2+}$ channel</span></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p>What would be the effect of a mutation to adenylate cyclase that makes it slower (lowers $V_{max}$)?</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/18/img/basic-gpcr.png" height="80%" width="80%"/>
+                    <p class="fragment" style="color:blue">Trigger would be normal, less amplification, less transmission</p>
+                </section>
+
+                <section>
+                    <p>What would be the effect of a mutation to $G_{\alpha}$ that slows its $GTP \rightarrow GDP$ activity (lowers $V_{max}$)?</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/18/img/basic-gpcr.png" height="80%" width="80%"/>
+                    <p class="fragment" style="color:blue">Trigger would be on longer, more amplification, more transmission</p>
+                </section>
+
+                <section>
+                    <p>What would be the effect of a mutation to the ion channel that lowered $cAMP$ affinity?</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/18/img/basic-gpcr.png" height="80%" width="80%"/>
+                    <p class="fragment" style="color:blue">Trigger would be normal, normal amplification, less transmission</p>
+                </section>
+
+                <section>
+                    <p>Why is it important that $G_{\alpha}$'s $GTP \rightarrow GDP$ activity is slow?</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/18/img/basic-gpcr.png" height="80%" width="80%"/>
+                    <p class="fragment" style="color:blue">$GTP \rightarrow GDP$ is a <em>timer</em> that makes sure $cAMP$ is made, but not forever</p>
+                </section>
+
+                <section>
+                    <p>Generality: these sorts of cascades are <em>everywhere</em></p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/18/img/generic-cascade.png" height="80%" width="80%"/>
+                    <small>Arrow is "turns on."  Flat arrow is "turns off."</small>
+                </section>
+
+                <section>
+                    <p>Such pathways construct "logic gates" and "circuits"</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/18/img/logic-gates.png" height="85%" width="85%"/>
+                </section>
+ 
+                <section>
+                    <p>Big idea: sensing is usually arranged into cascades</p>
+                    <p class="fragment">Why might this be?</p>
+
+                    <ul>
+                        <li class="fragment">Lots of points of regulation</li>
+                        <li class="fragment">Small signals can be amplifed</li>
+                        <li class="fragment">Makes system only turn on when it's supposed to</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p>Summary</p>
+                    <ul>
+                        <li>Cells signal through <em>cascades</em> of interactions/reactions</li>
+                        <li>For olfactory signaling:
+                            <ul>
+                                <li>Trigger signal: <span style="color:blue" class="fragment">$GPCR$ and $G$ protein</span></li>
+                                <li>Amplify signal: <span style="color:blue" class="fragment">adenylate cyclase, $cAMP$</span></li>
+                                <li>Pass on signal: <span style="color:blue" class="fragment">$Na^{+}/Ca^{2+}$ channel</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+               </section> 
 
 			</div>
 
