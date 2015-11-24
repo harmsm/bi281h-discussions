@@ -42,65 +42,195 @@
 			<div class="slides">
 
 				<section>
-					<h2>Players and Forces</h2>
-					<h4>2015-09-30</h4>
+					<h2>Oxidative Phosphorylation II</h2>
+					<h4>2015-11-23</h4>
 					<br/>
 				</section>
 				<section>
 					<h4>Conceptual goals</h4>
 					<ul>
-						<li class="fragment">Know the main chemical forces that undergird life</li>
-						<li class="fragment">How the four main classes of biomolecules differ in these properties</li>
-						<li class="fragment">and how these differences lead to their biological roles.</li>
+                        <li class="fragment">Understand how the electron transport chain couples movement of electrons along a REDOX gradient to creating a proton gradient</li>
+                        <li class="fragment">Understand how different cofactors can safely shuttle electrons</li>
 					</ul>
 
 					<h4>Skill goals</h4>
 					<ul>
-						<li class="fragment">Reason about the relative importance of different molecular forces in an aqueous environment</li>
-						<li class="fragment">Identify the ability to participate in different interactions from structure.</li>
+						<li class="fragment">Reason about the linkage between changes in reduction potential and ability to transport protons against a concentration gradient</li>
+						<li class="fragment">Reason about the relative ordering of the electron transport chain based on REDOX potentials and perturbation with drugs</li>
 					</ul>
 				</section>
 
+                <section>
+                    <p>Oxidative phosphorylation overview:</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/25/img/total-summary.png" height="100%" width="100%" /><br/>
+                </section>
 
-				<section>
-  				<h4>Bootstrap-based slide layout</h4>
-          <div class="row" align="middle">
-          	<div class="col-xs-6">
-            	<p>Column 1</p>
-            </div>
-            <div class="col-xs-6">
-            	<p>Column 2</p>
-            </div>
-          </div>
-          <h4>A list that builds</h4>
-          <ul>
-          	<li class="fragment">Item #1</li>
-            <li class="fragment">Item #2</li>
-          </ul>
-        </section>
+                <section>
+                    <p>Why does oxidative phosphorylation break the $NADH + \frac{1}{2}O_{2} + H^{+} \rightarrow NAD^{+} + H_{2}O$ reaction into multiple steps?</p>
+                    <p class="fragment" style="color:blue">Control, capture of energy at each step</p>
+                    <p class="fragment">Where does ox-phos occur (and which way are protons pumped)?</p>
+                    <p class="fragment" style="color:blue">In the mitochondria, pumping protons from matrix into intermembrane space</p>
+                
+                </section>
 
-        <section>
-        	<h4>Math!</h4>
-          When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
-        </section>
+                <section>
+                    <p>Complex I couples oxdiation of $Q$ to $QH_{2}$ to transport of protons across the bilayer</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/25/img/complex-i.png" height="70%" width="70%" />
+                </section>
 
-        <section>
-      		<h4>Image embed</h4>
-          <div class="row" align="middle">
-          	<img class="img-responsive" height="50%" width="50%" data-src="presentation-data/img/test-image.png" />
-          </div>
-      	</section>
+                <section>
+                    <p>Process has many sequential steps</p>
+                    <p>$NAD:H + H^{+} + FMN \rightarrow FMNH_{2}$</p>
+                    <p class="fragment">$FMNH_{2} + 2Fe^{3+} \rightarrow FMN + H_{2} + 2Fe^{2+}$</p>
+                    <p class="fragment">Pass along several iron-sulfur clusters</p>
+                    <p class="fragment">$2Fe^{3+} + 2Fe^{2+} \rightarrow 2Fe^{2+} + 2Fe^{3+}$</p>
+                    <p class="fragment">$2Fe^{2+} + Q + 2H^{+} \rightarrow 2Fe^{3+} QH_{2}$</p>
+                </section>
 
-        <section>
-        	<h4>Youtube</h4>
-          <iframe data-autoplay width="560" height="315" data-src="https://www.youtube.com/embed/GBaHPND2QJg" frameborder="0" allowfullscreen></iframe>
-        </section>
+                <section>
+                    <p>FMN accepts electrons directly from NADH</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/25/img/fmn.png" height="80%" width="80%" />
+                </section>
 
-        <section>
-        	<h4>D3 embed</h4>
-          <button align="middle" onclick="transition()">Update</button>
-          <div id="d3embed"></div>
-        </section>
+                <section>
+                    <p>Iron-sulfur clusters</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/25/img/fe-s.png" height="45%" width="45%" />
+                </section>
+
+                <section>
+                    <p>Iron-sulfur clusters</p>
+                    <ul>
+                        <li>Driven by oxidation of $Fe^{2+}$ to $Fe^{3+}$.</li>
+                        <li>Single electron transfer</li>
+                        <li>Sulfur complexes hold $Fe$ iron away from water and physically links oxidation state of $Fe$ to rest of protein</li>
+                    </ul> 
+                </section>
+
+                <section>
+                    <p>The mysterious $Q$ (ubiquinone, coenzyme Q10)</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/25/img/ubiquinone.png" height="100%" width="100%" /><br/>
+                    <small>Source: <a href="http://examine.com/supplements/coenzyme-q10/">examine.com</a></small>
+                </section>
+
+                <section>
+                    <p>Ubiquinone</p>
+                    <ul>
+                        <li>Driven by oxidation carbonyl/hydroxyls on conjugated ring</p>
+                        <li>Two electron transfer</li>
+                        <li>Both oxidized and reduced forms are uncharged.  Diffuses in the bilayer</li>
+                    </ul> 
+                </section>
+
+                <section>
+                    Fe-Sulfur clusters form a chain.  Electrons pass through chain, eventually hopping onto $Q$ to from $QH^{2}$ in the bilayer.
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/25/img/complex-i.png" height="65%" width="65%" />
+                    <p class="fragment"><em>Key point:</em> the $2H^{+}$ come from the <em>matrix</em> side</p>
+                </section>
+
+                <section>
+                    <p>Transfer is also linked to transfer of four more protons...<span class="fragment">somehow.</span></p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/25/img/complex-i-mechanism.jpg" height="100%" width="100%" />
+                </section>
+
+                <section>
+                    <p>Complex I is not the only source of $QH_{2}$.  
+                    <p>Succinate enters oxidative phosphorylation via Complex II, generating $QH_{2}$</p>
+                    <p>Fatty acid oxidation, other oxidation reactions can generate $QH_{2}$ using a variety of enzymes</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/25/img/complex-ii.png" height="60%" width="60%" />
+                </section>
+
+                <section>
+                    <p>Why might succinate to fumarate come in to ox-phos directly as $QH_{2}$ (rather than going through complex I)?</p>
+                    <p>Does this give as much energy as an NADH?</p>
+                    <div class="fragment" style="color:blue">
+                        <p>$succinate$ has higher affinity for $e^{-}$ than $NADH$</p>
+                        <p>$fumarte + 2H^{+} + 2e^{-} \rightarrow succinate^{-}$, $\varepsilon^{\circ \prime} = 0.031 \ V$</p>
+                        <p>$NAD^{+} + H^{-} \rightarrow NADH$, $\varepsilon^{\circ \prime} = -0.315 \ V$</p>
+                        <p>4 fewer protons are transported for succinate than $NADH$: lower energy yield</p>
+                    </div>
+                </section>
+        
+                <section>
+                    <p>What happens to $QH_{2}$?</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/25/img/total-summary.png" height="100%" width="100%" /><br/>
+                </section>
+
+                <section>
+                    <p>Enters "Q-cycle" which ultimately oxidizes cytochrome C and moves $4H^{+}$ across the bilayer</p>
+                    <p>$2QH_{2} \rightarrow QH_{2} + Q + 2H^{+}$</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/25/img/complex-iii.png" height="60%" width="60%" />
+                </section>
+
+                <section>
+                    <p>Key point: this is an <em>indirect</em> pump.  Geometry of complex III means protons are preferentially picked up on matrix side, preferentially dropped on lumen side</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/25/img/complex-iii.png" height="60%" width="60%" />
+                </section>
+
+                <section>
+                    <p>Oxidative phosphorylation overview:</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/25/img/total-summary.png" height="100%" width="100%" /><br/>
+                </section>
+ 
+                <section>
+                    <p>Cytochromes</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/25/img/heme.png" height="40%" width="40%" />
+                    <ul>
+                        <li>Driven by oxidation of $Fe^{2+}$ to $Fe^{3+}$.</li>
+                        <li>Single electron transfer</li>
+                        <li>Heme holds $Fe$ iron away from water and physically links oxidation state of $Fe$ to rest of protein</li>
+                    </ul> 
+                </section>
+
+                <section>
+                    <p>Cytochromes hold onto this heme ring in a deep pocket, protecting Fe</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/25/img/cytc.png" height="40%" width="40%" />
+                    <p>Cytochrome c is a "peripheral" membrane protein that "skates" over to complex IV</p>
+                </section>
+
+                <section>
+                    <p>Oxidative phosphorylation overview:</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/25/img/total-summary.png" height="100%" width="100%" /><br/>
+                </section>
+
+                <section>
+                    <p>Complex IV uses $O_{2}$ to oxidize $CytC(Fe^{2+})$.</p> 
+                    <p>$4\ CytC(Fe^{2+}) + O_{2} + 4H^{+} \rightarrow 4\ CytC(Fe^{3+}) + 2H_{2}O$</p>
+
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/25/img/complex-iv.png" height="50%" width="50%" /><br/>
+
+                </section>
+
+                <section>
+                    <p>This transports 2 more protons across the bilayer</p>
+                </section>
+
+                <section>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/25/img/total-summary.png" height="100%" width="100%" /><br/>
+                </section>
+               
+                <section>
+                    <p>Why might electron transfers be so tightly controlled?</p>
+                    <p class="fragment" style="color:blue">Premature contact with $O_{2}$ can generate highly reactive $\cdot O_{2}^{-}$ radical.</p>
+                </section>
+
+                <section>
+                    <p>Summary I</p>
+                    <ul>
+                        <li>Passage through Complexes I-IV allows oxidation of $NADH$ and other biomolecules, ultimately reducing $O_{2}$.</li>
+                        <li>This transports a total of 10 protons out of mitochondrial matrix</li>
+                        <li>This "recycles" $NADH$ and $QH_{2}$ into their oxidized forms</li>
+                    </ul>
+
+                </section>
+
+                <section>
+                    <p>Summary II</p>
+                    <ul>
+                        <li>REDOX centers (Fe-S, hemes, Q, cytochromes) allow ordered, vectorial movement of electrons towards increased reduction potentials</li>
+                        <li>Integral redox centers couple electron transport to allosteric conformational changes in complexes</li>
+                        <li>Allosteric conformational changes in complexes lead to transport of protons</li>               
+                    </ul>
+                </section>
 
 			</div>
 
