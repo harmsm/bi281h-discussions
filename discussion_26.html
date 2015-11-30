@@ -42,65 +42,228 @@
 			<div class="slides">
 
 				<section>
-					<h2>Players and Forces</h2>
-					<h4>2015-09-30</h4>
+					<h2>ATP synthase</h2>
+					<h4>2015-11-25</h4>
 					<br/>
 				</section>
 				<section>
 					<h4>Conceptual goals</h4>
 					<ul>
-						<li class="fragment">Know the main chemical forces that undergird life</li>
-						<li class="fragment">How the four main classes of biomolecules differ in these properties</li>
-						<li class="fragment">and how these differences lead to their biological roles.</li>
+						<li class="fragment">Understand the mechanism of ATP synthase</li>
+						<li class="fragment">Understand the energetics of ATP synthesis</li>
 					</ul>
 
 					<h4>Skill goals</h4>
 					<ul>
-						<li class="fragment">Reason about the relative importance of different molecular forces in an aqueous environment</li>
-						<li class="fragment">Identify the ability to participate in different interactions from structure.</li>
+						<li class="fragment">Reason about energy transduction (and how it can be disrupted).</li>
 					</ul>
 				</section>
 
 
-				<section>
-  				<h4>Bootstrap-based slide layout</h4>
-          <div class="row" align="middle">
-          	<div class="col-xs-6">
-            	<p>Column 1</p>
-            </div>
-            <div class="col-xs-6">
-            	<p>Column 2</p>
-            </div>
-          </div>
-          <h4>A list that builds</h4>
-          <ul>
-          	<li class="fragment">Item #1</li>
-            <li class="fragment">Item #2</li>
-          </ul>
-        </section>
+                <section>
+                    <p>Oxidative phosphorylation overview:</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/25/img/total-summary.png" height="100%" width="100%" /><br/>
+                </section>
 
-        <section>
-        	<h4>Math!</h4>
-          When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
-        </section>
+                <section>
 
-        <section>
-      		<h4>Image embed</h4>
-          <div class="row" align="middle">
-          	<img class="img-responsive" height="50%" width="50%" data-src="presentation-data/img/test-image.png" />
-          </div>
-      	</section>
+                    <p>What do we do with the proton gradient?</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/26/img/oxphos.png" height="100%" width="100%" /><br/>
 
-        <section>
-        	<h4>Youtube</h4>
-          <iframe data-autoplay width="560" height="315" data-src="https://www.youtube.com/embed/GBaHPND2QJg" frameborder="0" allowfullscreen></iframe>
-        </section>
+                </section>
 
-        <section>
-        	<h4>D3 embed</h4>
-          <button align="middle" onclick="transition()">Update</button>
-          <div id="d3embed"></div>
-        </section>
+                <section>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/26/img/hydrodam.png" height="100%" width="100%" /></br>
+                </section>
+
+                <section>
+                    <p>How does a hydroelectric dam generate electricity?</p>
+                    <ul>
+                        <li class="fragment">Elevated water has potential energy</li>
+                        <li class="fragment">Water flows through "penstock," trading potential for kinetic energy</li>
+                        <li class="fragment">Moving water pushes on <em>asymmetrical</em> turbine blades, converting linear motion into torsional motion</li>
+                        <li class="fragment">Wire moving through a magnetic field induces a change in electron potential (voltage)</li>
+                    </ul>
+
+                </section>
+        
+                <section>
+                    <p>This is how an ATP synthase works <em>energetically</em></p>
+                    <p style="color:red" class="fragment">This is <em>NOT</em> how this protein works mechanically</p>
+                    <small class="fragment">...even if it looks like it</small>
+                </section>
+
+                <section>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/GM9buhWJjlA?start=3&end=12&rel=0" frameborder="0" allowfullscreen></iframe>
+                </section> 
+
+                <section>
+                    <p>How does ATP synthase generate ATP?</p>
+                    <ul>
+                        <li class="fragment">Electron transport pushes protons across the bilayer, generating a potential energy difference across membrane</li>
+                        <li class="fragment">Protons flow through the $F_{0}$ subunit, moving through asymmetrical channel and converting potential gradient to rotation</li>
+                        <li class="fragment">Rotating shaft alters conformation of cooperative $F_{1}$ subunits, causing alternation between three states</li>
+                        <li class="fragment">Alternating conformations push enzyme through enzymatic cycle to catalyze $ADP + P_{i} \rightarrow ATP$ reaction</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p style="color:red">ATP synthase is <em>mechanical</em> but not <em>inertial</em>.  Protons don't "push" on turbine; $F_{1}$ does not "mash" $ADP$ and $P_{i}$ into $ATP$.</p>
+
+                </section>
+
+                <section>
+                    <p>Outline:</p>
+                    <ul>
+                        <li>What is the nature of the gradient? <span class="fragment" style="color:blue">electro-chemical (proton motive force)</span></li>
+                        <li>What happens in the rotor ($F_{0}$)? <span class="fragment" style="color:blue">proton transport is coupled to rotation</span></li>
+                        <li>What happens in subunit $F_{1}$? <span class="fragment" style="color:blue">cooperative enzyme cycling catalyzes $ADP + P_{i} \rightarrow ATP$</span></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p>How is energy stored in the $pH$ gradient between the matrix and the inter membrane space?</p>
+                    <p class="fragment" style="color:blue">$\Delta G$ = concentration + electrical potential</p>
+                   
+                    <div class="fragment"> 
+                        <p>Concentration: Matrix $pH=7.8$; IMS $pH=7.15$</p>
+                        <p>Electrical potential: $\Delta \psi = 0.170\ V$</p>
+                    </div>
+
+                    <p class="fragment">$\Delta G = RTln \Big ( \frac{[H^{+}]_{out}}{[H^{+}]_{in}} \Big ) + ZF \Delta \psi$</p>
+                    <div class="fragment">
+                        <p>$\Delta G = 0.0083 \times 300 \times ln \Big ( \frac{10^{-7.15}}{10^{-7.8}} \Big ) + 1 \times 96 \times 1.70$</p>
+                        <p style="color:blue">$\Delta G = 20.1 \ kJ \cdot mol^{-1}$</p>
+                    </div>
+                </section>
+
+                <section>
+                    <p>Outline:</p>
+                    <ul>
+                        <li>What is the nature of the gradient? <span style="color:blue">electro-chemical (proton motive force)</span></li>
+                        <li>What happens in the rotor ($F_{0}$)?</li>
+                        <li>What happens in subunit $F_{1}$?</span></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p>The $F_{0}$ subunit consists of 10 identical subunits arranged in a circle</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/26/img/atpase-structure_side.png" height="40%" width="40%" /><br/>
+                </section>
+
+                <section>
+                    <p>The $F_{0}$ subunit consists of 10 identical subunits arranged in a circle</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/26/img/atpase-structure_top.png" height="100%" width="100%" /><br/>
+                </section>
+
+                <section>
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/PjdPTY1wHdQ?start=28&end=48&rel=0&loop=1" frameborder="0" allowfullscreen></iframe>
+                </section>
+
+                <section>
+                    <p>Which aspartic acid will be more protonated?</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/26/img/my-sketch-asp.png" height="100%" width="100%" /><br/>
+                    <h2 class="fragment" style="color:blue"><em>A</em></h2>
+                </section>
+
+                <section>
+                    <p>Would a protonated Asp or de-protonated Asp more easily cross a membrane bilayer?</p>
+                    <p class="fragment" style="color:blue"><em>Protonated.</em>  A protonated Asp is uncharged ($RCOOH$) while a deprotonated Asp is charged ($RCOO^{-} + H^{+}$)</p>
+                </section>
+
+                <section>
+                    <p>Asp exposed to intermembrane space side protonates more than Asp exposed to matrix side</p>
+                    <p>Protonated Asp enters bilayer more easily than deprotonated Asp</p>
+                    <p>Brownian motion kicks protonated Asp "forward" more of than deprotonated Asp "backward"</p>
+                    <p>Result is net forward motion</p>
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/PjdPTY1wHdQ?start=28&end=48&rel=0&loop=1" frameborder="0" allowfullscreen></iframe>
+                </section>
+
+                <section>
+                    <p>You can <em>see</em> this with a microscope.  If you attach a flourescent actin polymer to ATPase, it spins</p>
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/QeHCAFKaWM8?rel=0" frameborder="0" allowfullscreen></iframe>
+                </section>
+
+                <section>
+                    <p>Outline:</p>
+                    <ul>
+                        <li>What is the nature of the gradient? <span style="color:blue">electro-chemical (proton motive force)</span></li>
+                        <li>What happens in the rotor ($F_{0}$)? <span style="color:blue">proton transport is coupled to rotation</span></li>
+                        <li>What happens in subunit $F_{1}$?</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/GM9buhWJjlA?start=3&end=33&rel=0" frameborder="0" allowfullscreen></iframe>
+                </section> 
+
+                <section>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/26/img/f1-schematic.png" height="100%" width="100%" /><br/>
+                </section>
+
+                <section>
+                    <p>$F_{1}$ consists of three $\alpha \beta$ dimers</p>
+                    <p class="fragment">Each $\alpha \beta$ dimer can be in either $O$, $L$, or $T$ states (bizarre names just like $T$ and $S$ from hemoglobin).</p>
+                    <p class="fragment">System is <em>cooperative</em>.  At all times, one subunit must be in $O$, one must be in $L$, one must be in $T$</p>
+                    <p class="fragment">Shaft connecting to $F_{0}$ ($\gamma$) is asymmetrical and stabilizes the $O$ state when bound</p>
+                    <p class="fragment">As $F_{0}$ spins, $\gamma$ pushes each subunit sequentially through $O \rightarrow L \rightarrow T$</p>
+                </section>
+   
+                <section>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/26/img/f1-schematic.png" height="100%" width="100%" /><br/>
+                </section>
+
+                <section>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/GM9buhWJjlA?start=12&end=33&rel=0" frameborder="0" allowfullscreen></iframe>
+                </section> 
+
+                <section>
+                    <p>How does this rotation lead to ATP synthesis?</p>
+                </section>
+
+                <section>
+                    <p>$O$ has high affinity for $ADP$ and $P_{i}$ individually</p>
+                    <p>$L$ brings $ADP$ and $P_{i}$ into close proximity</p>
+                    <p>$T$ has high affinity for $ATP$.  The $L \rightarrow T$ transition catalyzes formation of $ATP$</p>
+
+                    <p class="fragment">How do we get $ATP$ off?</p>
+                    <p class="fragment" style="color:blue">$O$ state has <em>low</em> affinity for ATP</p>
+                </section>
+
+                <section>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/26/img/f1-schematic.png" height="100%" width="100%" /><br/>
+                </section>
+
+                <section>
+                    <p>Each $120^{\circ}$ turn of $F_{0}$ pushes the $\alpha \beta$ dimers through one step of the cycle</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/GM9buhWJjlA?start=12&end=33&rel=0" frameborder="0" allowfullscreen></iframe>
+                </section> 
+
+                <section>
+                    <p>This process yields (at max) $3 ATP$ per 10 protons</p>
+                    <p>Electron transport moved 10 protons for 1 NADH</p>
+                    <p>Max yield is thus 3 ATP per NADH.</p>
+                    <p>With various inefficiencies, this is about ~2.5 ATP/NADH</p>
+                </section>
+            
+                <section>
+                    <p>Outline:</p>
+                    <ul>
+                        <li>What is the nature of the gradient? <span class="fragment" style="color:blue">electro-chemical (proton motive force)</span></li>
+                        <li>What happens in the rotor ($F_{0}$)? <span class="fragment" style="color:blue">proton transport is coupled to rotation</span></li>
+                        <li>What happens in subunit $F_{1}$? <span class="fragment" style="color:blue">cooperative enzyme cycling catalyzes $ADP + P_{i} \rightarrow ATP$</span></li>
+                    </ul>
+                </section>
+
+                <section>
+
+                    <ul>
+                        <li>Energy is transduced from electro chemical to mechanical to chemical ($ATP$) in ATP synthase</li>
+                        <li>Despite mechanics being randomly driven by water slamming into system, the reaction goes forward</li>
+                        <li>This process yields ~2.5 ATP/NADH. It's very efficient.</p>
+                    </ul>
+
+                </section>
 
 			</div>
 
