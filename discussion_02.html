@@ -42,6 +42,39 @@
 			<!-- Any section element inside of this container is a slide -->
 			<div class="slides">
 
+                <section>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <img class="img-responsive" src="presentation-data/img/protein-diversity/2.png" />
+                        </div>
+                        <div class="col-xs-4">
+                            <img class="img-responsive" src="presentation-data/img/protein-diversity/4.png" />
+                        </div>
+                        <div class="col-xs-4">
+                            <img class="img-responsive" src="presentation-data/img/protein-diversity/0.png" />
+                        </div>
+                    </div>
+                </section>
+
+
+                <section>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/oimU652RB1w" frameborder="0" allowfullscreen></iframe> 
+                </section>
+
+                <section>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <img class="img-responsive" src="presentation-data/img/protein-diversity/2.png" />
+                        </div>
+                        <div class="col-xs-4">
+                            <img class="img-responsive" src="presentation-data/img/protein-diversity/4.png" />
+                        </div>
+                        <div class="col-xs-4">
+                            <img class="img-responsive" src="presentation-data/img/protein-diversity/0.png" />
+                        </div>
+                    </div>
+                </section>
+
 				<section>
 					<h2>Players and Forces</h2>
 					<h4>2016-09-28</h4>
@@ -86,30 +119,62 @@
 					<h3>Road map</h3>
 					<h4>What are the important molecular interactions?</h4>
 					<h4>What about water?</h4>
-					<h4>Biological molecules participate in these interactions</h4>
+					<h4>Biological molecules and these interactions</h4>
 				</section>
 
-				<section>
+                <section>
 
+                    <p>$A + B \rightleftharpoons AB$</p> 
+                    <p class="fragment">$K = \frac{[AB]}{[A][B]}$</p>
+                    <p class="fragment">Useful info: $R = 0.0083\ kJ \cdot mol^{-1} K^{-1}$, $T = 300\ K$</p>
+
+                    <div class="fragment">
+                        <p>Ratio of formed to unformed is given by:</p>
+                        <p>$\Delta G = -RTln(K)$</p>
+                        <p>$K = \frac{[AB]}{[A][B]} = e^{-\Delta G/RT}$</p>
+                    </div>
+                
+                </section>
+
+                <section>
+                    <h4>Question:</h4>
+                    <p>The energy of a $Na^{+}$ + $Cl^{-1}$ bond in vacuum is $\approx -400\ kJ\cdot mol^{-1}$, but the book says ionic interactions are $\approx -70 kJ \cdot mol^{-1}$ in proteins.  What is the origin of this difference?</p> 
+                </section>
+
+				<section>
 					<h3>Protip: water is 55 M and should never be ignored</h3>
+                    <div class="row">
+                        <video data-autoplay mute loop height="55%" width="55%" loop>
+                            <source src="presentation-data/02/video/water-solution.mp4" />
+                            <source src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/02/video/water-solution.mp4" />
+                        </video>
+                    </div>
+				</section>
+                
+                <section>
+                    <h4>Question:</h4>
+                    <p>The energy of a $Na^{+}$ + $Cl^{-1}$ bond in vacuum is $\approx -400\ kJ\cdot mol^{-1}$, but the book says ionic interactions are $\approx -70 kJ \cdot mol^{-1}$ in proteins.  What is the origin of this difference?</p> 
+                    <p style="color:blue">Water competes the partners in an ion pair, this (effectively) weakens the bond.</p>
+                    <p class="fragment"><span style="color:red">Key point:</span> The strength of an interaction depends on its context!</p>
+                </section>
 
+				<section>
+					<h3>What happens if you jam a random molecule into water</h3>
+                    <div class="row">
+                        <video data-autoplay mute loop height="55%" width="55%" loop>
+                            <source src="presentation-data/02/video/water-solution.mp4" />
+                            <source src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/02/video/water-solution.mp4" />
+                        </video>
+                    </div>
+                    <p class="fragment">Disrupts smooth handoff of one water to another</p>
 				</section>
 
 				<section>
-					<!-- <iframe width="420" height="315" src="https://www.youtube.com/embed/2ROxqD_s8B4" frameborder="0" allowfullscreen></iframe> -->
-					<video class="stretch" data-autoplay mute loop height="125%" width="125%">
-						<source data-src="presentation-data/02/video/water-solution.mp4" />
-					</video>
-
+				  <p>Solutes throw off a water molecule's "groove".</p>
+				  <p>Fewer degrees of freedom means drop in entropy.</p>
+				  <p>Drop in entropy makes the dissolving the compound less favorable.</p>
+				  <p>$$\Delta G = \Delta H - T \color{red}{\Delta S}$$</p>
 				</section>
-
-				<section>
-					<h4>Solutes throw off a water molecule's "groove".</h4>
-				  <h4>Fewer degrees of freedom means drop in entropy.</h4>
-				  <h4>Drop in entropy makes the dissolving the compound less favorable.</h4>
-					<p>$$\Delta G = \Delta H - T \color{red}{\Delta S}$$</p>
-				</section>
-
 
 				<section>
 					<h4>Uber nerds:</h4>
@@ -124,6 +189,18 @@
                     <small>$2 \times r_{old}^2 \stackrel{?}{>} (2^{1/3} r_{old})^{2}$</small><br/>
                     <small>$2 > {2}^{2/3}$</small><br/>
 				</section>
+
+                <section>
+                    <p>What happens when you create a molecule with both hydrophobic and polar character?</p>
+
+                    <div class="fragment">
+                        <img src="http://bio100.class.uic.edu/lectures/bilayer01.jpg" height="55%" width="55%"/>
+                        
+                        <br/>
+                        <small><a href="http://bio100.class.uic.edu/lectures/membranes.htm">UIC.edu</a></small>
+                    </div>
+ 
+                </section>
 
 				<section>
 					<font size=6>
