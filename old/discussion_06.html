@@ -43,14 +43,16 @@
 
 				<section>
 					<h2>Why do proteins fold?</h2>
-					<h4>2016-10-10</h4>
+					<h4>2016-10-07</h4>
 					<br/>
 				</section>
 				<section>
 					<h4>Conceptual goals</h4>
 
 					<ul>
-                        <li class="fragment">Understand that folding is a tight balance between enthalpic and entropic terms</li>
+                        <li class="fragment">Understand how the hydrophobic effect drives polypeptide chain collapse</li>
+                        <li class="fragment">Understand that polar contacts lead to specific protein folds</li>
+                        <li class="fragment">Understand that different sequences create different sets of constraints and thus, different folds</li>
 					</ul>
 
 					<h4>Skill goals</h4>
@@ -66,15 +68,19 @@
                     <div class="row">
 
                         <div class="col-xs-6">
+                            <!--
+                            <iframe width="420" height="315" src="https://www.youtube.com/embed/H129GZ_rXlQ" frameborder="0" allowfullscreen></iframe>
+                            -->
                             <video class="video-responsive" data-autoplay mute loop>
                                 <source data-src="presentation-data/06/video/dynamic-helix.mp4" /> 
-                                <source data-src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/06/video/dynamic-helix.mp4" /> 
                             <video>
                         </div>
                         <div class="col-xs-6">
+                            <!--
+                            <iframe width="420" height="315" src="https://www.youtube.com/embed/bKl9g9RXBww" frameborder="0" allowfullscreen></iframe>
+                            -->
                             <video class="video-responsive" data-autoplay mute loop>
                                 <source data-src="presentation-data/06/video/fixed-helix.mp4" /> 
-                                <source data-src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/06/video/fixed-helix.mp4" /> 
                             </video>
                         </div>
 
@@ -86,20 +92,33 @@
  
                 </section>
 
+                <section>
+                    <p>$$\Delta G = \Delta H - T \Delta S$$</p>
+                    <ul>
+                        <li>$\Delta H \approx$ change in interactions</li>
+                        <li>$\Delta S =$ change in randomness</li>
+                    </ul>
+                    <p class="fragment">How much do interactions and randomness change between $U$ and $F$?</p>
+                </section>
+
                 <section data-background="#000000">
                     <p>Twelve alanine chain in water, sampled every 12.5 ps</p> 
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/kuigp3b1hwo" frameborder="0" allowfullscreen></iframe>
+                    <!--
                     <video class="video-responsive" controls mute height="85%" width="85%">
                         <source data-src="presentation-data/06/video/chain-collapse.mp4" /> 
-                                <source data-src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/06/video/chain-collapse.mp4" /> 
                     <video>
+                    -->
                 </section>
 
                 <section data-background="#000000">
                     <p>Twelve alanine chain in water, sampled every 12.5 ps.  Smoothed.</p> 
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/zjrxq75hiu0" frameborder="0" allowfullscreen></iframe> 
+                    <!--
                     <video class="video-responsive" controls mute height="85%" width="85%">
                         <source data-src="presentation-data/06/video/chain-collapse_smoothed.mp4" /> 
-                                <source data-src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/06/video/chain-collapse_smoothed.mp4" /> 
                     <video>
+                    -->
                 </section>
 
                 <section data-background="#000000">
@@ -108,8 +127,9 @@
                 </section>
 
                 <section data-transition="fade">
-                    <p>What happens to the number of hydrogen bonds over folding?</p>
+                    <p>Does the number of protein hydrogen bonds predict folding?</p>
                     <div class="row">
+                        <!--<img class="img-responsive fragment" height="85%" width="85%" src="presentation-data/06/img/follow-hbonds.png">-->
                         <img class="img-responsive fragment" height="85%" width="85%" src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/06/img/follow-hbonds.png">
                     </div>
                 </section>
@@ -119,25 +139,30 @@
                     <p>Number of chain hydrogen bonds is about the same between the folded and unfolded states</p>
                     <div class="row" align="center">
                         <div class="col-xs-6">
+                            <!--<img class="img-responsive" height="65%" width="65%" src="presentation-data/06/img/unfolded-and-water.png" />-->
                             <img class="img-responsive" height="65%" width="65%" src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/06/img/unfolded-and-water.png" />
                         </div>
                         <div class="col-xs-6">
+                            <!--<img class="img-responsive" height="55%" width="55%" src="presentation-data/06/img/folded-and-water.png" /> -->
                             <img class="img-responsive" height="55%" width="55%" src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/06/img/folded-and-water.png" />
                         </div>
                     </div>
+                    <p class="fragment">What might be a better predictor?</p>
 
                 </section>
 
                 <section data-transition="fade">
-                    <p>What happens to the water-exposed surface area on folding?</p>
+                    <p>Number of waters close to amino acid chain?</p>
                     <div class="row">
+                        <!--<img class="img-responsive" src="presentation-data/06/img/follow-sasa-0.png">-->
                         <img class="img-responsive" src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/06/img/follow-sasa-0.png">
                     </div>
                 </section>
 
                 <section data-transition="fade">
-                    <p class="fragment">Folded state minimizes surface area interacting with water</p>
+                    <p>Number of waters close to amino acid chain?</p>
                     <div class="row">
+                        <!--<img class="img-responsive" src="presentation-data/06/img/follow-sasa-1.png">-->
                         <img class="img-responsive" src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/06/img/follow-sasa-1.png">
                     </div>
                 </section>
@@ -148,9 +173,11 @@
                     <p class="fragment">Folded state minimizes surface area interacting with water</p>
                     <div class="row">
                         <div class="col-xs-6">
+                            <!--<img class="img-responsive" src="presentation-data/06/img/unfolded-and-water_sasa.png" />-->
                             <img class="img-responsive" src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/06/img/unfolded-and-water_sasa.png" />
                         </div>
                         <div class="col-xs-6">
+                            <!--<img class="img-responsive" src="presentation-data/06/img/folded-and-water_sasa.png" />-->
                             <img class="img-responsive" src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/06/img/folded-and-water_sasa.png" />
                         </div>
                     </div>
@@ -158,53 +185,45 @@
                 </section>
 
                 <section>
-                    <p>Minimizing surface area interacting with water favorable releases waters and creates favorable (positive) $\Delta S$.</p>
+                    <h4>Discuss</h4>
+                    <p>Why is minimizing surface area interacting with water favorable?</p>
+                    <p>Is this driven by $\Delta S$ or $\Delta H$?  Why?</p>
                 </section>
 
-                <section>
-                    <h4>Hydrogen bonds</h4> 
-                    <p>$\Delta H^{\circ \prime} = \color{blue}{H^{\circ \prime}_{prot-prot}} - \color{red}{H^{\circ \prime}_{prot-water}}$ </p>
-                    <p>$\Delta H^{\circ \prime} = \color{blue}{-25.1 \times 8} - \color{red}{-20.0 \times 8} = -41 \ kJ \cdot mol^{-1}$</p>
-                </section>
-            
-                <section>
-                    <h4>Conformational entropy</h4>
-                    <p>$\Delta S^{\circ \prime}_{helix} = \color{blue}{S^{\circ \prime}_{helix}} - \color{red}{S^{\circ \prime}_{unfolded}}$ </p>
-                    <p>$\Delta S^{\circ \prime}_{helix} = \color{blue}{Rln(1)} - \color{red}{Rln(3^{24})}  = -0.22 \ kJ \cdot mol^{-1} \cdot K^{-1}$</p>
-                    <p>$T \Delta S^{\circ \prime}_{helix} = -60.2 \ kJ \cdot mol^{-1}$</p>
-                </section>
-                
-                <section>
-                    <h4>Hydrophobic effect</h4>
-                    <p>Loss of exposed area increases disorder of water</p>
-                    <p>$\Delta S^{\circ \prime}_{hphobe} = 0.094 \ kJ \cdot mol^{-1} \cdot K^{-1}$ (water release)</p>
-                    <p>$T \Delta S^{\circ \prime}_{hphobe} = 28.1 \ kJ \cdot mol^{-1}$</p>
-                </section>
 
                 <section>
-
-                    <p>$\Delta G^{\circ \prime} = \Delta H^{\circ \prime}_{hbond} - T (\Delta S^{\circ \prime}_{helix} + \Delta S^{\circ \prime}_{hphobe})$</p>
-                    <p>$-3.5 = -41.0 - 300(-0.22 + 0.09)$</p>
-
+                    <p>But why do we get an $\alpha$-helix and not some other structure?</p>
+                    <p class="fragment">$\alpha$-helix makes sure hydrogen bonds are satisfied when they are removed from water</p>
                 </section>
- 
+    
                 <section>
-                    <h4>The stability of a structure is determined by many offsetting terms</h4>
+                    <h4>Summary</h4>
                     <ul>
-                        <li>Folding is driven by: 
-                            <ul class="fragment">
-                                <li>Favorable hydrogen bonds (helix makes hydrogen bonds) (enthalpy)</li>
-                                <li>Hydrophobic effect (a helix has a surface area less than that of the unfolded state) (entropy)</li>
-                            </ul>
-                        </li>
-                        <li>Folding is opposed by:
-                            <ul class="fragment">
-                                <li>Competing hydrogen bonds with water (enthalpy)</li>
-                                <li>Loss of conformational entropy</li>
+                        <li>Proteins collapse from disordered "unfolded" state to more ordered "folded" state</li>
+                        <li>Collapse is driven by hydrophobic effect
+                            <ul>
+                                <li>It is favorable to miminize contact with water</li>
+                                <li>The folded state has a surface area less than that of the unfolded state</li>
                             </ul>
                         </li>
                     </ul>
                 </section>
+        
+                <section>
+                    <h4>Summary (continued)</h4>
+               
+                    <ul> 
+                        <li>Protein folding is driven by an increase in entropy:
+                            <ul>
+                                <li>Enthalpy of system remains roughly constant ($\Delta H \approx 0$)</li>
+                                <li>Entropy goes <em>down</em> down when the chain folds ($\Delta S_{chain} > 0 $)</li>
+                                <li>Increased entropy of water release offsets loss of chain entropy ($\Delta S_{water} + \Delta S_{chain} < 0$)</li>
+                            </ul>
+                        </li>
+                        <li>The specific fold is determined by making sure hydrogen bonds (and other interactions) are satisfied even when collapsed</li>
+                    </ul>
+   
+                </section> 
                     
         
 			</div>

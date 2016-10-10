@@ -6,7 +6,7 @@
 
         <!-- CUSTOMIZE METADATA HERE -->
 		<title>Presentation</title>
-		<meta name="description" content="BI281H Discussion">
+		<meta name="description" content="BI281H Discussion 3">
 		<meta name="author" content="Michael J. Harms">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -40,192 +40,111 @@
 		<div class="reveal">
 			<!-- Any section element inside of this container is a slide -->
 			<div class="slides">
+                <section>
+
+                    <p>Objective: build an intuitive understanding of $\Delta G = \Delta H - T \Delta S$ using...</p>
+        
+                    <h2 class="fragment" style="color:red">STATISTICAL THERMODYNAMCIS</h2>
+                </section>
 
 				<section>
-					<h2>Why do proteins fold?</h2>
-					<h4>2016-10-07</h4>
-					<br/>
-				</section>
-				<section>
-					<h4>Conceptual goals</h4>
-
-					<ul>
-                        <li class="fragment">Understand how the hydrophobic effect drives polypeptide chain collapse</li>
-                        <li class="fragment">Understand that polar contacts lead to specific protein folds</li>
-                        <li class="fragment">Understand that different sequences create different sets of constraints and thus, different folds</li>
-					</ul>
-
-					<h4>Skill goals</h4>
-					<ul>
-                        <li class="fragment">Manipulate thermodynamic equations describing protein stability to calculate contributions of different forces</li>
-                        <li class="fragment">Reason correctly about interactions by thinking correctly about both sides of a reaction coordinate</li>
-					</ul>
-				</section>
-
-                <section data-background="#000000">
-
-                    <p>$$U \rightleftarrows F$$</p>
-                    <div class="row">
-
-                        <div class="col-xs-6">
-                            <!--
-                            <iframe width="420" height="315" src="https://www.youtube.com/embed/H129GZ_rXlQ" frameborder="0" allowfullscreen></iframe>
-                            -->
-                            <video class="video-responsive" data-autoplay mute loop>
-                                <source data-src="presentation-data/06/video/dynamic-helix.mp4" /> 
-                            <video>
-                        </div>
-                        <div class="col-xs-6">
-                            <!--
-                            <iframe width="420" height="315" src="https://www.youtube.com/embed/bKl9g9RXBww" frameborder="0" allowfullscreen></iframe>
-                            -->
-                            <video class="video-responsive" data-autoplay mute loop>
-                                <source data-src="presentation-data/06/video/fixed-helix.mp4" /> 
-                            </video>
-                        </div>
-
-                    </div>
-
-                    <ul class="fragment">
-                        <li>What changes between $U$ and $F$?</li>
-                    </ul>                   
- 
-                </section>
-
-                <section>
-                    <p>$$\Delta G = \Delta H - T \Delta S$$</p>
-                    <ul>
-                        <li>$\Delta H \approx$ change in interactions</li>
-                        <li>$\Delta S =$ change in randomness</li>
-                    </ul>
-                    <p class="fragment">How much do interactions and randomness change between $U$ and $F$?</p>
-                </section>
-
-                <section data-background="#000000">
-                    <p>Twelve alanine chain in water, sampled every 12.5 ps</p> 
-                    <iframe width="420" height="315" src="https://www.youtube.com/embed/kuigp3b1hwo" frameborder="0" allowfullscreen></iframe>
-                    <!--
-                    <video class="video-responsive" controls mute height="85%" width="85%">
-                        <source data-src="presentation-data/06/video/chain-collapse.mp4" /> 
-                    <video>
-                    -->
-                </section>
-
-                <section data-background="#000000">
-                    <p>Twelve alanine chain in water, sampled every 12.5 ps.  Smoothed.</p> 
-                    <iframe width="420" height="315" src="https://www.youtube.com/embed/zjrxq75hiu0" frameborder="0" allowfullscreen></iframe> 
-                    <!--
-                    <video class="video-responsive" controls mute height="85%" width="85%">
-                        <source data-src="presentation-data/06/video/chain-collapse_smoothed.mp4" /> 
-                    <video>
-                    -->
-                </section>
-
-                <section data-background="#000000">
-                    <p>What did you see in the simulations?</p>
-                    <p>What caused the chain to form an $\alpha$-helix?</p>
-                </section>
-
-                <section data-transition="fade">
-                    <p>Does the number of protein hydrogen bonds predict folding?</p>
-                    <div class="row">
-                        <!--<img class="img-responsive fragment" height="85%" width="85%" src="presentation-data/06/img/follow-hbonds.png">-->
-                        <img class="img-responsive fragment" height="85%" width="85%" src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/06/img/follow-hbonds.png">
-                    </div>
-                </section>
-
-                <section data-transition="fade">
-
-                    <p>Number of chain hydrogen bonds is about the same between the folded and unfolded states</p>
-                    <div class="row" align="center">
-                        <div class="col-xs-6">
-                            <!--<img class="img-responsive" height="65%" width="65%" src="presentation-data/06/img/unfolded-and-water.png" />-->
-                            <img class="img-responsive" height="65%" width="65%" src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/06/img/unfolded-and-water.png" />
-                        </div>
-                        <div class="col-xs-6">
-                            <!--<img class="img-responsive" height="55%" width="55%" src="presentation-data/06/img/folded-and-water.png" /> -->
-                            <img class="img-responsive" height="55%" width="55%" src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/06/img/folded-and-water.png" />
-                        </div>
-                    </div>
-                    <p class="fragment">What might be a better predictor?</p>
-
-                </section>
-
-                <section data-transition="fade">
-                    <p>Number of waters close to amino acid chain?</p>
-                    <div class="row">
-                        <!--<img class="img-responsive" src="presentation-data/06/img/follow-sasa-0.png">-->
-                        <img class="img-responsive" src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/06/img/follow-sasa-0.png">
-                    </div>
-                </section>
-
-                <section data-transition="fade">
-                    <p>Number of waters close to amino acid chain?</p>
-                    <div class="row">
-                        <!--<img class="img-responsive" src="presentation-data/06/img/follow-sasa-1.png">-->
-                        <img class="img-responsive" src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/06/img/follow-sasa-1.png">
-                    </div>
-                </section>
-
-               
-                 <section data-transition="fade">
-
-                    <p class="fragment">Folded state minimizes surface area interacting with water</p>
-                    <div class="row">
-                        <div class="col-xs-6">
-                            <!--<img class="img-responsive" src="presentation-data/06/img/unfolded-and-water_sasa.png" />-->
-                            <img class="img-responsive" src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/06/img/unfolded-and-water_sasa.png" />
-                        </div>
-                        <div class="col-xs-6">
-                            <!--<img class="img-responsive" src="presentation-data/06/img/folded-and-water_sasa.png" />-->
-                            <img class="img-responsive" src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/06/img/folded-and-water_sasa.png" />
-                        </div>
-                    </div>
-
-                </section>
-
-                <section>
-                    <h4>Discuss</h4>
-                    <p>Why is minimizing surface area interacting with water favorable?</p>
-                    <p>Is this driven by $\Delta S$ or $\Delta H$?  Why?</p>
-                </section>
-
-
-                <section>
-                    <p>But why do we get an $\alpha$-helix and not some other structure?</p>
-                    <p class="fragment">$\alpha$-helix makes sure hydrogen bonds are satisfied when they are removed from water</p>
-                </section>
+                    <p>On your index card:</p><br/>
     
-                <section>
-                    <h4>Summary</h4>
-                    <ul>
-                        <li>Proteins collapse from disordered "unfolded" state to more ordered "folded" state</li>
-                        <li>Collapse is driven by hydrophobic effect
-                            <ul>
-                                <li>It is favorable to miminize contact with water</li>
-                                <li>The folded state has a surface area less than that of the unfolded state</li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <p><em>Describe, in words, what the equation $\Delta G = \Delta H - T \Delta S$ means</em></p>
+
                 </section>
-        
+
+
+				<section>
+
+                    <div class="row">
+                        <video data-autoplay mute loop height="100%" width="100%" loop>
+                            <source src="presentation-data/xx/video/dH0.mp4" />
+                            <source src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/xx/video/dH0.mp4" />
+                        </video>
+                    </div>
+
+				</section>
+
+				<section>
+
+                    <div class="row">
+                        <video data-autoplay mute loop height="100%" width="100%" loop>
+                            <source src="presentation-data/xx/video/dH-2.mp4" />
+                            <source src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/xx/video/dH-2.mp4" />
+                        </video>
+                    </div>
+
+				</section>
+
+				<section>
+
+                    <div class="row">
+                        <video data-autoplay mute loop height="100%" width="100%" loop>
+                            <source src="presentation-data/xx/video/dH-5.mp4" />
+                            <source src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/xx/video/dH-5.mp4" />
+                        </video>
+                    </div>
+
+				</section>
+
                 <section>
-                    <h4>Summary (continued)</h4>
-               
-                    <ul> 
-                        <li>Protein folding is driven by an increase in entropy:
-                            <ul>
-                                <li>Enthalpy of system remains roughly constant ($\Delta H \approx 0$)</li>
-                                <li>Entropy goes <em>down</em> down when the chain folds ($\Delta S_{chain} > 0 $)</li>
-                                <li>Increased entropy of water release offsets loss of chain entropy ($\Delta S_{water} + \Delta S_{chain} < 0$)</li>
-                            </ul>
-                        </li>
-                        <li>The specific fold is determined by making sure hydrogen bonds (and other interactions) are satisfied even when collapsed</li>
+
+                    <table style="width:50%" align="center">
+                        <tr><th>$d$</th><th>$t_{in}/t_{out}$</th></tr>
+                        <tr><th>0</th><th>0.03</th></tr>
+                        <tr><th>1</th><th>0.08</th></tr>
+                        <tr><th>2</th><th>0.19</th></tr>
+                        <tr><th>3</th><th>0.48</th></tr>
+                        <tr><th>4</th><th>1.20</th></tr>
+                        <tr><th>5</th><th>2.97</th></tr>
+                        <tr><th>6</th><th>7.39</th></tr>
+                        <tr><th>7</th><th>18.35</th></tr>
+                    </table>
+
+                </section>
+
+                <section data-background="#000000" data-transition="fade">
+
+                    <p>If peptides were robots...</p>
+                    <div class="row">
+                        <div class="col-xs-6">
+                        <video data-autoplay mute loop height="100%" width="100%" loop>
+                            <source src="presentation-data/xx/video/dynamic-helix.mp4" />
+                            <source src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/xx/video/dynamic-helix.mp4" />
+                        </video>
+                        </div>
+                        <div class="col-xs-6">
+                        <video data-autoplay mute loop height="100%" width="100%" loop>
+                            <source src="presentation-data/xx/video/fixed-helix.mp4" />
+                            <source src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/xx/video/fixed-helix.mp4" />
+                        </video>
+                        </div>
+                    </div>
+
+				</section>
+
+				<section>
+                    <p>On your index card:</p><br/>
+    
+                    <p><em>Describe, in words, what the equation $\Delta G = \Delta H - T \Delta S$ means</em></p>
+
+                </section>
+
+				<section>
+					<h3>Summary</h3>
+					<ul>
+                        <li class="fragment">$\Delta G$ measures how likely one state is relative to others (how often the robot/peptide is in that state).</li>
+                        <li class="fragment">$\Delta H$ describes the favorability of interactions within that state (the depth of the hole)</li>
+                        <li class="fragment">$\Delta S$ describes the difference in the number of conformations between two states (the relative areas of each state)</li>
                     </ul>
-   
-                </section> 
-                    
-        
+
+                    <h4 class="fragment">Biochemical reactions are always tradeoffs between enthalpy and entropy</h4>
+
+                </section>
+
+
+
 			</div>
 
 		</div>
@@ -235,7 +154,7 @@
 
 		<script>
 
-            var USE_LOCAL = false;
+            var USE_LOCAL = true;
 
             if (USE_LOCAL) {
                 var mathjax_location = 'MathJax-master/MathJax.js';
