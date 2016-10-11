@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+        <!-- CUSTOMIZE METADATA HERE -->
+		<title>Presentation</title>
+		<meta name="description" content="BI281H Discussion">
+		<meta name="author" content="Michael J. Harms">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+        <link rel="stylesheet" href="presentation-data/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+        <!-- CUSTOMIZE STYLESHEET HERE -->
+		<link rel="stylesheet" href="presentation-data/css/override.css">
+	</head>
+
+	<body>
+
+        <!-- CUSTOMIZE SLIDES HERE -->
+		<div class="reveal">
+			<!-- Any section element inside of this container is a slide -->
+			<div class="slides">
+
+                <section>
+                    <p>First midterm: <em>tonight</em> at 7 pm in Lillis 282</p>
+                    <p>Covers weeks 1-3 (lectures 1-9, homework 1-3, lab 1-3).</p>
+                    <p><span style="color:red">Bring a calculator</span></p>
+                    <p>The exam is closed note; however, there is a data sheet on the back page with important formulas and constants.</p>
+                    <p>You may use a calculator on the exam, but no Internet-enabled device (cell phone, tablet, laptop, etc).</p>
+                </section>
+
+				<section>
+					<h2>Enzymes: mechanism of serine protease</h2>
+					<h4>2016-10-19</h4>
+					<br/>
+				</section>
+
+				<section>
+					<h4>Conceptual goals</h4>
+
+					<ul>
+                        <li class="fragment">Understand the chemical mechanism of serine protease.</li>
+                        <li class="fragment">Understand the core ways enzymes speed up rates: orient ligands, sequester from water, interact with transition state, do sequential low barrier chemical steps.</li>
+					</ul>
+
+					<h4>Skill goals</h4>
+					<ul>
+                        <li class="fragment">Trace/explain the electron "arrows" in this mechanism.</li>
+                        <li class="fragment">Reason about the effects of mutations on its activity.</li>
+					</ul>
+				</section>
+
+                <section>
+                    <p>Peptide bond is a hydrolysis reaction</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/11/img/hydrolysis-scheme.png" height="120%" width="120%"/>
+                    <p>rate constant = $k = 1.5 \times 10^{-9}\ s^{-1}$</p>
+                    <p class="fragment">$k = 0.05\ years^{-1}$.  That means 20 years to break a bond!</p>
+                </section> 
+
+                <section  data-background="#000000">
+                    <p>The "Active Site" is where the chemistry happens</p>
+                    <div class="row">
+                        <div class="col-xs-6 fragment">
+                            <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/11/img/active-site.png" />
+                            <p>Made of Asp-His-Ser catalytic triad</p>
+                        </div>
+                        <div class="col-xs-6 fragment">
+                            <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/11/img/surface.png" />
+                            <p>Active site pulled away from water</p>
+                        </div>
+                    </div>               
+                </section>
+
+                <section data-transition="fade">
+                    <p>The catatlyic triad is made of Asp-His-Ser</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/11/img/5.png" />
+                </section>
+
+                <section data-transition="fade">
+                    <p>Step 1: $R-S^{-}$ attack on carbonyl</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/11/img/0.png" />
+                </section>
+
+                <section>
+                    <p>Puzzles:</p>
+                        <li class="fragment">Serine (ROH) is a pretty weak nucleophile (about as good as water).  How can it lead to rate speed up relative to water? <span class="fragment" style="color:blue">$R-O^{-}$ is an excellent nulceophile ($\approx 10^{8}$ better than water).</span></li>
+                        <li class="fragment">But the $pK_{a}$ of Serine proton is $\approx 17$.  What business does it have giving up a proton at $pH$ 7? <span class="fragment" style="color:blue">Triad shifts $pK_{a}$ of serine</span></p>
+                </section>
+
+                <section>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/11/img/0.png" height="50%" width="50%"/>
+                    <p class="fragment">Aspartic acid away from water <em>desperately</em> wants a proton</p>
+                    <p class="fragment">The almost-negative aspartic acid makes it favorable to make the Histidine positive</p>
+                    <p class="fragment">His pulls on the Ser proton, lowering its $pK_{a}$ to near neutral.</p>
+                </section>
+
+                <section>
+                    <h4>Big ideas</h4>
+                    <p>1. Enzymes orient chemical groups so they're primed to do chemistry.</p>
+                    <p class="fragment">2. Enzymes activate polar atoms by pulling them away from water.</p>
+                </section>
+
+                <section data-transition="fade">
+                    <p>Step 1: $R-S^{-}$ attack on carbonyl</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/11/img/0.png" />
+                </section>
+
+                <section data-transition="fade">
+                    <p>This creates a negatively charged tetrahedral intermediate</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/11/img/1.png" />
+                </section>
+                
+                <section>
+                    <p>Oxyanion hole stabilizes tetrahedral intermediate by interacting with negative oxygen</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/11/img/oxyanion-hole.jpg" height="55%" width="55%"/><br />
+                    <small>Credit: <a href="http://oregonstate.edu/instruct/bb450/fall14/lecture/catalyticstrategiesoutline.html">oregonstate.edu</a></small>
+                </section>
+
+                <section>
+                    <h4>Big ideas</h4>
+                    <p>1. Enzymes orient chemical groups so they're primed to do chemistry.</p>
+                    <p>2. Enzymes activate polar atoms by pulling them away from water.</p>
+                    <p class="fragment">3. Enzymes interact with/stabilize transition state.</p>
+                </section>
+    
+                <section data-transition="fade">
+                    <p>Step 2: break the peptide bond</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/11/img/1.png" />
+                </section>
+
+                <section>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/11/img/1.png" height="50%" width="50%"/>
+                    <p class="fragment">Electrons flow from negative oxygen, but rather than breaking new peptide-serine bond, break peptide bond to satisfy electron-poor histidine</p>
+                    <p class="fragment">Newly cleaved C-terminal bit leaves the active site by diffusion.  Remainder of peptide covalently attached to Serine.</p>
+                </section>
+
+                <section data-transition="fade">
+                    <p>Step 2: break the peptide bond</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/11/img/1.png" />
+                </section>
+
+                <section data-transition="fade">
+                    <p>Step 3: newly cleaved C-terminal peptide diffuses away</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/11/img/2.png" />
+                </section>
+
+                <section>
+                    <p>Are we done yet?</p>
+                    <p class="fragment" style="color:blue">No.  Enzyme still has peptide covalently attached.</p>
+                </section>
+
+                <section data-transition="fade">
+                    <p>Step 3: newly cleaved C-terminal peptide diffuses away</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/11/img/2.png" />
+                </section>
+
+                <section data-transition="fade">
+                    <p>Step 4: water enters the binding site and attacks peptide carbonyl</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/11/img/3.png" />
+                </section>
+
+                <section>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/11/img/3.png" height="50%" width="50%"/>
+                    <p class="fragment">Water is "activated" by that needy histidine in the same way as Serine</p>
+                </section>
+
+                <section data-transition="fade">
+                    <p>Step 4: water enters the binding site and attacks peptide carbonyl</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/11/img/3.png" />
+                </section>
+
+                <section data-transition="fade">
+                    <p>Step 5: electrons flow from charged oxygen and break peptide-serine bond</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/11/img/4.png" />
+                </section>
+
+                <section data-transition="fade">
+                    <p>Step 6: newly cleaved peptide diffuses out of active site, enzyme restored</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/11/img/5.png" />
+                </section>
+
+                <section>
+                    <h4>Big ideas</h4>
+                    <p>1. Enzymes orient chemical groups so they're primed to do chemistry.</p>
+                    <p>2. Enzymes activate polar atoms by pulling them away from water.</p>
+                    <p>3. Enzymes interact with/stabilize transition state.</p>
+                    <p class="fragment">4. Enzymes do hard chemistry by breaking it into multiple, low-barrier steps</p>
+                </section>
+
+
+                <section>
+                    <p>Specifcity is achieved by polar interactions outside of active site</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/11/img/enzyme-specificity.png" />
+                </section>
+
+                <section  data-background="#000000">
+                    <p>Tobacco Etch Virus protease recognizes <em>ENLYFQG</em></p>
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/mRt_TLW9zg8" frameborder="0" allowfullscreen></iframe>
+                    <!--
+                    <video class="video-responsive" data-autoplay mute loop height="65%" width="65%"/> 
+                        <source data-src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/11/video/tev-protease-specificity.m4v" />
+                    <video>
+                    -->
+                </section>
+
+                <section>
+                    <h4>Big ideas</h4>
+                    <p>1. Enzymes orient chemical groups so they're primed to do chemistry.</p>
+                    <p>2. Enzymes activate polar atoms by pulling them away from water.</p>
+                    <p>3. Enzymes interact with/stabilize transition state.</p>
+                    <p>4. Enzymes do hard chemistry by breaking it into multiple, low-barrier steps</p>
+                    <p class="fragment">5. Specificity is encoded by interactions near the active site</p>
+                </section>
+
+                <section  data-background="#000000">
+                    <p>Exact active site geometry has evolved <em>many</em> times</p>
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/Mw2_cUlX4lw" frameborder="0" allowfullscreen></iframe>
+                    <!--
+                    <video class="video-responsive" data-autoplay mute loop controls height="85%" width="85%"/> 
+                        <source data-src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/11/video/serine-protease-overlay.mp4" />
+                    <video>
+                    -->
+                </section>
+
+                <section>
+                    <h4>Class review</h4>
+                    <p>Let's have a different person answer each question</p>
+                </section>
+
+                <section data-transition="fade">
+                    <p>Step 0: primed catalytic triad</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/11/img/5.png" height="65%" width="65%"/>
+                    <p class="fragment">Why is the Asp-His hydrogen bond strong?
+                        <span class="fragment" style="color:blue">Both are away from water in the active site</span>
+                    </p>
+                </section>
+                <section data-transition="fade">
+                    <p>Step 0: primed catalytic triad</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/11/img/5.png" height="65%" width="65%"/>
+                    <p>How does this change the strength of the His-Ser H-bond?
+                        <span class="fragment" style="color:blue">Negative Asp stabilizes positive His, increasing affinity of His for proton</span>
+                    </p>
+                </section>
+
+                <section data-transition="fade">
+                    <p>Step 1: $R-S^{-}$ attack on carbonyl</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/11/img/0.png" height="65%" width="65%"/>
+                    <p class="fragment">How can a Ser ($pK_{a}\ 17$) deprotonate at $pH\ 7$?
+                        <span class="fragment" style="color:blue">The needy His "pulls" on the Ser proton and thus lowers the $pK_{a}$ of Ser.</span>
+                    </p>
+                </section>
+
+                <section data-transition="fade">
+                    <p>Step 1: $R-S^{-}$ attack on carbonyl</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/11/img/0.png" height="65%" width="65%"/>
+                    <p class="fragment">Is this activated Ser a better or worse nucleophile than water?
+                        <span class="fragment" style="color:blue">Much better</span>
+                    </p>
+                </section>
+
+                <section data-transition="fade">
+                    <p>Step 2: break the peptide bond</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/11/img/1.png" height="75%" width="75%"/>
+                    <p class="fragment">How does the enzyme stabilize the negative tetrahedral intermediate?
+                        <span class="fragment" style="color:blue">Favorable polar interactions with negative charge (oxyanion hole)</span>
+                    </p>
+                </section>
+
+                <section data-transition="fade">
+                    <p>Step 2: break the peptide bond</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/11/img/1.png" height="75%" width="75%"/>
+                    <p>Why does the peptide bond break rather than the Ser-peptide bond?
+                        <span class="fragment" style="color:blue">Histidine is now formally positive and is now more attractive to electrons than the Ser</span>
+                    </p>
+                </section>
+
+                <section data-transition="fade">
+                    <p>Step 3: newly cleaved C-terminal peptide diffuses away</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/11/img/2.png" height="75%" width="75%"/>
+                </section>
+
+                <section data-transition="fade">
+                    <p>Step 4: water enters the binding site and attacks peptide carbonyl</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/11/img/3.png" height="65%" width="65%"/>
+                    <p class="fragment">What business does a water molecule have in a (relatively) hydrophobic active site? 
+                        <span class="fragment" style="color:blue">1. Water is 55 M.  2. lone pair on histdine nitrogen needs an acceptor.</span>
+                    </p>
+                </section>
+
+                <section data-transition="fade">
+                    <p>Step 5: electrons flow from charged oxygen and break peptide-serine bond</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/11/img/4.png" />
+                </section>
+
+                <section data-transition="fade">
+                    <p>Step 6: newly cleaved peptide diffuses out of active site, enzyme restored</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/11/img/5.png" />
+                </section>
+
+                <section>
+                    <h4>Big ideas</h4>
+                    <p>1. Enzymes orient chemical groups so they're primed to do chemistry.</p>
+                    <p>2. Enzymes activate polar atoms by pulling them away from water.</p>
+                    <p>3. Enzymes interact with/stabilize transition state.</p>
+                    <p>4. Enzymes do hard chemistry by breaking it into multiple, low-barrier steps</p>
+                    <p>5. Specificity is encoded by interactions near the active site</p>
+                </section>
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+            var USE_LOCAL = false;
+
+            if (USE_LOCAL) {
+                var mathjax_location = 'MathJax-master/MathJax.js';
+                var jquery_location = 'presentation-data/js/jquery-2.1.4.min.js';
+                var bootstrap_location = 'presentation-data/js/bootstrap.min.js';
+                var d3_location = 'presentation-data/js/d3.min.js';
+            } else {
+                var mathjax_location = 'https://cdn.mathjax.org/mathjax/latest/MathJax.js';
+                var jquery_location = 'https://code.jquery.com/jquery-2.1.4.min.js';
+                var bootstrap_location = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js';
+                var d3_location = 'https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js';
+            }
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+                // Add math, using local mathjax
+                math: {
+                    mathjax: mathjax_location,
+                    config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+                },
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/math/math.js', async: true },    // mathjax
+                    { src: jquery_location } ,
+                    { src: bootstrap_location } ,
+                    { src: d3_location } ,
+                    { src: 'presentation-data/js/test-stream.js'}
+				]
+			});
+
+
+
+		</script>
+
+	</body>
+</html>

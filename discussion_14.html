@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+        <!-- CUSTOMIZE METADATA HERE -->
+		<title>Presentation</title>
+		<meta name="description" content="BI281H Discussion">
+		<meta name="author" content="Michael J. Harms">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+        <link rel="stylesheet" href="presentation-data/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+        <!-- CUSTOMIZE STYLESHEET HERE -->
+		<link rel="stylesheet" href="presentation-data/css/override.css">
+	</head>
+
+	<body>
+
+        <!-- CUSTOMIZE SLIDES HERE -->
+		<div class="reveal">
+			<!-- Any section element inside of this container is a slide -->
+			<div class="slides">
+
+				<section>
+					<h2>Cooperativity: how does hemoglobin load and unload oxygen? </h2>
+					<h4>2016-10-25</h4>
+					<br/>
+				</section>
+
+				<section>
+
+					<h4>Conceptual goals</h4>
+
+                    <ul>
+                        <li class="fragment">Understand how multiple subunits working in conjunction give tightly controlled loading and unloading of cooperative proteins.</li>
+                    </ul>
+
+					<h4>Skill goals</h4>
+
+                    <ul>
+                        <li class="fragment">Reason about the thermodynamics of cooperativity using linkage thermodynamics.</li>
+                        <li class="fragment">Interpret graphical representations of loading/unloading curves in terms of cooperative behavior.</li>
+                    </ul>
+
+				</section>
+
+                <section>
+                    <p>Max Perutz and John Kendrew solved the 3D structure of myoglobin in 1959</p>
+                    <p class="fragment">It took them 22 years</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/14/img/perutz.jpg" height="60%" width="60%"/>
+                </section>
+
+                <section>
+                    <p>Myoglobin binds $O_{2}$ using a "heme" group with a bound $Fe(II)$ and a proximal His</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/14/img/myoglobin.jpg" /><br/>
+                    <small>Credit: <a href="http://jeb.biologists.org/content/207/20/3441">Ordway & Garry (2004) JEB 207:3441-3446</a></small>
+                </section>
+
+                <section  data-background="#000000" data-transition="fade">
+                    <p>Hemoglobin is a tetramer of our myoglobin-like monomers</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/14/img/hemoglobin.png" height="90%" width="90%" /><br/>
+                </section>
+
+                <section>
+                </section>
+
+                <section  data-background="#000000" data-transition="fade">
+                    <video class="video-responsive" data-autoplay mute controls height="90%" width="90%"/> 
+                        <source data-src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/14/video/hemoglobin1.mov" />
+                    </video>
+                    <small>Credit: <a href="http://biochem.web.utah.edu/iwasa/projects/hemoglobin.html">Janet Iwasa (Utah)</a></small>
+                </section>
+
+                <section  data-background="#000000" data-transition="fade">
+                    <video class="video-responsive" data-autoplay mute height="90%" width="90%"/> 
+                        <source data-src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/14/video/hemoglobin-dpg.mov" />
+                    </video>
+                    <small>Credit: <a href="http://biochem.web.utah.edu/iwasa/projects/hemoglobin.html">Janet Iwasa (Utah)</a></small>
+                </section>
+
+                <section>
+                    <p>Summary I</p>
+                    <ul>
+                        <li class="fragment">Myoglobin and hemoglobin are $O_{2}$ binding proteins that bind $O_{2}$ using a "heme" group</li>
+                        <li class="fragment">Hemoglobin is a tetramer of myoglobin-like subunits</li>
+                        <li class="fragment">Myoglobin buffers $O_{2}$ in tissues, hemoglobin transports $O_{2}$ in the blood</li>
+                        <li class="fragment">Myoglobin would unload at most 10% of its $O_{2}$ if it transported oxygen</li>
+                        <li class="fragment">Best monomer ($K_{D}=44\ torr$) could unload 40% of its oxygen</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p>Summary II</p>
+                    <ul>
+                        <li class="fragment">Cooperativity between sites allows hemoglobin to unload 75% of oxygen</li>
+                        <li class="fragment">Cooperativity comes about because binding the first $O_{2}$ "pays" to put complex into high $O_{2}$ affinity state.</li>
+                        <li class="fragment">This is descibed by the "Hill equation":$$\theta_{Hill} = \frac{1}{1 + (K_{D}/[L])^{n}}$$ where $n$ is $\approx$ number of sites</li>
+                        <li class="fragment">BPG binding binds to the low-affinity state, allowing hemoglobin to unload 95% of oxygen to tissues</li>
+                    </ul>
+                </section>
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+            var USE_LOCAL = false;
+
+            if (USE_LOCAL) {
+                var mathjax_location = 'MathJax-master/MathJax.js';
+                var jquery_location = 'presentation-data/js/jquery-2.1.4.min.js';
+                var bootstrap_location = 'presentation-data/js/bootstrap.min.js';
+                var d3_location = 'presentation-data/js/d3.min.js';
+            } else {
+                var mathjax_location = 'https://cdn.mathjax.org/mathjax/latest/MathJax.js';
+                var jquery_location = 'https://code.jquery.com/jquery-2.1.4.min.js';
+                var bootstrap_location = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js';
+                var d3_location = 'https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js';
+            }
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+                // Add math, using local mathjax
+                math: {
+                    mathjax: mathjax_location,
+                    config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+                },
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/math/math.js', async: true },    // mathjax
+                    { src: jquery_location } ,
+                    { src: bootstrap_location } ,
+                    { src: d3_location } ,
+                    { src: 'presentation-data/js/test-stream.js'}
+				]
+			});
+
+
+
+		</script>
+
+	</body>
+</html>

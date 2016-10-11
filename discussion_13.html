@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+        <!-- CUSTOMIZE METADATA HERE -->
+		<title>Presentation</title>
+		<meta name="description" content="BI281H Discussion">
+		<meta name="author" content="Michael J. Harms">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+        <link rel="stylesheet" href="presentation-data/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+        <!-- CUSTOMIZE STYLESHEET HERE -->
+		<link rel="stylesheet" href="presentation-data/css/override.css">
+	</head>
+
+	<body>
+
+        <!-- CUSTOMIZE SLIDES HERE -->
+		<div class="reveal">
+			<!-- Any section element inside of this container is a slide -->
+			<div class="slides">
+
+				<section>
+					<h2>Enzyme regulation</h2>
+					<h4>2016-10-24</h4>
+					<br/>
+				</section>
+
+				<section>
+					<h4>Conceptual goals</h4>
+					<ul>
+                        <li class="fragment">Understand different ways to inhibit enzyme activity and how these possibilities can be discriminated experimentally.</li>
+					</ul>
+
+					<h4>Skill goals</h4>
+					<ul>
+                        <li class="fragment">Interpret changes to MM graphs in terms of regulatory mechansim, linking changes in graph to changes in chemistry.</li>
+					</ul>
+				</section>
+
+                <section>
+                    <p>Review: the mechanism of serine protease</p>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <img class="img-responsive" src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/11/img/0.png" />
+                        </div> 
+                        <div class="col-xs-4">
+                            <img class="img-responsive fragment" src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/11/img/1.png" />
+                        </div> 
+                        <div class="col-xs-4">
+                            <img class="img-responsive fragment" src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/11/img/2.png" />
+                        </div> 
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <img class="img-responsive fragment" src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/11/img/3.png" />
+                        </div> 
+                        <div class="col-xs-4">
+                            <img class="img-responsive fragment" src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/11/img/4.png" />
+                        </div> 
+                        <div class="col-xs-4">
+                            <img class="img-responsive fragment" src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/11/img/5.png" />
+                        </div> 
+                    </div>
+
+                </section>
+
+                <section>
+
+                    <p>What happens if we mutate Aspartic Acid 102 to an Alanine?</p>
+                    <ul>
+                        <li>To transtion state free energy?</li>
+                        <li>To $k_{cat}$ ?</li>
+                        <li>To $K_{M}$ ?</li>
+                    </ul>
+
+                </section>
+
+                <section>
+                    <p>How can enzymes be regulated without introducing mutations?</p>
+                </section>
+
+                <section  data-background="#000000">
+                    <p>HIV protease inhibitor binds at the enzyme active site</p>
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/madRjiaJrk8" frameborder="0" allowfullscreen></iframe>
+                    <!--
+                    <video class="video-responsive" data-autoplay mute loop height="80%" width="80%"/> 
+                        <source data-src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/13/video/competitive-inhibitor.mp4" />
+                    </video>
+                    -->
+                </section>
+
+                <section>
+                    <p>A <em>competitive</em> inhibitor competes for the same site as the substrate and thus slows the enzyme down.</p>
+                    <p class="fragment">This leads to a increase in: <span class="fragment" style="color:blue">$K_{M}$</span></p>
+                    <p class="fragment">The inhibitor usually looks quite similar to the substrate but is less reactive</p>
+                </section>
+
+                <section>
+                    <h4>If you drink moonshine, doctors might give you even more alcohol!</h4>
+                    <p class="fragment">Methanol ($CH_{3}OH$) is not poisonous, but is converted to the potent poison formaldehyde ($CH_{2}O$) by the enzyme alcohol dehydrogenase. One treatment for methanol poisoning is to give the patient copious quantities of ethanol ($CH_{3}CH_{2}OH$).  Why might this be?</p>
+                    <p class="fragment" style="color:blue">Ethanol competes with methanol at this site, lowering the rate of formaldehyde production.  </p>
+                    <p class="fragment">Does this alter $k_{cat}$ or $K_{M}$? <span class="fragment" style="color:blue">$K_{M}$ because it <em>competes</em> for the same site.</span></p>
+                </section> 
+
+
+                <!-- Go to Michaelis-Menten graphic and have them predict how changing kcat and KM will alter graph -->
+
+                <section>
+
+                    <p>Sarin is a potent neurotoxin</p>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/13/img/sarin-structure.png" />
+                        </div>
+                        <div class="col-xs-8">
+                            <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/13/img/800px-Sarin_Biological_effects.svg.png" height="50%" width="50%"/>
+                        </div>
+                    </div>
+   
+                    <small>"Sarin Biological effects" by RicHard-59: <a href="https://commons.wikimedia.org/wiki/File:Sarin_Biological_effects.svg#/media/File:Sarin_Biological_effects.svg">wikimedia.org</a></small>
+
+                </section>
+
+                <section>
+
+                    <p>Sarin covalently modifies an active-site serine in acetylcholine esterase</p>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/13/img/sarin-wide-view.png" />
+                        </div>
+                        <div class="col-xs-6">
+                            <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/13/img/sarin-in-active-site.png" />
+                        </div>
+                    </div>
+   
+                    <small>PBD 2Y2V</small>
+
+                </section>
+
+                <section>
+                    <p>An <em>irreversible</em> or (<em>suicide</em>) inhibitor covalently modifies the active site, destroying the enzyme.</p>
+                    <p class="fragment">This leads to a drop in: <span class="fragment" style="color:blue">$[E]_{T}$</span></p>
+                    <p class="fragment">The inhibitor usually looks quite similar to the substrate</p>
+                </section>
+
+                <!-- Go to Michaelis-Menten graphic and have them predict how changing kcat and KM will alter graph -->
+
+                <section  data-background="#000000" data-transition="fade">
+
+                    <p>Hepatitis C Virus RNA polymerase binds RNA in its active site</p>
+                    <small>It's critical for viral replication</small> <br />
+
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/XtsvonUuqxI" frameborder="0" allowfullscreen></iframe>
+                    <!--
+                    <video class="video-responsive" data-autoplay mute loop height="90%" width="90%"/> 
+                        <source data-src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/13/video/hcv-polymerase-free.mp4" />
+                    </video>
+                    -->
+       
+                </section>
+
+                <section  data-background="#000000" data-transition="fade">
+
+                    <p>A non-competitive inhibitor inhibits activity by binding <em>away</em> from the active site</p>
+
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/IcogdLIZhdU" frameborder="0" allowfullscreen></iframe>
+                    <!--
+                    <video class="video-responsive" data-autoplay mute loop height="90%" width="90%"/> 
+                        <source data-src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/13/video/hcv-polymerase-inhibitor.mp4" />
+                    </video>
+                    -->
+       
+                </section>
+
+                <section>
+                    <p><img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/13/img/noncompetitive.jpg" height="150%" width="150%"/></p>
+                    <small>Image credit: <a href="http://bioap.wikispaces.com/Enzymes+2010">http://bioap.wikispaces.com</a></small>
+                </section>
+
+                <section>
+                    <p>A <em>noncompetitive</em> inihibitor binds distant from the active site, altering active site to turn off activity</p>
+                    <p class="fragment">This leads to a drop in: <span class="fragment" style="color:blue">$k_{cat}$</span></p>
+                    <p class="fragment">The inhibitor need not have any chemical similarity to the substrate</p>
+                </section>
+
+                <section>
+                    <p>This "allosteric" mechanism can also be used to turn <em>on</em> an enzyme: binding at a distant site puts enzyme in active form</p>
+                    <p class="fragment">This leads to an <em>increase</em> in <span style="color:blue">$k_{cat}$</span></p>
+                </section>
+
+                <!-- Go to Michaelis-Menten graphic and have them predict how changing kcat and KM will alter graph -->
+
+                <section>
+                    <p>Summary</p>
+                    <ul>
+                        <li class="fragment">A <em>competitive</em> inhibitor binds at the active site and competes with substrate. <span class="fragment" style="color:blue">This raises $K_{M}$</li>
+                        <li class="fragment">A <em>suicide</em> inhibitor irreversibly (covalently) modifies the active site and destroys the enzyme. <span class="fragment" style="color:blue">This lowers $[E]_{T}$</li>
+                        <li class="fragment">A <em>Non-competitive</em> inhibitor binds away from the active site and "magically" lowers activity. <span class="fragment" style="color:blue">This lowers $k_{cat}$</li>
+                        <li class="fragment">All three mechanisms are used biologically and in medicine.</li>
+                    </ul>
+                </section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+            var USE_LOCAL = false;
+
+            if (USE_LOCAL) {
+                var mathjax_location = 'MathJax-master/MathJax.js';
+                var jquery_location = 'presentation-data/js/jquery-2.1.4.min.js';
+                var bootstrap_location = 'presentation-data/js/bootstrap.min.js';
+                var d3_location = 'presentation-data/js/d3.min.js';
+            } else {
+                var mathjax_location = 'https://cdn.mathjax.org/mathjax/latest/MathJax.js';
+                var jquery_location = 'https://code.jquery.com/jquery-2.1.4.min.js';
+                var bootstrap_location = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js';
+                var d3_location = 'https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js';
+            }
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+                // Add math, using local mathjax
+                math: {
+                    mathjax: mathjax_location,
+                    config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+                },
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/math/math.js', async: true },    // mathjax
+                    { src: jquery_location } ,
+                    { src: bootstrap_location } ,
+                    { src: d3_location } ,
+                    { src: 'presentation-data/js/test-stream.js'}
+				]
+			});
+
+
+
+		</script>
+
+	</body>
+</html>

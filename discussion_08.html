@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+        <!-- CUSTOMIZE METADATA HERE -->
+		<title>Presentation</title>
+		<meta name="description" content="BI281H Discussion">
+		<meta name="author" content="Michael J. Harms">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+        <link rel="stylesheet" href="presentation-data/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+        <!-- CUSTOMIZE STYLESHEET HERE -->
+		<link rel="stylesheet" href="presentation-data/css/override.css">
+	</head>
+
+	<body>
+
+        <!-- CUSTOMIZE SLIDES HERE -->
+		<div class="reveal">
+			<!-- Any section element inside of this container is a slide -->
+			<div class="slides">
+
+                <section>
+                   
+                    <p>Review session: <em>tonight</em> at 7 pm in Willamette 110</p>
+                    <p>First midterm: next Wednesday (10/21) 7 pm in Lillis 282</p> 
+                    <p>Midterm will cover up through the end of this week (lectures 1-9, homework 1-3, lab 1-3).</p>
+
+                </section>
+
+				<section>
+					<h2>Protein recognition and membranes</h2>
+					<h4>2016-10-12</h4>
+					<br/>
+				</section>
+
+				<section>
+					<h4>Conceptual goals</h4>
+					<ul>
+                        <li class="fragment">Understand that highly specific molecular interactions are achieved through satisfying polar interactions in hydrophobic environments.</li>
+                        <li class="fragment">Understand that interactions are "tuned" to affinities useful for the cell.</li>
+					</ul>
+
+					<h4>Skill goals</h4>
+					<ul>
+                        <li class="fragment">Use structure-based reasoning to predict relative affinities and specificities of different interactions.</li>
+                        <li class="fragment">Reason correctly about interactions by thinking correctly about both sides of a reaction coordinate.</li> 
+					</ul>
+				</section>
+
+                <section  data-background="#000000">
+                    <p>The estrogen receptor binds <em>estradiol</em> in female metazoans</p>
+                    <iframe width="640" height="360" src="https://www.youtube.com/embed/jc1MAVoirFk" frameborder="0" allowfullscreen></iframe>
+                    <!--
+                    <video class="video-responsive" data-autoplay mute loop height="60%" width="60%"/> 
+                        <source data-src="presentation-data/07/video/estrogen-receptor.mp4" />
+                    <video>
+                    -->
+    
+                </section>
+
+
+                <section>
+                    <p>$\theta = \frac{1}{1 + K_{D}/[L]}$</p>
+                    <p>$\theta \equiv$ fractional occupancy</p>
+                    <p>$K_{D} \equiv$ dissociation constant</p>
+                    <p>$[L] \equiv$ ligand concentration</p>
+                    <p>A <em>ligand</em> is a small molecule bound by a biological macromolecule</p>
+                </section>
+
+                <section>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/08/img/estradiol-vs-testosterone.png" class="img-responsive"/>
+                    <small>Chen et al. (2004) <em>JBC</em> 279(32):33855-33864</small>
+                </section>
+               
+                <section>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/08/img/binding-table.png" class="img-responsive"/>
+                </section>
+ 
+                <section>
+                    <p>In principle, is one hydrogen bond enough to explain testosterone/estrogen specificity?</p> 
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/08/img/idealized-data.png" height="55%" width="55%"/>
+                </section>
+
+                <section>
+                    <p>Summary I</p>
+                    <ul>
+                        <li>Proteins can bind to specific molecules in the cellular environment</li>
+                        <li>Interactions are driven by the hydrophobic effect, but specificity is achieved by shape complementarity and polar contacts</li>
+                        <li>The strength of these interactions is quantified by the <em>Dissociation constant</em> ($K_{D}$)</li>
+                        <li>$K_{D}$ is tuned to the concentration of the molecule in the cell</li>
+                    </ul>
+                </section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+            var USE_LOCAL = false;
+
+            if (USE_LOCAL) {
+                var mathjax_location = 'MathJax-master/MathJax.js';
+                var jquery_location = 'presentation-data/js/jquery-2.1.4.min.js';
+                var bootstrap_location = 'presentation-data/js/bootstrap.min.js';
+                var d3_location = 'presentation-data/js/d3.min.js';
+            } else {
+                var mathjax_location = 'https://cdn.mathjax.org/mathjax/latest/MathJax.js';
+                var jquery_location = 'https://code.jquery.com/jquery-2.1.4.min.js';
+                var bootstrap_location = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js';
+                var d3_location = 'https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js';
+            }
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+                // Add math, using local mathjax
+                math: {
+                    mathjax: mathjax_location,
+                    config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+                },
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/math/math.js', async: true },    // mathjax
+                    { src: jquery_location } ,
+                    { src: bootstrap_location } ,
+                    { src: d3_location } ,
+                    { src: 'presentation-data/js/test-stream.js'}
+				]
+			});
+
+
+
+		</script>
+
+	</body>
+</html>
