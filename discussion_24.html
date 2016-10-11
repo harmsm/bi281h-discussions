@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+        <!-- CUSTOMIZE METADATA HERE -->
+		<title>Presentation</title>
+		<meta name="description" content="BI281H Discussion">
+		<meta name="author" content="Michael J. Harms">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+        <link rel="stylesheet" href="presentation-data/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+        <!-- CUSTOMIZE STYLESHEET HERE -->
+		<link rel="stylesheet" href="presentation-data/css/override.css">
+	</head>
+
+	<body>
+
+        <!-- CUSTOMIZE SLIDES HERE -->
+		<div class="reveal">
+			<!-- Any section element inside of this container is a slide -->
+			<div class="slides">
+
+				<section>
+					<h2>Players and Forces</h2>
+					<h4>2016-11-18</h4>
+					<br/>
+				</section>
+				<section>
+					<h4>Conceptual goals</h4>
+					<ul>
+						<li class="fragment">Know the main chemical forces that undergird life</li>
+						<li class="fragment">How the four main classes of biomolecules differ in these properties</li>
+						<li class="fragment">and how these differences lead to their biological roles.</li>
+					</ul>
+
+					<h4>Skill goals</h4>
+					<ul>
+						<li class="fragment">Reason about the relative importance of different molecular forces in an aqueous environment</li>
+						<li class="fragment">Identify the ability to participate in different interactions from structure.</li>
+					</ul>
+				</section>
+
+                <section>
+
+                </section>
+
+                <section>
+                    <p>Oxidative Phosphorylation completes the "combustion" reaction$</p>
+                    <p>$C_{6}H_{12}O_{6} + 6O_{2} \rightarrow 6CO_{2} + 6H_{2}O$</p>
+
+                    <div class="fragment">
+                        <p>$C_{6}H_{12}O_{6} \rightarrow 6CO_{2} + 2ATP + 2GTP + 10NADH + QH_{2}$</p>
+                    </div>
+
+                    <p class="fragment">$2NADH + O_{2} 2H^{+} \rightarrow 2NAD^{+} + H_{2}O$</p>
+                    <p class="fragment"><em>Oxidize</em> $NADH$ to $NAD^{+}$ by <em>reducing</em>$O_{2}$ to $H_{2}O$</p>
+
+                </section>
+
+                <section>
+                    <p>How much energy is released on transferring electrons from $NADH$ to $O_{2}$?</p>
+                    <p>$\frac{1}{2}O_{2} + 2H^{+} + 2e^{-} \rightarrow H_{2}O$; $\varepsilon^{\circ \prime} = 0.815\ V$</p>
+                    <p>$NAD^{+} + H^{+} + 2e^{-} \rightarrow NADH$; $\varepsilon^{\circ \prime} = -0.315\ V$</p>
+                </section>
+
+                <section>
+                    <p class="fragment">$\Delta \varepsilon^{\circ \prime} = \varepsilon_{acceptor} - \varepsilon_{donor}$</p>
+                    <p class="fragment">$\Delta \varepsilon^{\circ \prime} = \varepsilon_{O2 \rightarrow H2O} - \varepsilon_{nad+ \rightarrow nadh}$</p>
+                    <p class="fragment">$\Delta \varepsilon^{\circ \prime} = (0.815\ V-- 0.315\ V)$</p>
+                    <p class="fragment">$\Delta \varepsilon^{\circ \prime} = 1.130 \ V$</p>
+                </section>
+                
+                <section>
+                    <p class="fragment">$\Delta G ^{\circ \prime} = -n F \Delta \varepsilon ^{\circ \prime}$</p>
+                    <p class="fragment">$\Delta G ^{\circ \prime} = -2 \times 96 \ kJ \cdot mol^{-1} \cdot V^{-1}  \times 1.130 \ V$</p>
+                    <p class="fragment">$\Delta G ^{\circ \prime} = -217 \ kJ \cdot mol^{-1}$</p>
+                </section> 
+
+                
+                B (III)
+                C
+                A (IV)
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+            var USE_LOCAL = false;
+
+            if (USE_LOCAL) {
+                var mathjax_location = 'MathJax-master/MathJax.js';
+                var jquery_location = 'presentation-data/js/jquery-2.1.4.min.js';
+                var bootstrap_location = 'presentation-data/js/bootstrap.min.js';
+                var d3_location = 'presentation-data/js/d3.min.js';
+            } else {
+                var mathjax_location = 'https://cdn.mathjax.org/mathjax/latest/MathJax.js';
+                var jquery_location = 'https://code.jquery.com/jquery-2.1.4.min.js';
+                var bootstrap_location = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js';
+                var d3_location = 'https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js';
+            }
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+                // Add math, using local mathjax
+                math: {
+                    mathjax: mathjax_location,
+                    config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+                },
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/math/math.js', async: true },    // mathjax
+                    { src: jquery_location } ,
+                    { src: bootstrap_location } ,
+                    { src: d3_location } ,
+                    { src: 'presentation-data/js/test-stream.js'}
+				]
+			});
+
+
+
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+        <!-- CUSTOMIZE METADATA HERE -->
+		<title>Presentation</title>
+		<meta name="description" content="BI281H Discussion">
+		<meta name="author" content="Michael J. Harms">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+        <link rel="stylesheet" href="presentation-data/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+        <!-- CUSTOMIZE STYLESHEET HERE -->
+		<link rel="stylesheet" href="presentation-data/css/override.css">
+	</head>
+
+	<body>
+
+        <!-- CUSTOMIZE SLIDES HERE -->
+		<div class="reveal">
+			<!-- Any section element inside of this container is a slide -->
+			<div class="slides">
+
+				<section>
+					<h2>Food is going to kill you</h2>
+					<h4>2015-12-02</h4>
+					<br/>
+				</section>
+				<section>
+					<h4>Conceptual goals</h4>
+					<ul>
+						<li class="fragment">Understand metabolism in (slightly) broader context</li>
+						<li class="fragment">Understand how finely balanced biochemistry is...it's a miracle we're alive at all</li>
+					</ul>
+				</section>
+
+                <section>
+                    <p>Using oxygen is a dangerous business</p>
+                </section> 
+
+                <section>
+                    <p>Cyanobacteria evolved about 2.1 billion years ago</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/29/img/cyanobacteria.jpg" height="50%" width="50%" /><br/>
+                    <p class="fragment">They brought some new-fangled chemistry: photosynthesis</p>
+                    <p class="fragment">This was (arguably) the worst pollution event in history. "Green" chemistry is dangerous chemistry.</p>
+                    <small>Credit: <a href="http://protist.i.hosei.ac.jp/pdb/images/Prokaryotes/Cyanobacteria/Cyanobacteria3.html">Protist Info Server</a></small>
+                </section>
+
+                <section>
+                    <p>Why is oxygen generated in photosynthesis?</p>
+                    <p class="fragment" style="color:blue">Photosystem II regenerates photooxidized $P680^{+} \rightarrow P680$ by taking an electron from $H_{2}O$. 
+                </section>
+      
+                <section>
+                    <p>How does absorption of a photon lead to electron transport?</p>
+                    <p class="fragment" style="color:blue">Excited electron is "ripped off" ($P680 \xrightarrow[]{h \nu} P680^{+} + e^{-}$) and passed on to electron transport molecules like $(PQ + 2e^{-} + 2H^{+} \rightarrow PQH_{2})$</p>
+                </section>
+
+                <section>
+                    <p>How does electron transport lead to the production of $ATP$ and $NADPH$?</p>
+                    <ul style="color:blue">
+                        <li class="fragment">As electrons are passed from low to high reduction potential, $H^{+}$ are transported across the bilayer.  This creates a proton gradient that can be converted to $ATP$ using ATP synthase</li>
+                        <li class="fragment">The final electron acceptor in this electron transport chain is $NADP^{+}$, giving a recharged $NADPH$ that is ready to do more chemistry</li>
+                    </ul>
+                </section>
+ 
+                <section>
+                    <p>The evolution of photosynthesis led to accumulation of $O_{2}$ in the atmosphere for the first time</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/29/img/oxygenation.png" height="100%" width="100%" /><br/>
+                    <small>Credit: <a href="https://en.wikipedia.org/wiki/Great_Oxygenation_Event">wikimedia.org</a></small>
+                </section> 
+ 
+                <section>
+                    <p>Accumulating $O_{2}$ had several effects:</p>
+                    <ul>
+                        <li class="fragment">It killed a huge number of species (by mechanisms we'll talk about)</li>
+                        <li class="fragment">It formed a huge amount of insoluble iron oxides ($Fe_{3}O_{4}$ and $Fe_{2}O_{3}$).</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p>"Iron band" formations around the world help date these events</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/29/img/iron-bands.jpg" height="80%" width="80%" /><br/>
+                    <small><a href="https://en.wikipedia.org/wiki/Banded_iron_formation">wikimedia.org</a></small>
+                </section>                  
+ 
+                <section>
+                    <p>Accumulating $O_{2}$ had several effects:</p>
+                    <ul>
+                        <li>It killed a huge number of species (by mechanisms we'll talk about)</li>
+                        <li>It formed a huge amount of insoluble iron oxides ($Fe_{3}O_{4}$ and $Fe_{2}O_{3}$).</li>
+                        <li class="fragment">It reacted with methane ($CH_{4}$) in the atmosphere to form $CO_{2}$ and $H_{2}O$.  This destroyed the methane "greenhouse" and probably gave a snowball earth: a <em>global</em> ice age</li>
+                        <li class="fragment">It made complex life possible by giving a terminal $e^{-}$ acceptor for respiration</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p>The big problem (and power) of oxygen: it has <em>really</em> high affinity for electrons.</p>
+                    <p>Is this a high or low $\varepsilon^{\circ \prime}$?  <span class="fragment" style="color:blue"><em>HIGH.</em> $\frac{1}{2}O_{2} + 2H^{+} + 2e^{-} \rightarrow H_{2}O$ has $\varepsilon^{\circ \prime} = 0.815\ V$</p>
+                    <p class="fragment">Why does this high reduction potential allow $O_{2}$-using creatures to extract more energy from sugar than they could without $O_{2}$?</p>
+                    <p class="fragment" style="color:blue">$O_{2}$ provides a "sink" for electrons that drives a highly favorable set of oxidation reactions.  Anaerobic respiration is limited by the electron affinity of its terminal sink (i.e. pyruvate to lactate at $-0.185\ V)$</p>
+                </section>
+
+                <section>
+                    <p>Unfortunately, this energy is dangerous to extract...</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/25/img/total-summary.png" height="100%" width="100%" /><br/>
+                </section>
+
+                <section>
+                    <p>What happens if you run out of $ADP$ (and why)?</p>
+                    <ul style="color:blue">
+                        <li class="fragment">ATP synthesis is the only way to relieve the proton gradient.</li>
+                        <li class="fragment">Gradient becomes so large that electron transport can't pump against gradient.</li>
+                        <li class="fragment">Electrons accumulate in chain.</li>
+                        <li class="fragment">Bad things happen</li> 
+                    </ul>
+                </section>
+
+                <section>
+                    <p>Big problem points are handoffs involving $Q$</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/25/img/total-summary.png" height="100%" width="100%" /><br/>
+                </section>
+
+                <section>
+                    <p>$QH_{2}$ carries $2e^{-}$, while all of the reaction centers carry only $1e^{-}$.  ${\cdot}Q^{-}$ is generated as an intermediate</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/29/img/q-cycle.png" height="70%" width="70%" />
+                </section> 
+
+                <section>
+                    <p>In actively respiring mitochondria, up to 4% of $O_{2}$ is converted to superoxide by errant $\cdot Q^{-}$.
+                    <p>$\cdot Q^{-} + O_{2} \rightarrow Q + \cdot O^{-}_{2}$</p>
+                    <p>superoxide is highly reactive and can go on to modify enzymes, lipids, and nucleic acids</p>
+                    <p class="fragment"><em>This is very bad</em></p>
+                </section>
+
+                <section>
+                    <p>Example: in the lab, you treat an enzyme with $\cdot O^{-}$ and then measure it's enzyme kinetics.  $K_{M}$ is unchanged, but $V_{max}$ is much lower.</p>
+                    <p>What might have happened?</p>
+                    <ul style="color:blue">
+                        <li class="fragment">Maybe it reacted at active site (suicide inhibitor)</li>
+                        <li class="fragment">Maybe it modified a site distant from the active site (allostery)</li>
+                    </ul>
+                    <p class="fragment">These sorts of modifications disrupt protein function and thus living</p>
+                </section>
+
+                <section>
+                    <p>Cells have defenses against superoxide:</p>
+                    <ul>
+                        <li>Superoxide dismutase catalyzes ${\cdot}O^{-}_{2} + {\cdot}O^{-}_{2} + 2H^{+} \rightarrow H_{2}O_{2} + O_{2}$</li>
+                        <li>Cells use $NADPH \rightarrow NADP^{+} + 2e^{-} + H^{+}$ to reduce $H_{2}O_{2}$ to $H_{2}O$</li>
+                    <ul>
+                </section>
+
+                <section>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/29/img/detox.png" height="70%" width="70%" />
+                </section>
+
+                <section>
+                    <p>But it's not enough.  Damage will accumulate.</p>
+                    <p class="fragment">Damaged DNA leads to cancer</p>
+                    <p class="fragment">Oxidized lipids form the nucleus for plaque formation in arteriosclerosis</p>
+                    <p class="fragment">Along with other forms of damage</p>
+                </section>
+
+                <section>
+                    <p>DNA: Cells have a huge number of mechanisms to repair DNA damage</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/29/img/dna-repair-mech.png" height="66%" width="66%" /><br/>
+                    <small><a href="doi:10.1038/nature10760">Lord & Ashworth (2012) <em>Nature</em> 481:287-294</a></small>
+                </section>
+                    
+                <section>
+                    <p>But it's <em>still</em> not enough.</p>
+                    <p>Humans have ~40 <em>trillion</em> cells.  Over a long enough time, damage will leak through all of these mechanisms</p>
+                    <p>Damaged DNA can disrupt regulation of gene expression that controls cell growth.</p>
+                    <p>This leads to an out-of-control cell that then passes on its out-of-controllness to it's progeny: cancer</p>
+                </section>
+
+                <section>
+                    <p>High fat + oxidative stress leads to plaque formation, nucleated by oxidized lipids</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/29/img/artery.png" height="85%" width="85%" /><br/>
+                    <small>Source: <a href="http://cdn.intechopen.com/pdfs-wm/35945.pdf">Garelnabi (2012)</a></small>
+                </section>
+
+                <section>
+                    <p>And what's one way to get a lot of fat made?</p>
+                    <div class="fragment">
+                        <p>Eat lots of fructose</p>
+                        <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/29/img/fat-mouse.jpg" height="50%" width="50%" /><br/>
+                    </div>
+                </section>
+                
+                <section>
+                    <p>Fructose looks a lot like glucose</p>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/29/img/glucose.png" height="85%" width="85%"/>
+                        </div>
+                        <div class="col-xs-6">
+                            <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/29/img/fructose.png" height="85%" width="85%"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">glucose</div>
+                        <div class="col-xs-6">fructose</div>
+                    </div>
+                    <p class="fragment">But it's processed differently.</p>
+                </section>
+
+                <section>
+                    <p>Consumption of fructose has gone <em>way</em> up, concomitant with increase in obesity</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/29/img/sugar-consumption.jpg" />
+                </section>
+
+                <section>
+                    <p>Glucose is absorbed and processed by many tissues, but fructose is primarily absorbed in the liver</p>
+                    <p class="fragment">The liver expresses the enzyme <em>fructokinase</em>, which catalyzes the formation of fructose-1-phosphate</p>
+                    <p class="fragment">F1P cannot leave the cell because of it's charge, so it accumulates in the liver</p>
+
+                </section>
+
+
+                <section>
+                    <p>F1P can be converted to DHAP and GA3P (of glycolysis fame)</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/29/img/fructose-stage-1.jpg" height="80%" width="80%"/>
+                </section>
+
+                <section>
+                    <p>BUT, in doing so, it bypasses phospho-fructokinase</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/20/img/step-3_regulation.png" height="80%" width="80%"/>
+                    <p class="fragment">When you eat fructose, it's sent down the glycolysis pipe, even if there's plenty of energy around</p>
+                </section>
+
+                <section>
+                    <p>A large excess of energy rich molecules triggers fat production</p>
+                    <p class="fragment">Worse, F1P can feed <em>directly</em> into fat production pathways</p>
+                    <img class="fragment" src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/29/img/fructose-tg.jpg" height="70%" width="70%"/>
+                </section>
+    
+                <section>
+                    <ul>
+                        <li>Fructose is burned directly because it skips PFK, leading to a glut of energy and turing on fat production</li>
+                        <li class="fragment">Fructose itself is an efficient substrate for making fat</li>
+                        <li class="fragment">This happens preferentially in the liver, leading to fatty liver (which is a central regulator of metabolism in mammals, leading to even worse outcomes over time)</li>
+                        <li class="fragment">Oxidative stress plus high fat leads to arterial plaques, heart disease, stroke, etc.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p>Exercise:</p>
+                    <p>Hexokinase can make F6P rather than F1P, which would solve all of these problems. Why doesn't this happen?</p>
+                    <div class="fragment">
+                        <p>Hexokinase/fructose $K_{M} = 12 \ mM$; $k_{cat} = 20\ s^{-1}$</p>
+                        <p>fructokinase/fructose $K_{M} = 0.5 \ mM$; $k_{cat} = 8\ s^{-1}$</p>
+                        <p>If both proteins have the same concentration, how much faster will fructokinase operate on 0.1 mM fructose?</p>
+                    </div>
+                </section>
+
+                <section>
+                    <p>Summary:</p>
+                    <ul>
+                        <li>$O_{2}$ is vital to respiration, but also dangerous.</li>
+                        <li>It can form superoxide, which damages molecules</li>
+                        <li>Damaged proteins lead to poor cellular function, DNA to cancer, and lipids to heart disease</li>
+                        <li>Fructose skips the key regulatory step in glycolysis, leading to fat production and heart disease</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p>Final is Wednesday 12/9, Willamette 100, 10:15 am</p>
+                    <p>I'm holding extra office hours on Monday at 10 am in the lab room, <em>not</em> Will 350 as announced.</p>
+                    <p>If you haven't already, it helps me out a lot if you fill out course evaluations:</p>
+                    <ul>
+                        <li>What you liked/was helpful</li>
+                        <li>What you didn't like/harder than it had to be</li>
+                        <li>Suggestions to improve</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p>It's been a great term.  Have a happy, merry and culturally relevant [insert holiday here]!</p>
+                </section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+            var USE_LOCAL = false;
+
+            if (USE_LOCAL) {
+                var mathjax_location = 'MathJax-master/MathJax.js';
+                var jquery_location = 'presentation-data/js/jquery-2.1.4.min.js';
+                var bootstrap_location = 'presentation-data/js/bootstrap.min.js';
+                var d3_location = 'presentation-data/js/d3.min.js';
+            } else {
+                var mathjax_location = 'https://cdn.mathjax.org/mathjax/latest/MathJax.js';
+                var jquery_location = 'https://code.jquery.com/jquery-2.1.4.min.js';
+                var bootstrap_location = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js';
+                var d3_location = 'https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js';
+            }
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+                // Add math, using local mathjax
+                math: {
+                    mathjax: mathjax_location,
+                    config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+                },
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/math/math.js', async: true },    // mathjax
+                    { src: jquery_location } ,
+                    { src: bootstrap_location } ,
+                    { src: d3_location } ,
+                    { src: 'presentation-data/js/test-stream.js'}
+				]
+			});
+
+
+
+		</script>
+
+	</body>
+</html>
