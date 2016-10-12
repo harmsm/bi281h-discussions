@@ -44,13 +44,13 @@
                 <section>
                    
                     <p>Review session: <em>tonight</em> at 7 pm in Willamette 110</p>
-                    <p>First midterm: next Wednesday (10/21) 7 pm in Lillis 282</p> 
+                    <p>First midterm: next Wednesday (10/19) 7 pm in Pacific 123</p> 
                     <p>Midterm will cover up through the end of this week (lectures 1-9, homework 1-3, lab 1-3).</p>
 
                 </section>
 
 				<section>
-					<h2>Protein recognition and membranes</h2>
+					<h2>Protein recognition</h2>
 					<h4>2016-10-12</h4>
 					<br/>
 				</section>
@@ -58,56 +58,167 @@
 				<section>
 					<h4>Conceptual goals</h4>
 					<ul>
-                        <li class="fragment">Understand that highly specific molecular interactions are achieved through satisfying polar interactions in hydrophobic environments.</li>
-                        <li class="fragment">Understand that interactions are "tuned" to affinities useful for the cell.</li>
+                        <li class="fragment">Proteins form <em>specific</em> interactions with molecular partners</li>
+                        <li class="fragment">Specificity is achieved by creating interactions that can only be fulfilled by one partner, not others</li>
+                        <li class="fragment">Interactions are "tuned" to affinities useful for the cell.</li>
 					</ul>
 
 					<h4>Skill goals</h4>
 					<ul>
                         <li class="fragment">Use structure-based reasoning to predict relative affinities and specificities of different interactions.</li>
-                        <li class="fragment">Reason correctly about interactions by thinking correctly about both sides of a reaction coordinate.</li> 
+                        <li class="fragment">Use $K_{D}$ to characterize the strength of interactions</li>
 					</ul>
 				</section>
 
-                <section  data-background="#000000">
-                    <p>The estrogen receptor binds <em>estradiol</em> in female metazoans</p>
-                    <iframe width="640" height="360" src="https://www.youtube.com/embed/jc1MAVoirFk" frameborder="0" allowfullscreen></iframe>
-                    <!--
-                    <video class="video-responsive" data-autoplay mute loop height="60%" width="60%"/> 
-                        <source data-src="presentation-data/07/video/estrogen-receptor.mp4" />
+                <section>
+
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/08/img/testosterone.png" class="img-responsive" height="100%" width="100%"/>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="row">Testosterone</div> 
+                            <div class="row" align="center">
+                                <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/08/img/mars-symbol.png" class="img-responsive" height="40%" width="40%"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/08/img/estrogen.png" class="img-responsive" height="100%" width="100%"/>
+                        </div> 
+                        <div class="col-xs-6">
+                            <div class="row">Estrogen</div> 
+                            <div class="row" align="center">
+                                <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/08/img/venus-symbol.png" class="img-responsive" height="40%" width="40%"/>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section>
+
+                    <p>Steroids have only a small range of blood concentrations</p>
+                    <div class="row">
+                        <div class="col-xs-4"></div>
+                        <div class="col-xs-4">Female</div>
+                        <div class="col-xs-4">Male</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4">Estrogen</div>
+                        <div class="col-xs-4">$0.1-2.0\ nM$</div>
+                        <div class="col-xs-4">$0.05-0.2\ nM$</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4">Testosterone</div>
+                        <div class="col-xs-4">$0.9-3\ nM$</div>
+                        <div class="col-xs-4">$10-50\ nM$</div>
+                    </div>
+
+                    <small><a href="https://upload.wikimedia.org/wikipedia/commons/c/cb/Blood_values_sorted_by_mass_and_molar_concentration.png">wikipedia.org</a></small>
+
+                </section>
+
+                <section>
+
+                    <div class="row">
+                        <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/08/img/sr-function.png" class="img-responsive"/>
+                    </div>
+
+                    <small><a href="https://www.boundless.com/biology/textbooks/boundless-biology-textbook/the-endocrine-system-37/how-hormones-work-211/intracellular-hormone-receptors-795-12031/images/fig-ch37_02_01/">boundless.com</a></small>
+                </section>
+
+                <section>
+                    <h4>Estrogen and testosterone bind to different receptors, turning on different genes</h4>
+                    <ul>
+                        <li>Estrogen binds to the estrogen receptor</li>
+                        <li>Testosterone binds to the androgen receptor</li>
+                    </ul>
+                </section>
+
+                <section  data-background="#000000" data-transition="fade">
+                    <p>Receptors have almost identical steroid binding pockets</p>
+                    <video class="video-responsive" data-autoplay mute loop height="50%" width="50%"/> 
+                        <source data-src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/08/video/estrogen-receptor.mp4" />
                     <video>
-                    -->
-    
                 </section>
 
-
-                <section>
-                    <p>$\theta = \frac{1}{1 + K_{D}/[L]}$</p>
-                    <p>$\theta \equiv$ fractional occupancy</p>
-                    <p>$K_{D} \equiv$ dissociation constant</p>
-                    <p>$[L] \equiv$ ligand concentration</p>
-                    <p>A <em>ligand</em> is a small molecule bound by a biological macromolecule</p>
+                <section  data-background="#000000" data-transition="fade">
+                    <p>How do almost identical receptors distinguish between almost identical steroids?</p>
+                    <video class="video-responsive" data-autoplay mute loop height="50%" width="50%"/> 
+                        <source data-src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/08/video/estrogen-receptor.mp4" />
+                    <video>
                 </section>
 
                 <section>
-                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/08/img/estradiol-vs-testosterone.png" class="img-responsive"/>
+
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/08/img/steroid-specificity_answer.png" class="img-responsive"/>
+                    <div class="fragment">
+                        <p>Binding <em>specificity</em> is discrimination between steroids.</p>
+                        <p>Specificity is determined by:</p>
+                        <ul>
+                            <li>shape of the pocket</li>
+                            <li>polar interactions</li>
+                        </ul>
+                    </div>       
+ 
+                </section>
+
+
+
+                <section>
+                    <p>Biochemists use <em>dissociation constants</em> ($K_{D}$) to measure binding affinity</p>
+                    <p>$ML \rightleftarrows M + L$</p>
+                    <p>$M$ is <em>macromolecule</em> (protein)</p>
+                    <p>$L$ is <em>ligand</em> (small molecule)</p>
+                    <br/>
+                    <div class="fragment">
+                        $K_{D} = \frac{[M][L]}{[ML]}$
+                    </div>
+                </section>
+
+                <section>
+                    <p>We can measure $K_{D}$ by following $\theta$ versus $[L]$</p>
+
+                    <div>
+                        <div class="col-xs-6 fragment">
+                            <p>$K_{D} = \frac{[M][L]}{[ML]}$</p>
+                            <p>$[ML] \times K_{D} = [M][L]$</p>
+                            <p>$[ML] = \frac{[M][L]}{K_{D}}$</p>
+                        </div>
+                        <div class="col-xs-6 fragment">
+                            <p>$\theta = \frac{[ML]}{[M] + [ML]}$</p>
+                            <p>$\theta = \frac{[M][L]/K_{D}}{[M] + [M][L]/K_{D}}$</p>
+                            <p>$\theta = \frac{[L]/K_{D}}{1 + [L]/K_{D}}$</p>
+                            <p style="color:blue">$\theta = \frac{1}{1 + K_{D}/[L]}$</p>
+                        </div>
+                    </div>  
+ 
+                </section>
+
+                <section>
+                    <p class="fragment">The $K_{D}$ is the concentration of $L$ at which $\theta = 0.5$.</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/08/img/estradiol-vs-testosterone.png" class="img-responsive" height="80%" width="80%"/>
                     <small>Chen et al. (2004) <em>JBC</em> 279(32):33855-33864</small>
                 </section>
                
                 <section>
-                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/08/img/binding-table.png" class="img-responsive"/>
-                </section>
- 
-                <section>
-                    <p>In principle, is one hydrogen bond enough to explain testosterone/estrogen specificity?</p> 
-                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/08/img/idealized-data.png" height="55%" width="55%"/>
+                    <p>ER responds to physiological concentrations of <em>estrogen</em> but not <em><span style="color:red">testosterone</span></em></p> 
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/08/img/er-hormone.png" height="55%" width="55%"/>
                 </section>
 
                 <section>
-                    <p>Summary I</p>
+                    <p>Is one hydrogen bond, in principle, enough to explain the difference in bindng?</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/08/img/er-hormone.png" height="55%" width="55%"/>
+                </section>
+ 
+                <section>
+                    <p>Summary</p>
                     <ul>
                         <li>Proteins can bind to specific molecules in the cellular environment</li>
-                        <li>Interactions are driven by the hydrophobic effect, but specificity is achieved by shape complementarity and polar contacts</li>
+                        <li>Specificity is acheived by shape complementarity and polar contacs.</li>
                         <li>The strength of these interactions is quantified by the <em>Dissociation constant</em> ($K_{D}$)</li>
                         <li>$K_{D}$ is tuned to the concentration of the molecule in the cell</li>
                     </ul>
