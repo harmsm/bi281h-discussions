@@ -48,32 +48,138 @@
 				</section>
 
                 <section>
+                    <p>What do enzymes do to the reaction coordianate to speed up reactions?</p>    
+                    <p class="fragment" style="color:blue">They lower the activation energy by stabilizing the transition state</p>
+                </section>
+
+                <section>
+                    <p>_____________ changes in activation energy lead to ____________ changes in rate.</p>
+                    <ol>
+                        <li>Small, large</li>   
+                        <li>Small, Small</li>   
+                        <li>Large, Small</li>   
+                        <li>Large, Large</li>   
+                    </ol>
+            
+                    <p class="fragment" style="color:blue">1 and 4</p>
+                    <p class="fragment" style="color:blue">Stabilizing TS by $67 \ kJ \cdot mol^{-1}$ gives a 100-billion fold increase in rate!</p>
+                    
+                </section>
+
+                <section>
+                    <p>What part of the serine protease enzymatic mechanism does the most to speed up the reaction?</p>
+
+                    <p class="fragment" style="color:blue">Oxyanion hole: 2 hydrogen bonds to the negatively charged intermediate</p>
+                </section>
+
+                <section>
+
+                    <p>How do organisms regulate the rates at which they do chemistry?</p>
+					<a href="https://dl.dropboxusercontent.com/u/8440421/presentation-data/01/img/roche-metabolic_pathways.png"><img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/01/img/roche-metabolic_pathways_small.png" /></a>
+					<small color="gray" align="left">Gerhard Michal, Roche</small>
+
+                </section>
+
+                <section>
                     <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/12/img/proteins.jpg" height="80%" width="80%"/> 
                 </section>
 
 				<section>
 					<h4>Conceptual goals</h4>
 					<ul>
-                        <li class="fragment">Understand the characteristics of a Michaelis-Menten enzyme and how experimental rate measurements reveal information about the mechanism of action. </li>
+                        <li class="fragment">Understand the properties of Michaelis-Menten enzymes</li>
+                        <li class="fragment">Understand how experimental rate measurements allow determination of MM parameters</li>
+                        <li class="fragment">Understand how cells tweak these parameters to achieve regulated activity</li>
                     </ul>
 
 					<h4>Skill goals</h4>
 					<ul>
-                        <li class="fragment">Interpret experimental graphs for MM enzymes in terms of altered MM parameters like $k_{cat}$.</li>
+                        <li class="fragment">Interpret experimental graphs for MM enzymes in terms of altered MM parameters.</li>
                         <li class="fragment">Interpret changes to those parameters in terms of altered underlying chemistry.</li>
                     </ul>
 				</section>
-
+    
                 <section>
+                    <p>Resources</p>
+                    <p>Homework (do it...)</p>
+                    <p>Lab 5</p>
+                    <p>Practice problems later</p>
+                    <p>Simulator <a href="http://aclarke.uoregon.edu:8000">http://aclarke.uoregon.edu:8000</a></p>
+                </section>
+                            
+                <section>
+
+                    <p>$E \cdot S \color{red}{\rightarrow} E + P$</p>
+                    <div class="fragment">
+                        <p>Expand the arrow:</p>
+                        <p>$E \cdot S \color{red}{\rightleftarrows E \cdot TS \rightarrow } E + P$</p>
+                    </div>
+
+                    <p class="fragment">$E \cdot S \color{red}{\overset{k_{cat}}{\rightarrow}} E + P$</p>
+                    <p class="fragment">$k_{cat}$ is the rate constant for the reaction once substrate is bound</p>
+
                 </section>
 
+                <section>
+
+                    <p>$velocity = V = [E \cdot S] k_{cat}$</p>
+
+                    <p class="fragment">What determines $[E \cdot S]$?</p>
+                    <ul class="fragment" style="color:blue">
+                        <li>$[E]_{T}$: the total enzyme concentration</li>
+                        <li>$[S]$: the substrate concentration</li>
+                        <li>$K_{M}$: the "affinity" of the enzyme for substrate</li>
+                    </ul>
+
+                    <p class="fragment">$V = [E \cdot S] k_{cat} = [E]_{T} \theta_{ES} k_{cat}$
+
+                </section>
+   
+                <section>
+                    <p>What is $\theta_{ES}$?</p>
+
+                    <div class="fragment">
+                        <p>$E \cdot S \overset{K_{M}}{\rightleftarrows} [E] + [S] $</p>
+                        <p>$\theta_{ES} = \frac{[ES]}{[E] + [ES]}$</p>
+                        <p>$\theta_{ES} = \frac{1}{1 + K_{M}/[S]}$</p>
+                    </div>
+
+                    <p class="fragment">$K_{M}$ (the Michaelis constant) is basically a $K_{D}$.  It measures the affinity of the enzyme for substrate.</p>
+
+                </section>
+
+                <section>
+                    <p>The Michaelis-Menten equation:</p>
+                    <p>$V_{0} = k_{cat}[E]_{T}\frac{1}{1 + K_{M}/[S]_{0}}$</p>
+                    <p class="fragment">The velocity of a reaction is determined by:</p>
+                    <ul class="fragment">
+                        <li>The rate constant for the enzyme when bound to substrate ($k_{cat}$)</li>
+                        <li>And the concentration of substrate bound to enzyme.  This is determined by $K_{M}$, $[S]_{0}$, and $[E]_{T}$.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p>$E + S \color{blue}{\overset{K_{M}}{\rightleftarrows}} E \cdot S \color{red}{\overset{k_{cat}}{\rightarrow}} E + P$</p>
+                    <p>Would a mutation to serine protease disrupting the oxanion hole alter $k_{cat}$ or $K_{M}$?</p>
+                    <p style="color:red" class="fragment">$k_{cat}$ would go down.  It would disrupt ability to hop over transition state.</p>
+                    <p class="fragment">How would it alter the $V$ vs. $S$ curve?</p>
+                    <p style="color:red" class="fragment">It would lower the maximum rate, but leave shape unchanged.</p>
+                </section>
+
+                <section>
+                    <p>$E + S \color{blue}{\overset{K_{M}}{\rightleftarrows}} E \cdot S \color{red}{\overset{k_{cat}}{\rightarrow}} E + P$</p>
+                    <p>Would a mutation to serine protease disrupting binding of the peptide alter $k_{cat}$ or $K_{M}$?</p>
+                    <p style="color:blue" class="fragment">$K_{M}$ would go up.  It would disrupt ability to bind substrate.</p>
+                    <p class="fragment">How would it alter the $V$ vs. $S$ curve?</p>
+                    <p style="color:blue" class="fragment">It would raise the $K_{M}$, but leave the maximum rate unchanged.</p>
+                </section>
 
                 <section>
                     <p>Summary I</p>
                     <ul>
-                        <li class="fragment">Enzyme chemistry can be described by:<br/>$E + S \rightleftarrows ES \rightleftarrows E + P$</li>
+                        <li class="fragment">Enzyme chemistry can be described by:<br/>$E + S \rightleftarrows ES \rightarrow E + P$</li>
                         <li class="fragment">Initial enzyme velocity ($V_{0}$) is:<br/>$V_{0} = k_{cat} \times [E]_{T} \times \theta$</li>
-                        <li class="fragment">$k_{cat}$ is the "intrinisic enzyme rate" in $s^{-1}M_{enzyme}^{-1}$</li>
+                        <li class="fragment">$k_{cat}$ is the "intrinisic enzyme rate" in $s^{-1}$</li>
                         <li class="fragment">$[E]_{T}$ is the total enzyme concentration</li>
                         <li class="fragment">$\theta$ is the fractional saturation of the enzyme with substrate</li>
                         <li class="fragment">$\theta = \frac{[S]_{0}}{K_{M}+[S]_{0}} = \frac{1}{1 + K_{M}/[S]_{0}}$</li>
