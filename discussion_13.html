@@ -50,14 +50,27 @@
 				<section>
 					<h4>Conceptual goals</h4>
 					<ul>
-                        <li class="fragment">Understand different ways to inhibit enzyme activity and how these possibilities can be discriminated experimentally.</li>
+                        <li class="fragment">Understand how experimental rate measurements allow determination of MM parameters</li>
+                        <li class="fragment">Understand how cells tweak these parameters to achieve regulated activity</li>
 					</ul>
 
 					<h4>Skill goals</h4>
 					<ul>
-                        <li class="fragment">Interpret changes to MM graphs in terms of regulatory mechansim, linking changes in graph to changes in chemistry.</li>
+                        <li class="fragment">Interpret experimental graphs for MM enzymes in terms of altered MM parameters.</li>
+                        <li class="fragment">Interpret changes to those parameters in terms of altered underlying chemistry.</li>
 					</ul>
 				</section>
+
+                <section>
+                    <p>The Michaelis-Menten equation:</p>
+
+                    <p>$V_{0} = k_{cat}[E]_{T}\frac{[S]_{0}}{[S]_{0} + K_{M}}$</p>
+                    <p class="fragment">$V_{0} = k_{cat}[E]_{T}\frac{[S]_{0}}{[S]_{0} + K_{M}} \times \frac{1/[S]_{0}}{1/[S]_{0}}$</p>
+                    <p class="fragment">$V_{0} = k_{cat}[E]_{T}\frac{1}{1 + K_{M}/[S]_{0}}$</p>
+                    <p class="fragment">initial velocity = (intrinsic rate of enzyme)(total enzyme)(fraction of enzyme saturated with substrate)</p>
+
+                </section>
+
 
                 <section>
                     <p>Review: the mechanism of serine protease</p>
@@ -91,25 +104,35 @@
 
                     <p>What happens if we mutate Aspartic Acid 102 to an Alanine?</p>
                     <ul>
-                        <li>To transtion state free energy?</li>
-                        <li>To $k_{cat}$ ?</li>
-                        <li>To $K_{M}$ ?</li>
+                        <li>To transtion state free energy? <span class="fragment" style="color:blue">Raises it</span></li>
+                        <li>To $k_{cat}$? <span class="fragment" style="color:blue">Lowers it (slower enzyme)</span></li>
+                        <li>To $K_{M}$? <span class="fragment" style="color:blue">No effect</span></li>
                     </ul>
 
                 </section>
 
                 <section>
-                    <p>How can enzymes be regulated without introducing mutations?</p>
+                    <p>Binding affinity ($K_{M}$) and specificity is determined by interactions just outside active site</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/11/img/enzyme-specificity.png" />
+                </section>
+
+                <section>
+                    <p>Rule of thumb: change to the active site residues alters $k_{cat}$, while a change to the binding residues alters $K_{M}$.</p>
+                    <p class="fragment">How can enzymes be regulated without introducing mutations?</p>
+                </section>
+
+                <section>
+
+                    <p>$V_{0} = k_{cat}[E]_{T}\frac{[S]_{0}}{[S]_{0} + K_{M}}$</p>
+
                 </section>
 
                 <section  data-background="#000000">
                     <p>HIV protease inhibitor binds at the enzyme active site</p>
-                    <iframe width="420" height="315" src="https://www.youtube.com/embed/madRjiaJrk8" frameborder="0" allowfullscreen></iframe>
-                    <!--
+                    <!--<iframe width="420" height="315" src="https://www.youtube.com/embed/madRjiaJrk8" frameborder="0" allowfullscreen></iframe>-->
                     <video class="video-responsive" data-autoplay mute loop height="80%" width="80%"/> 
                         <source data-src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/13/video/competitive-inhibitor.mp4" />
                     </video>
-                    -->
                 </section>
 
                 <section>
@@ -173,12 +196,10 @@
                     <p>Hepatitis C Virus RNA polymerase binds RNA in its active site</p>
                     <small>It's critical for viral replication</small> <br />
 
-                    <iframe width="420" height="315" src="https://www.youtube.com/embed/XtsvonUuqxI" frameborder="0" allowfullscreen></iframe>
-                    <!--
+                    <!--<iframe width="420" height="315" src="https://www.youtube.com/embed/XtsvonUuqxI" frameborder="0" allowfullscreen></iframe>-->
                     <video class="video-responsive" data-autoplay mute loop height="90%" width="90%"/> 
                         <source data-src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/13/video/hcv-polymerase-free.mp4" />
                     </video>
-                    -->
        
                 </section>
 
@@ -186,12 +207,12 @@
 
                     <p>A non-competitive inhibitor inhibits activity by binding <em>away</em> from the active site</p>
 
-                    <iframe width="420" height="315" src="https://www.youtube.com/embed/IcogdLIZhdU" frameborder="0" allowfullscreen></iframe>
                     <!--
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/IcogdLIZhdU" frameborder="0" allowfullscreen></iframe>
+                    -->
                     <video class="video-responsive" data-autoplay mute loop height="90%" width="90%"/> 
                         <source data-src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/13/video/hcv-polymerase-inhibitor.mp4" />
                     </video>
-                    -->
        
                 </section>
 
@@ -202,13 +223,23 @@
 
                 <section>
                     <p>A <em>noncompetitive</em> inihibitor binds distant from the active site, altering active site to turn off activity</p>
-                    <p class="fragment">This leads to a drop in: <span class="fragment" style="color:blue">$k_{cat}$</span></p>
+                    <p class="fragment">This leads to a drop in: <span class="fragment" style="color:blue">$[E]_{T}$. Less of the enzyme is in the active form.</span></p>
                     <p class="fragment">The inhibitor need not have any chemical similarity to the substrate</p>
+
+                </section>
+
+                <section>
+
+                    <p>Foreshadowing: this is through <em>linked equilibria</em></p>
+                    <p>$E_{active} + I \rightleftarrows E_{inactive} + I \rightleftarrows E_{inactive} \cdot I$</p>
+                    <p class="fragment">$[E]_{active} = [E]_{T}\theta_{active}$</p>
+                    <p class="fragment">$\theta_{active} = \frac{[E_{active}]}{[E_{active}] + [E_{inactive}] + [E_{inactive}\cdot I]}$</p>
+    
                 </section>
 
                 <section>
                     <p>This "allosteric" mechanism can also be used to turn <em>on</em> an enzyme: binding at a distant site puts enzyme in active form</p>
-                    <p class="fragment">This leads to an <em>increase</em> in <span style="color:blue">$k_{cat}$</span></p>
+                    <p class="fragment">This leads to an <em>increase</em> in <span style="color:blue">$[E]_{T}$</span></p>
                 </section>
 
                 <!-- Go to Michaelis-Menten graphic and have them predict how changing kcat and KM will alter graph -->
@@ -218,8 +249,9 @@
                     <ul>
                         <li class="fragment">A <em>competitive</em> inhibitor binds at the active site and competes with substrate. <span class="fragment" style="color:blue">This raises $K_{M}$</li>
                         <li class="fragment">A <em>suicide</em> inhibitor irreversibly (covalently) modifies the active site and destroys the enzyme. <span class="fragment" style="color:blue">This lowers $[E]_{T}$</li>
-                        <li class="fragment">A <em>Non-competitive</em> inhibitor binds away from the active site and "magically" lowers activity. <span class="fragment" style="color:blue">This lowers $k_{cat}$</li>
-                        <li class="fragment">All three mechanisms are used biologically and in medicine.</li>
+                        <li class="fragment">A <em>Non-competitive</em> inhibitor binds away from the active site and "magically" lowers activity. <span class="fragment" style="color:blue">This lowers $[E]_{T}$</li>
+                        <li class="fragment">Cells also directly control how much enzyme they make, altering $[E]_{T}$.</p>
+                        <li class="fragment">All of these mechanisms are used biologically and in medicine.</li>
                     </ul>
                 </section>
 
