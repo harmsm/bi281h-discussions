@@ -42,46 +42,103 @@
 			<div class="slides">
 
 				<section>
-					<h2>Cooperativity: how does hemoglobin load and unload oxygen? </h2>
-					<h4>2016-10-25</h4>
+					<h2>Allostery</h2>
+					<h4>2016-10-26</h4>
 					<br/>
 				</section>
 
-				<section>
+                <section>
+                    <small>You measure MM curves for a variety of enzymes (solid curves).  You add molecule $A$ to each solution and remeasure its MM curve (dashed line). <span style="color:red">For each curve: What changed ($K_{M}$ or $V_{max}$)?  Is this a competitive or noncompetitive inhibitor?</small>
 
-					<h4>Conceptual goals</h4>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <img class="img-responsive" src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/14/img/km_competitive.png"/>
+                            <small class="fragment" style="color:blue">$K_{M}$, competitive</small>
+                        </div>
+                        <div class="col-xs-4">
+                            <img class="img-responsive" src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/14/img/noncompetitive.png"/>
+                            <small class="fragment" style="color:blue">$V_{max}$, noncompetitive</small>
+                        </div>
+                        <div class="col-xs-4">
+                            <img class="img-responsive" src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/14/img/allosteric-activator.png"/>
+                            <small class="fragment" style="color:blue">$V_{max}$, activator</small>
+                        </div>
+                    </div>                            
+  
+                </section>
 
+                <section>
+                    <p>Competitive inhibitor</p>
                     <ul>
-                        <li class="fragment">Understand how multiple subunits working in conjunction give tightly controlled loading and unloading of cooperative proteins.</li>
+                        <li>Inhibitor competes with substrate for same site</li>
+                        <li>This raises $K_{M}$: lower apparent affinity for substrate because it has to compete</li>
+                        <li>No effect on $V_{max}$.  If you add enough substrate, you swamp out competitor</li>
+                        <li>Inhibitor is chemically similar to the substrate</li>
+                        <li>Example: Ethanol competes with methanol for alcohol dehydrogenase, lowering the rate of formaldehyde production.</li>
+                    </ul>
+                </section> 
+
+                <section>
+                    <p>Noncompetitive inhibitor</p>
+                    <ul>
+                        <li>Binds distant from the active site, altering active site to turn off activity</li>
+                        <li>This leads to a drop in $V_{max}$. (lower $[E]_{T}$: Less of the enzyme is in the active form.)</li>
+                        <li>No effect on $K_{M}$.  What active enzyme is around has exact same affinity for substrate</li>
+                        <li>The inhibitor need not have any chemical similarity to the substrate</li>
+                    </ul>
+                </section>
+
+                <section  data-background="#000000" data-transition="fade">
+
+                    <p>Example noncompetitive inhibitor</p>
+
+                    <video class="video-responsive" data-autoplay mute loop height="90%" width="90%"/> 
+                        <source data-src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/13/video/hcv-polymerase-inhibitor.mp4" />
+                    </video>
+       
+                </section>
+
+                <section>
+
+                    <p>This is through <em>linked equilibria</em></p>
+                    <p>$E_{active} + I \rightleftarrows E_{inactive} + I \rightleftarrows E_{inactive} \cdot I$</p>
+                    <p class="fragment">$[E]_{active} = [E]_{T}\theta_{active}$</p>
+                    <p class="fragment">$\theta_{active} = \frac{[E_{active}]}{[E_{active}] + [E_{inactive}] + [E_{inactive}\cdot I]}$</p>
+    
+                </section>
+        
+				<section>
+					<h4>Conceptual goals</h4>
+                    <ul>
+                        <li class="fragment">Understand that binding at one site in a protein can alter activity at another site</li>
+                        <li class="fragment">This "allostery" arises because the "allosteric effector" interacts with one conformation, but not the other.</li>
+                        <li class="fragment">Understand how this applies to hemoglobin (BPG).</li>
                     </ul>
 
 					<h4>Skill goals</h4>
-
-                    <ul>
-                        <li class="fragment">Reason about the thermodynamics of cooperativity using linkage thermodynamics.</li>
-                        <li class="fragment">Interpret graphical representations of loading/unloading curves in terms of cooperative behavior.</li>
-                    </ul>
+					<ul>
+                        <li class="fragment">Determine how binding at on site affects activity at the other</li>
+                        <li class="fragment">Predict the effects of adding allosteric effectors to a system of equilibria.</li>
+					</ul>
 
 				</section>
 
                 <section>
-                    <p>Max Perutz and John Kendrew solved the 3D structure of myoglobin in 1959</p>
-                    <p class="fragment">It took them 22 years</p>
-                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/14/img/perutz.jpg" height="60%" width="60%"/>
-                </section>
-
-                <section>
-                    <p>Myoglobin binds $O_{2}$ using a "heme" group with a bound $Fe(II)$ and a proximal His</p>
-                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/14/img/myoglobin.jpg" /><br/>
-                    <small>Credit: <a href="http://jeb.biologists.org/content/207/20/3441">Ordway & Garry (2004) JEB 207:3441-3446</a></small>
+                    <p>Hemoglobin transports $O_{2}$ from the lungs to tissues</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/14/img/red-blood-cell.jpg" height="60%" width="60%"/>
+                    <br/>
+                    <small><a href="https://stephaniefuturedoc.files.wordpress.com/2012/07/red-blood-cell.jpg">stephaniefuturedoc</a></small>
                 </section>
 
                 <section  data-background="#000000" data-transition="fade">
-                    <p>Hemoglobin is a tetramer of our myoglobin-like monomers</p>
+                    <p>Hemoglobin is a tetramer four proteins</p>
                     <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/14/img/hemoglobin.png" height="90%" width="90%" /><br/>
                 </section>
 
                 <section>
+                    <p>Each subunit binds $O_{2}$ using a "heme" group with a bound $Fe(II)$ and a proximal His</p>
+                    <img src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/14/img/myoglobin.jpg" /><br/>
+                    <small>Credit: <a href="http://jeb.biologists.org/content/207/20/3441">Ordway & Garry (2004) JEB 207:3441-3446</a></small>
                 </section>
 
                 <section  data-background="#000000" data-transition="fade">
@@ -98,26 +155,39 @@
                     <small>Credit: <a href="http://biochem.web.utah.edu/iwasa/projects/hemoglobin.html">Janet Iwasa (Utah)</a></small>
                 </section>
 
-                <section>
-                    <p>Summary I</p>
-                    <ul>
-                        <li class="fragment">Myoglobin and hemoglobin are $O_{2}$ binding proteins that bind $O_{2}$ using a "heme" group</li>
-                        <li class="fragment">Hemoglobin is a tetramer of myoglobin-like subunits</li>
-                        <li class="fragment">Myoglobin buffers $O_{2}$ in tissues, hemoglobin transports $O_{2}$ in the blood</li>
-                        <li class="fragment">Myoglobin would unload at most 10% of its $O_{2}$ if it transported oxygen</li>
-                        <li class="fragment">Best monomer ($K_{D}=44\ torr$) could unload 40% of its oxygen</li>
-                    </ul>
+                <section  data-background="#000000" data-transition="fade">
+                    <video class="video-responsive" data-autoplay mute loop height="90%" width="90%"/> 
+                        <source data-src="https://dl.dropboxusercontent.com/u/8440421/presentation-data/14/video/hemoglobin-t-to-r.mov" />
+                    </video>
+                    <small>Credit: <a href="http://biochem.web.utah.edu/iwasa/projects/hemoglobin.html">Janet Iwasa (Utah)</a></small>
                 </section>
 
                 <section>
-                    <p>Summary II</p>
+                    <p>What are the ingredients you would need for allostery?</p>
+                </section>
+
+                <section>   
+                    <p>Ingredients:</p>
                     <ul>
-                        <li class="fragment">Cooperativity between sites allows hemoglobin to unload 75% of oxygen</li>
-                        <li class="fragment">Cooperativity comes about because binding the first $O_{2}$ "pays" to put complex into high $O_{2}$ affinity state.</li>
-                        <li class="fragment">This is descibed by the "Hill equation":$$\theta_{Hill} = \frac{1}{1 + (K_{D}/[L])^{n}}$$ where $n$ is $\approx$ number of sites</li>
-                        <li class="fragment">BPG binding binds to the low-affinity state, allowing hemoglobin to unload 95% of oxygen to tissues</li>
+                        <li>Two different binding sites recognizing different things</li>
+                        <li>Equilibrium between two (or more) protein shapes</li>
+                        <li>Different "activities" (functions, properties, etc.) of each shape</li>
+                        <li>Binding to one shape, but not the others</li>
                     </ul>
                 </section>
+
+                <section>   
+                    <p>Summary</p>
+                    <p>Allostery is when binding at one site in a protein alters activity at another site</p>
+                    <ul>
+                        <li>Two different binding sites recognizing different things</li>
+                        <li>Equilibrium between two (or more) protein shapes</li>
+                        <li>Different "activities" (functions, properties, etc.) of each shape</li>
+                        <li>Binding to one shape, but not the others</li>
+                    </ul>
+                    <p>BPG allosterically regulates $O_{2}$ binding in hemoglobin</p>
+                </section>
+
 
 
 			</div>
