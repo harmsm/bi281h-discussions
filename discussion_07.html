@@ -43,7 +43,7 @@
 
 				<section>
 					<h2>Why do proteins fold?</h2>
-					<h4>2016-10-10</h4>
+					<h4>2017-10-06</h4>
 					<br/>
 				</section>
 				<section>
@@ -96,15 +96,44 @@
 
                 <section data-background="#000000">
                     <p>Twelve alanine chain in water, sampled every 12.5 ps.  Smoothed.</p> 
-                    <video class="video-responsive" controls mute height="85%" width="85%">
+                    <video class="video-responsive" controls mute loop height="85%" width="85%">
                         <source data-src="presentation-data/06/video/chain-collapse_smoothed.mp4" /> 
-                                <source data-src="http://spock.uoregon.edu/presentation-data/06/video/chain-collapse_smoothed.mp4" /> 
+                        <source data-src="http://spock.uoregon.edu/presentation-data/06/video/chain-collapse_smoothed.mp4" /> 
                     <video>
                 </section>
 
+                <section>
+                    <p>I'll leave the video up -- now work through the handout in class</p>
+                </section>
+
+                <section>
+                    <p>After watching the simulation: is formation of a helix thermodynamically favorable or unfavorable?</p>
+                    <p class="fragment" style="color:blue">Favorable (helix forms without outside help)</p>
+                </section>
+
+                <section>
+                    <p>$\Delta H^{\circ\prime}$: A 12-alanine helix forms 8 backbone hydrogen bonds. If, on average, a protein hydrogen bonds contributes $-20\ kJ\cdot mol^{-1}$ to the enthalpy, what is enthalpy due to hydrogen bonds in the helical state? </p>
+                    <p class="fragment" style="color:blue">$8 \times -20 \ kJ\cdot mol^{-1} = -160 \ kJ \cdot mol^{-1}$</p>
+                </section>
+
+                <section>
+                    <p>$\Delta S^{\circ\prime}$: The 12-alanine peptide has 24 rotatable bonds (the $^{+}H_{3}N-C_{\alpha}$ and $C_{\alpha}-COO-$ bonds). How many conformations are possible for a 12-alanine peptide?</p>
+                    <p class="fragment" style="color:blue">$3^{24} = 282,429,536,481$</p>
+                    <p>What is the entropy change on folding? </p>
+                    <p class="fragment" style="color:blue">$\Delta S^{\circ \prime} = Rln \Big (\frac{N_{helix}}{N_{unfolded}} \Big )$</p>
+                    <p class="fragment" style="color:blue">$\Delta S^{\circ \prime} = Rln \Big (\frac{1}{282,429,536,481} \Big )$</p>
+                    <p class="fragment" style="color:blue">$\Delta S^{\circ \prime} = -0.22 \ kJ \cdot mol^{-1} \cdot K^{-1}$</p>
+                </section>
+
+                <section>
+                    <p>$\Delta G^{\circ\prime}$: From these calculations, what would you predict $\Delta G_{unf\rightarrow helix}^{\circ\prime}$ to be? </p>
+                    <p class="fragment" style="color:blue">$\Delta G^{\circ\prime} = \Delta H ^{\circ\prime} - T \Delta S^{\circ\prime}$</p>
+                    <p class="fragment" style="color:blue">$\Delta G^{\circ\prime} = -160 - 300 \times -0.22$</p>
+                    <p class="fragment" style="color:blue">$\Delta G^{\circ\prime} = -94 \ kJ \cdot mol^{-1}$</p>
+                </section>
+
                 <section data-background="#000000">
-                    <p>What did you see in the simulations?</p>
-                    <p>What caused the chain to form an $\alpha$-helix?</p>
+                    <p>Let's look at the simulations one more time</p>
                 </section>
 
                 <section data-transition="fade">
@@ -136,16 +165,15 @@
                 </section>
 
                 <section data-transition="fade">
-                    <p class="fragment">Folded state minimizes surface area interacting with water</p>
+                    <p class="fragment">Folded state has less surface area interacting with water</p>
                     <div class="row">
                         <img class="img-responsive" src="http://spock.uoregon.edu/presentation-data/06/img/follow-sasa-1.png">
                     </div>
                 </section>
 
-               
-                 <section data-transition="fade">
+                <section data-transition="fade">
 
-                    <p class="fragment">Folded state minimizes surface area interacting with water</p>
+                    <p>Folded state has less surface area interacting with water</p>
                     <div class="row">
                         <div class="col-xs-6">
                             <img class="img-responsive" src="http://spock.uoregon.edu/presentation-data/06/img/unfolded-and-water_sasa.png" />
@@ -158,7 +186,58 @@
                 </section>
 
                 <section>
+                    <p>Hand out #2!</p>
+                </section>
+
+                <section>
+                    <p>Experimental $\Delta G^{\circ\prime}$: If you make a solution of peptides made of 12 alanines at $300\ K$, $80\%$ of the molecules are $\alpha$-helices, $20\%$ are unfolded. What is $\Delta G_{unf\rightarrow helix}^{\circ\prime}$?</p>
+                    <p class="fragment" style="color:blue">$\Delta G^{\circ\prime} = -RTln(K)$</p>
+                    <p class="fragment" style="color:blue">$\Delta G^{\circ\prime} = -RTln\Big ( \frac{helix}{unfolded} \Big )$</p>
+                    <p class="fragment" style="color:blue">$\Delta G^{\circ\prime} = -0.0083 \times 300 \times ln \Big ( \frac{0.8}{0.2} \Big ) $</p>
+                    <p class="fragment" style="color:blue">$\Delta G^{\circ\prime} = -3.5 \ kJ \cdot mol^{-1}$</p>
+                </section>
+
+                <section>
+                    <p>How does this number compare to your predicted $\Delta G^{\circ\prime}$?</p>
+                    <p class="fragment" style="color:blue">Much worse ($-3.5$ vs. $-94 \ kJ \cdot \ mol^{-1}$)</p>
+                </section>
+
+                <section>
+                    <p>The experimental value for $\Delta H^{\circ\prime}$ is $-41\ kJ\cdot mol^{-1}$. Assuming $8$ hydrogen bonds actually form and that the hydrogen bonds are the main contribution to $\Delta H^{\circ\prime}$, what is each hydrogen bond “worth” in the helix? Why might this be different from the value we used above? </p>
+                    <p class="fragment" style="color:blue">$-41/8 = -5.1\ kJ\cdot mol^{-1}$</p>
+                    <p class="fragment" style="color:blue">Less than $-20\ kJ \cdot mol^{-1}$ because these hydrogen bonds compete with water hydrogen bonds</p>
+                </section>
+
+                <section>
+                    <p>Now you know $\Delta G^{\circ\prime}$ and $\Delta H^{\circ\prime}$. What is the contribution of entropy ($T\Delta S^{\circ\prime}$) to the free energy of helix formation? Does entropy favor or disfavor helix formation?</p>
+                    <p class="fragment" style="color:blue">$\Delta G^{\circ \prime} = \Delta H^{\circ \prime} - T\Delta S^{\circ \prime}$</p>
+                    <p class="fragment" style="color:blue">$-3.5 = -5.1 - T\Delta S^{\circ \prime}$</p>
+                    <p class="fragment" style="color:blue">$ 1.6 = - T\Delta S^{\circ \prime}$</p>
+                </section>
+
+                <section>
+                    <p>Is it bigger or smaller than your prediction?</p>
+                    <p class="fragment" style="color:blue">Smaller.</p>
+                    <p class="fragment" style="color:blue">From calculation: $-300\times-0.22 = -66\ kJ \cdot mol^{-1}$ </p>
+                    <p class="fragment" style="color:blue">From experiment:  $-1.6 kJ \cdot mol^{-1}$</p>
+                </section>
+
+                <section>
                     <p>Minimizing surface area interacting with water favorable releases waters and creates favorable (positive) $\Delta S$.</p>
+                </section>
+
+                <section data-transition="fade">
+
+                    <p>Folded state has less surface area interacting with water</p>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <img class="img-responsive" src="http://spock.uoregon.edu/presentation-data/06/img/unfolded-and-water_sasa.png" />
+                        </div>
+                        <div class="col-xs-6">
+                            <img class="img-responsive" src="http://spock.uoregon.edu/presentation-data/06/img/folded-and-water_sasa.png" />
+                        </div>
+                    </div>
+
                 </section>
 
                 <section>
