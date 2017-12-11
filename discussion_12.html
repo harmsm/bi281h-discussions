@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+        <!-- CUSTOMIZE METADATA HERE -->
+		<title>Presentation</title>
+		<meta name="description" content="BI281H Discussion">
+		<meta name="author" content="Michael J. Harms">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+        <link rel="stylesheet" href="presentation-data/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+        <!-- CUSTOMIZE STYLESHEET HERE -->
+		<link rel="stylesheet" href="presentation-data/css/override.css">
+	</head>
+
+	<body>
+
+        <!-- CUSTOMIZE SLIDES HERE -->
+		<div class="reveal">
+			<!-- Any section element inside of this container is a slide -->
+			<div class="slides">
+
+				<section>
+					<h2>Michaelis-Menten kinetics</h4>
+					<h4>2017-10-20</h4>
+					<br/>
+				</section>
+
+                <section>
+                    <p>What do enzymes do to the reaction coordianate to speed up reactions?</p>    
+                    <p class="fragment" style="color:blue">They lower the activation energy by stabilizing the transition state</p>
+                </section>
+
+                <section>
+                    <p>_____________ changes in activation energy lead to ____________ changes in rate.</p>
+                    <ol>
+                        <li>Small, large</li>   
+                        <li>Small, Small</li>   
+                        <li>Large, Small</li>   
+                        <li>Large, Large</li>   
+                    </ol>
+            
+                    <p class="fragment" style="color:blue">1 and 4</p>
+                    <p class="fragment" style="color:blue">Stabilizing TS by $67 \ kJ \cdot mol^{-1}$ gives a 100-billion fold increase in rate!</p>
+                    
+                </section>
+
+                <section>
+                    <p>What part of the serine protease enzymatic mechanism does the most to speed up the reaction?</p>
+
+                    <p class="fragment" style="color:blue">Oxyanion hole: 2 hydrogen bonds to the negatively charged intermediate</p>
+                </section>
+
+                <section>
+
+                    <p>How do organisms regulate the rates at which they do chemistry?</p>
+					<a href="presentation-data/01/img/roche-metabolic_pathways.png"><img src="presentation-data/01/img/roche-metabolic_pathways_small.png" /></a>
+					<small color="gray" align="left">Gerhard Michal, Roche</small>
+
+                </section>
+
+                <section>
+                    <img src="presentation-data/12/img/proteins.jpg" height="80%" width="80%"/> 
+                </section>
+
+				<section>
+					<h4>Conceptual goals</h4>
+					<ul>
+                        <li class="fragment">Understand the properties of Michaelis-Menten enzymes</li>
+                        <li class="fragment">Understand how experimental rate measurements allow determination of MM parameters</li>
+                        <li class="fragment">Understand how cells tweak these parameters to achieve regulated activity</li>
+                    </ul>
+
+					<h4>Skill goals</h4>
+					<ul>
+                        <li class="fragment">Interpret experimental graphs for MM enzymes in terms of altered MM parameters.</li>
+                        <li class="fragment">Interpret changes to those parameters in terms of altered underlying chemistry.</li>
+                    </ul>
+				</section>
+    
+                <section>
+                    <p>Resources</p>
+                    <p>Homework (do it...)</p>
+                    <p>Lab 5</p>
+                    <p>Practice problems later</p>
+                    <p>Simulator <a href="http://aclarke.uoregon.edu:8000">http://aclarke.uoregon.edu:8000</a></p>
+                </section>
+                            
+                <section>
+
+                    <p>$E \cdot S \color{red}{\rightarrow} E + P$</p>
+                    <div class="fragment">
+                        <p>Expand the arrow:</p>
+                        <p>$E \cdot S \color{red}{\rightleftarrows E \cdot TS \rightarrow } E + P$</p>
+                    </div>
+
+                    <p class="fragment">$E \cdot S \color{red}{\overset{k_{cat}}{\rightarrow}} E + P$</p>
+                    <p class="fragment">$k_{cat}$ is the rate constant for the reaction once substrate is bound</p>
+
+                </section>
+
+                <section>
+
+                    <p>$velocity = V = [E \cdot S] k_{cat}$</p>
+
+                    <p class="fragment">What determines $[E \cdot S]$?</p>
+                    <ul class="fragment" style="color:blue">
+                        <li>$[E]_{T}$: the total enzyme concentration</li>
+                        <li>$[S]$: the substrate concentration</li>
+                        <li>$K_{M}$: the "affinity" of the enzyme for substrate</li>
+                    </ul>
+
+                    <p class="fragment">$V = [E \cdot S] k_{cat} = [E]_{T} \theta_{ES} k_{cat}$
+
+                </section>
+   
+                <section>
+                    <p>What is $\theta_{ES}$?</p>
+
+                    <div class="fragment">
+                        <p>$E \cdot S \overset{K_{M}}{\rightleftarrows} [E] + [S] $</p>
+                        <p>$\theta_{ES} = \frac{[ES]}{[E] + [ES]}$</p>
+                        <p>$\theta_{ES} = \frac{1}{1 + K_{M}/[S]}$</p>
+                    </div>
+
+                    <p class="fragment">$K_{M}$ (the Michaelis constant) is basically a $K_{D}$.  It measures the affinity of the enzyme for substrate.</p>
+
+                </section>
+
+                <section>
+                    <p>The Michaelis-Menten equation:</p>
+                    <p>$V_{0} = k_{cat}[E]_{T}\frac{1}{1 + K_{M}/[S]_{0}}$</p>
+                    <p class="fragment">The velocity of a reaction is determined by:</p>
+                    <ul class="fragment">
+                        <li>The rate constant for the enzyme when bound to substrate ($k_{cat}$)</li>
+                        <li>And the concentration of substrate bound to enzyme.  This is determined by $K_{M}$, $[S]_{0}$, and $[E]_{T}$.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p>$E + S \color{blue}{\overset{K_{M}}{\rightleftarrows}} E \cdot S \color{red}{\overset{k_{cat}}{\rightarrow}} E + P$</p>
+                    <p>Would a mutation to serine protease disrupting the oxanion hole alter $k_{cat}$ or $K_{M}$?</p>
+                    <p style="color:red" class="fragment">$k_{cat}$ would go down.  It would disrupt ability to hop over transition state.</p>
+                    <p class="fragment">How would it alter the $V$ vs. $S$ curve?</p>
+                    <p style="color:red" class="fragment">It would lower the maximum rate, but leave shape unchanged.</p>
+                </section>
+
+                <section>
+                    <p>$E + S \color{blue}{\overset{K_{M}}{\rightleftarrows}} E \cdot S \color{red}{\overset{k_{cat}}{\rightarrow}} E + P$</p>
+                    <p>Would a mutation to serine protease disrupting binding of the peptide alter $k_{cat}$ or $K_{M}$?</p>
+                    <p style="color:blue" class="fragment">$K_{M}$ would go up.  It would disrupt ability to bind substrate.</p>
+                    <p class="fragment">How would it alter the $V$ vs. $S$ curve?</p>
+                    <p style="color:blue" class="fragment">It would raise the $K_{M}$, but leave the maximum rate unchanged.</p>
+                </section>
+
+                <section>
+                    <p>Summary I</p>
+                    <ul>
+                        <li class="fragment">Enzyme chemistry can be described by:<br/>$E + S \rightleftarrows ES \rightarrow E + P$</li>
+                        <li class="fragment">Initial enzyme velocity ($V_{0}$) is:<br/>$V_{0} = k_{cat} \times [E]_{T} \times \theta$</li>
+                        <li class="fragment">$k_{cat}$ is the "intrinisic enzyme rate" in $s^{-1}$</li>
+                        <li class="fragment">$[E]_{T}$ is the total enzyme concentration</li>
+                        <li class="fragment">$\theta$ is the fractional saturation of the enzyme with substrate</li>
+                        <li class="fragment">$\theta = \frac{[S]_{0}}{K_{M}+[S]_{0}} = \frac{1}{1 + K_{M}/[S]_{0}}$</li>
+                        <li class="fragment">$K_{M} \approx K_{D}$ for substrate</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p>Summary II</p>
+                    <ul>
+                        <li class="fragment">Michaelis-Menten equation is:<br/>
+                            $V_{0} = k_{cat} [E]_{T}  \frac{[S]_{0}}{K_{M} + [S]_{0}} $</li>
+                        <li class="fragment">Mucking up enzyme chemistry lowers $k_{cat}$</li>
+                        <li class="fragment">Mucking up substrate binding increases $K_{M}$</li>
+                    </ul>
+                </section>
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+            var USE_LOCAL = false;
+
+            if (USE_LOCAL) {
+                var mathjax_location = 'MathJax-master/MathJax.js';
+                var jquery_location = 'presentation-data/js/jquery-2.1.4.min.js';
+                var bootstrap_location = 'presentation-data/js/bootstrap.min.js';
+                var d3_location = 'presentation-data/js/d3.min.js';
+            } else {
+                var mathjax_location = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js';
+                var jquery_location = 'https://code.jquery.com/jquery-2.1.4.min.js';
+                var bootstrap_location = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js';
+                var d3_location = 'https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js';
+            }
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+                // Add math, using local mathjax
+                math: {
+                    mathjax: mathjax_location,
+                    config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+                },
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/math/math.js', async: true },    // mathjax
+                    { src: jquery_location } ,
+                    { src: bootstrap_location } ,
+                    { src: d3_location } ,
+                    { src: 'presentation-data/js/test-stream.js'}
+				]
+			});
+
+
+
+		</script>
+
+	</body>
+</html>

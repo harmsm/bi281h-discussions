@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+        <!-- CUSTOMIZE METADATA HERE -->
+		<title>Presentation</title>
+		<meta name="description" content="BI281H Discussion">
+		<meta name="author" content="Michael J. Harms">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+        <link rel="stylesheet" href="presentation-data/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+        <!-- CUSTOMIZE STYLESHEET HERE -->
+		<link rel="stylesheet" href="presentation-data/css/override.css">
+	</head>
+
+	<body>
+
+        <!-- CUSTOMIZE SLIDES HERE -->
+		<div class="reveal">
+			<!-- Any section element inside of this container is a slide -->
+			<div class="slides">
+
+                <section>
+                    <p>Final on Friday, 12/8 at 10:15 am in MCK 229 (this room)</p>
+                    <p>Final is cumulative</p>
+                    <p>Review session on Thursday, 12/7 at 9:00 am in Allen 141</p>
+                </section>
+
+				<section>
+					<h2>Photosynthesis I</h2>
+					<h4>2017-11-29</h4>
+					<br/>
+				</section>
+				<section>
+					<h4>Conceptual goals</h4>
+					<ul>
+						<li class="fragment">Understand the mechanism of the photosynthesis light reactions</li>
+						<li class="fragment">Understand the energetics of the photosynthesis light reactions</li>
+					</ul>
+
+					<h4>Skill goals</h4>
+					<ul>
+						<li class="fragment">Reason about energy transduction</li>
+					</ul>
+				</section>
+                <section>
+                    <p>Photosynthesis is the source of (most) energy in the biosphere</p>
+                    <p>It creates the building blocks from which everything else is made</p>
+                </section>
+
+                <section>
+                    <p>Photosynthesis has two main parts</p>
+                    <ul>
+                        <li>"Light" reactions (today). <span class="fragment" style="color:blue">Capture energy from light and use it to make $ATP$ and $NADPH$</span></li>
+                        <li>Carbon fixation (sometimes called "dark") reactions (next class). <span class="fragment" style="color:blue">Reduce $CO_{2}$ to create sugars</span></li>
+                    </ul>
+
+                </section>
+
+                <section>
+                    <p>In plants, photosynthesis occurs in chloroplasts</p>
+                    <img src="presentation-data/27/img/chloroplast.png" />
+                </section>
+
+                <section>
+                    <img src="presentation-data/27/img/em-spectrum.png" />
+                    <small>Credit: <a href="https://en.wikipedia.org/wiki/Electromagnetic_spectrum">wikipedia</a></small>
+                    <p class="fragment">The bluer the light, the higher the energy</p>
+                </section>
+
+                <section>
+                    <p>A photon's energy is inversely proportional to wavelength</p>
+                    <p>$E = \frac{hc}{\lambda}$</p>
+                    <p>$E$: <em>energy</em>; $h$: <em>Planck's constant</em>; $c$: <em>speed of light</em>; $\lambda$: <em>wavelength</em></p>
+                </section>
+
+                <section>
+                    <p>When photons are absorbed, they move electrons from the <em>ground</em> to <em>excited</em> state</p>
+                    <img src="presentation-data/27/img/ground_excited_states.png" height="50%" width="50%"/><br />
+                    <small>Credit: <a href="http://people.chem.ucsb.edu/kahn/kalju/chem126/public/elspect_theory.html">UCSB</a></small>
+                    <p class="fragment">Energy of photon must match energy gap between ground and excited states</p>
+                </section>
+
+                <section>
+                    <p>What are the possible fates of the excited electron?</p>
+                    <ul>
+                        <li class="fragment">Lost as heat</li>
+                        <li class="fragment">Re-emitted as a photon (fluorescence, phosphorescence)</li>
+                        <li class="fragment">Directly excites an electron in another molecule (<em>exciton transfer</em>)</li>
+                        <li class="fragment">Electron is lost to another molecule (<em>photooxidation</em>)</li>
+                    </ul>
+                    <p class="fragment" style="color:blue">Photosynthetic molecules are tuned for exciton transfer and photooxidation</p>
+                </section>
+
+                <section>
+                    <p>Photosynthesis relies on conjugated molecules with extensive $\pi$ orbitals</p>
+                    <img src="presentation-data/27/img/pigments.png" height="40%" width="40%" />
+                    <p>Different molecules have different absorption maxima</p>
+                </section>
+
+                <section>
+                    <p>Plants appear green because these pigments absorb strongly in the blue and red regions but reflect green</p>
+                    <img src="presentation-data/27/img/abs-profile.png" height="50%" width="50%" />
+                    <p class="fragment">So why don't they have a pigment that absorbs all of that green light?</p>
+                    <p class="fragment" style="color:blue">Not a chemical limit, a physiological one.  Would absorb too much heat.</p>
+                </section>
+
+				<section data-background="#000000" data-transition="fade">
+                    <p>Pigments are exquisitely arranged to maximize absorption and exciton transfer</p>
+                    <img src="presentation-data/27/img/lhc-heme-ring.png" height="60%" width="60%" />
+                </section>
+
+				<section data-background="#000000" data-transition="fade">
+                    <p>Pigments are exquisitely arranged to maximize absorption and exciton transfer</p>
+                    <!--<iframe width="420" height="315" src="https://www.youtube.com/embed/fQQ2IKJpiRQ" frameborder="0" allowfullscreen></iframe>-->
+					<video class="stretch" data-autoplay mute loop height="90%" width="90%">
+						<source data-src="presentation-data/27/video/lhc-no-protein.mp4" />
+					</video>
+                </section> 
+
+				<section data-background="#000000" data-transition="fade">
+                    <p>Pigments are exquisitely arranged to maximize absorption and exciton transfer</p>
+                    <!--<iframe width="420" height="315" src="https://www.youtube.com/embed/zV949buXdSg" frameborder="0" allowfullscreen></iframe>-->
+					<video class="stretch" data-autoplay mute loop height="90%" width="90%">
+						<source data-src="presentation-data/27/video/lhc-with-protein.mp4" />
+					</video>
+                </section> 
+
+                <section>
+                    <p>Light harvesting complexes funnel energy to reaction centers by exciton transfer</p>
+                    <img src="presentation-data/27/img/antenna.png" height="50%" width="50%" />
+                </section>
+
+                <section>
+                    <p>Why might it be helpful to have multiple pigments funneling into a single reaction center?</p>
+                    <ul class="fragment" style="color:blue">
+                        <li>Allows efficient capture over a large area</li>
+                        <li>Allows capture of multiple wavelengths</li>
+                    </ul>
+                </section>
+ 
+                <section>
+                    <p>Okay, so we can capture a photon... now what?</p>
+                </section>
+ 
+                <section>
+                    <p>The energy from the photon is transferred to $P680$ which enters its excited state $P680^{*}$</p>
+                    <p>$P680^{*}$ has $\varepsilon^{\circ \prime} = -0.8\ V$</p>
+                    <p class="fragment">Put another way, an easy way to relax the system is simply to lose the exicted electron</p>
+                    <p class="fragment"><em>Way</em> lower affinity than $NAD^{+} + H^{-} \rightarrow NADH$ ($-0.32 \ V$)</p>
+                </section>
+
+                <section>
+                    <p>What do you think happens next?</p>
+                    <p class="fragment" style="color:blue">Electron transport, just as we saw in oxidative phosphorylation!</p>
+                </section>
+
+                <section>
+                    <p>This electron is transferred to plastiquinone</p>
+                    <img src="presentation-data/27/img/excitation.png" height="70%" width="70%" />
+                </section>
+ 
+                <section>
+                    <p>plastiquinone (photosynthesis)</p>
+                    <img src="presentation-data/27/img/pq.png" height="50%" width="50%" /><br/>
+                    <div class="fragment">
+                        <p>Ubiquinone (oxidative phosphorylation)</p>
+                        <img src="presentation-data/27/img/ubiquinone.png" height="60%" width="60%" /><br/>
+                    </div>
+                </section>
+
+                <section>
+                    <p>Takes four photons oxidize two $H_{2}O$ into one $O_{2}$</p>
+                    <p>Generates $1O_{2}$, moves (net) $4H^{+}$ into the lumen, and reduces $2PQ \rightarrow 2PQH_{2}$</p>
+                    <img src="presentation-data/27/img/psii.png" height="65%" width="65%" /><br/>
+                </section>
+
+                <section>
+                    <p>What happened to the $P680^{*}$?</p>
+                </section>
+
+                <section>
+                    <p>When it loses its electron, it is now $P680^{+}$ and has extremely high $e^{-}$ affinity</p>
+                    <img src="presentation-data/27/img/p680-recycle.png" height="40%" width="40%" /><br/>
+                    <p class="fragment">It can scavenge another $e^{-}$ from $H_{2}O$.</p>
+                </section>                  
+ 
+                <section>
+                    <p>$P680^{+}$ oxidizes $H_{2}O$: it is a better oxidant than $O_{2}$!</p>
+                    <p>Pulls electrons off one by one, catalyzed using a $Mn_{4}CaO{5}$ cluster</p>
+                    <img src="presentation-data/27/img/mncao-complex.png" height="50%" width="50%" />
+                </section>
+
+                <section>
+                    <p>Now what?  How do we get an electron off of something that has such a strong electron affinity ($\varepsilon^{\circ \prime} = 1.15\ V$)?</p>
+                    <div class="fragment">
+                        <p>Photooxidation: photon kicks $e^{-}$ into exicted state where it is easily lost.</p>
+                        <img src="presentation-data/27/img/p680-recycle.png" height="40%" width="40%" /><br/>
+                    </div>
+                </section>
+
+                <section>
+                    <p>What happens to the electrons that were on $PQH_{2}$?</p>
+                    <p class="fragment">Transfer through another series of steps...</p>
+                </section>
+ 
+                <section>
+                    <p>Another photooxidation event is used to reduce $NADP^{+}$ to $NADPH$</p>
+                    <img src="presentation-data/27/img/double-excite.png" height="70%" width="70%" /><br/>
+                </section>         
+  
+                <section> 
+                    <p class="fragment">$NADPH$ is used extensively for <em>anabolic</em> processes downstream</p>
+                </section>
+
+                <section>
+                    <p>Total summary of photooxidation</p>
+                    <ul>
+                        <li>PSII:
+                            <ul>
+                                <li>$4\ photons$</li>
+                                <li>$2\ H_{2}O \rightarrow 4H^{+} + O_{2}$</li>
+                                <li>$2\ PQ + 4H^{+} \rightarrow 2PQH_{2}$</li>
+                            </ul>
+                        </li>
+                        <li>PSI:
+                            <ul>
+                                <li>$4\ photons$</li>
+                                <li>$2PQH_{2} \rightarrow 2\ PQ + 4H^{+}$</li>
+                                <li>$2\ NADP^{+} + 2H^{+} \rightarrow 2NADPH$</li>
+                            </ul>
+                        </li>
+                    <ul>
+                </section>
+
+                <section>
+                    <p>Over this process, roughly 12 protons are transported from the stroma to the lumen</p>
+                    <p class="fragment">What happens to these protons?</p>
+                </section>
+
+                <section>
+                    <p style="color:blue">They are used to make ATP using ATP synthase</p>
+                    <img src="presentation-data/27/img/atp-synthase.png" height="50%" width="50%"/>
+                </section>
+
+                <section>
+                    <p>Summary of events</p>
+                    <ul>
+                        <li class="fragment">Energy from photons is used to <em>photooxidize</em> $P680$, meaning it loses a high-energy electron</li>
+                        <li class="fragment">It reacquires in electron by <em>oxidizing</em> $H_{2}O$ into $O_{2}$</li>
+                        <li class="fragment">$P680$ electrons reduce $PQ$ to $PQH_{2}$ (almost exactly like $Q$ to $QH_{2}$ in respiration)</li>
+                        <li class="fragment">A second photon absorption (ultimately) reduces $NADP^{+}$ to $NADPH$</li>
+                        <li class="fragment">Just like in respiration, these redox events are coupled to transport of protons across the bilayer</li>
+                        <li class="fragment">This proton gradient is then converted to $ATP$ by ATP synthase</p>
+                    </ul>
+
+                </section>
+                 
+                <section>
+                    <p>Key point:</p>
+                    <p>Photophosphorylation is highly similar to oxidative phosphorylation, except high energy electrons come from excited $P680^{*}$ rather than glucose</p>
+                    <p>Outputs of light reactions are $ATP$ and $NADPH$</p>
+
+                    <p>$NADP^{+}$ is the terminal electron acceptor (analagous to $O_{2}$ in respiration)</p>
+                </section>
+ 
+     
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+            var USE_LOCAL = false;
+
+            if (USE_LOCAL) {
+                var mathjax_location = 'MathJax-master/MathJax.js';
+                var jquery_location = 'presentation-data/js/jquery-2.1.4.min.js';
+                var bootstrap_location = 'presentation-data/js/bootstrap.min.js';
+                var d3_location = 'presentation-data/js/d3.min.js';
+            } else {
+                var mathjax_location = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js';
+                var jquery_location = 'https://code.jquery.com/jquery-2.1.4.min.js';
+                var bootstrap_location = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js';
+                var d3_location = 'https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js';
+            }
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+                // Add math, using local mathjax
+                math: {
+                    mathjax: mathjax_location,
+                    config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+                },
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/math/math.js', async: true },    // mathjax
+                    { src: jquery_location } ,
+                    { src: bootstrap_location } ,
+                    { src: d3_location } ,
+                    { src: 'presentation-data/js/test-stream.js'}
+				]
+			});
+
+
+
+		</script>
+
+	</body>
+</html>

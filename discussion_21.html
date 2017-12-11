@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+        <!-- CUSTOMIZE METADATA HERE -->
+		<title>Presentation</title>
+		<meta name="description" content="BI281H Discussion">
+		<meta name="author" content="Michael J. Harms">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+        <link rel="stylesheet" href="presentation-data/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+        <!-- CUSTOMIZE STYLESHEET HERE -->
+		<link rel="stylesheet" href="presentation-data/css/override.css">
+	</head>
+
+	<body>
+
+        <!-- CUSTOMIZE SLIDES HERE -->
+		<div class="reveal">
+			<!-- Any section element inside of this container is a slide -->
+			<div class="slides">
+
+				<section>
+					<h2>Fermentation and Gluconeogenesis</h2>
+					<h4>2017-11-10</h4>
+					<br/>
+				</section>
+				<section>
+					<h4>Conceptual goals</h4>
+					<ul>
+						<li class="fragment">Understand the chemical transformations by which $NADH$ is recycled</li>
+						<li class="fragment">Understand the chemical transformations by which pyruvate is converted to glucose</li>
+						<li class="fragment">Understand basic principles of metabolic energy extraction and regulation</li>
+					</ul>
+
+					<h4>Skill goals</h4>
+					<ul>
+						<li class="fragment">Reason about metabolic energy extraction</li>
+						<li class="fragment">Reason about metabolic pathway regulation</li>
+					</ul>
+				</section>
+
+                <section>
+                    <p>Organisms have complex pathways for dealing with sugar "metabolites"</p>
+                    <img src="presentation-data/20/img/overview.png" height="25%" width="25%"/>
+                </section>
+
+                <section>
+                    <p>Metabolite is one of the small molecules passed around by cells in these complex pathways.</p>
+                </section>
+
+                <section>
+                    <p>Quick review:</p>
+                    <ul>
+                        <li class="fragment">What does the reaction-free-energy diagram look like for glycolysis?
+                            <span class="fragment" style="color:blue">mixture of irreversible downhill steps and many "flat" steps"</span>
+                        </li>
+                        <li class="fragment">How does the whole process of glycolysis overcome small, unfavorable steps mid pathway?
+                            <span class="fragment" style="color:blue">Favorable later steps "pull" material through</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p>Quick review:</p>
+                    <ul>
+                        <li class="fragment">Why are steps with large drop in $\Delta G$ good points of regulation?
+                            <span class="fragment" style="color:blue">Create one way "valves" to stop "flux" through the pathway.</span>
+                        </li>
+                        <li class="fragment">What is product inhibition, and how does it allow a cell to control "metabolite" concentrations?
+                            <span class="fragment" style="color:blue">The product of the pathway inhibits an early enzyme in the pathway, meaning the cell "knows" when it has made enough product and stops the pathway</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Outline</h2>
+                    <p>REDOX!</p>
+                    <p>What happens if a cell runs out of $NAD^{+}$?  <em>Fermentation.</em></p>
+                    <p>What happens if an organism needs more glucose? <em>Gluconeogenesis.</em></p>
+                </section>
+
+                <section>
+                    <h4>Part-the-zeroth: REDOX</h4> 
+                    <img src="presentation-data/21/img/redox-potentials.png" height="60%" width="60%"/><br/>
+                </section>
+
+                <section>
+                    <h4>Rules</h4>
+                    <ul>
+                        <li>Moving up the table is favorable</li>
+                        <li>To figure out <em>how</em> favorable, determine $\Delta \varepsilon$</li>
+                        <li>To figure out how much energy is released in a reaction, calculate $\Delta G = -n F \Delta \varepsilon$ (where $n$ is number of electrons and $F$ is $96 \ kJ \cdot V^{-1}$)</li>
+                </section> 
+
+                <section>
+                    <p>What is the energy to oxidize $NADH$ using $O_{2}$?</p>
+                    <p class="fragment" style="color:blue">$-217\ kJ \cdot mol^{-1}$</p>
+                </section>
+
+                <section>
+                    <p>Part-the-first: fermentation</p>
+                    <p>What if we run out of $NAD^{+}$?</p>
+                    <p class="fragment" style="color:blue">You can't oxidize glucose (or many other metabolites) and you die.</p>
+                    <p class="fragment">What kind of reaction would we need to drive $NADH \rightarrow NAD^{+} + H^{-}$?</p> 
+                    <p class="fragment" style="color:blue">Reduction, to oxidize $NADH$</p>
+                </section>
+
+                <section>
+                    <small>What molecule could we use to grab onto $NADH$'s electrons?</small><br/>
+                    <img src="presentation-data/21/img/redox-potentials.png" height="50%" width="50%"/><br/>
+                    <small class="fragment" style="color:blue">Any above $NADH$ on this table</small> 
+                </section>
+            
+                <section>
+                    <p>Most creatures: pyruvate to lactate via lactic acid fermentation</p>
+                    <img src="presentation-data/21/img/lac-ferm.png" height="100%" width="100%"/>
+                    <img /> 
+                    <p class="fragment">End result is recycled $NAD^{+}$.</p>
+                    <p class="fragment">Excess lactate + excess $NAD^{+}$ will run this in reverse</p>
+                </section>
+
+                <section>
+                    <img src="presentation-data/21/img/bottom-half-metabolism.png" height="100%" width="100%"/>
+                </section>
+
+                <section>
+                    <p>Practice: what is the energy change for lactate fermentation?</p>
+                    <p>$\Delta G ^{\circ \prime} = -n F \Delta \varepsilon ^{\circ \prime}$</p>
+                    <p>$NAD^{+} + H^{-} \rightarrow NADH$, $\varepsilon ^{\circ \prime} = -0.315\ V$</p>
+                    <p>$pyruvate\  + H^{-} \rightarrow lactate$, $\varepsilon ^{\circ \prime} = -0.185\ V$</p>
+                </section>
+
+                <section>
+                    <p>Step 1: Calculate the change in the redox potential (the change in electron affinity)</p>
+                    <p class="fragment">$\Delta \varepsilon^{\circ \prime} = \varepsilon_{acceptor} - \varepsilon_{donor}$</p>
+                    <p class="fragment">$\Delta \varepsilon^{\circ \prime} = \varepsilon_{pyr \rightarrow lac} - \varepsilon_{nad+ \rightarrow nadh}$</p>
+                    <p class="fragment">$\Delta \varepsilon^{\circ \prime} = (-0.185\ V-- 0.315\ V)$</p>
+                    <p class="fragment">$\Delta \varepsilon^{\circ \prime} = 0.130 \ V$</p>
+                </section>
+
+                <section>
+                    <p>Step 2: Calculate the change in the energy</p>
+                    <p>$\Delta \varepsilon^{\circ \prime} = 0.130 \ V$</p>
+                    <p class="fragment">$\Delta G ^{\circ \prime} = -n F \Delta \varepsilon ^{\circ \prime}$</p>
+                    <p class="fragment">$\Delta G ^{\circ \prime} = -2 \times 96\ kJ\cdot V^{-1} mol^{-1} 0.130 \ V $</p>
+                    <p class="fragment">$\Delta G ^{\circ \prime} = -25 \ kJ \cdot mol^{-1}$</p>
+                    <p class="fragment">Not <em>quite</em> enough for an ATP</p>
+                </section
+>
+                <section>
+                    <p>What do yeast do to recycle their $NADH$?</p>
+                    <p class="fragment" style="color:blue">$pyruvate \rightarrow acetaldehyde \rightarrow EtOH$</p>
+                    <p class="fragment" style="color:blue">$acetaldehyde \rightarrow EtOH$ is a reduction that <em>oxidizes</em> $NADH$ to $NAD^{+}$</p>
+                </section>
+
+                <section>
+                    <p>Key points: </p>
+                    <ul>
+                        <li class="fragment">$NADH$ must be recycled to $NAD^{+}$ (oxidized) for glycolysis to continue</li>
+                        <li class="fragment">This occurs by <em>fermentation</em> (either lactate or ethanol)</li>
+                        <li class="fragment">$NADH$ oxidation itself releases energy, but we need a higher-affinity acceptor to actually capture $ATP$</li>
+                    </ul>
+                </section> 
+ 
+                <section>
+                    <small>What molecule would give us more energy if we used it to capture $NADH$'s electrons?</small><br/>
+                    <img src="presentation-data/21/img/redox-potentials.png" height="60%" width="60%"/>
+                </section>
+
+                <section>
+                    <p>Mini homework question:</p>
+                    <p>How many $ADP + P_{i} \rightarrow ATP$ reactions could we pay for if we took the electrons from $NADH$ and stuck them on $O_{2}$?</p>
+                </section>
+    
+                <section>
+                    <p>Part-the-second: gluconeogenesis</p>
+                    <p>Human brain runs (almost) solely on glucose.</p>
+                    <p>If you don't eat glucose, where can you get some?</p>
+                </section>
+
+                <section>
+                    <p>Gluconeogenesis:</p>
+                    <p>$2\ pyruvate + 4ATP + 2GTP + 2NADH + 2H^{+} + 4H_{2}O \rightarrow $</p>
+                    <p>$glucose + 4ADP + 2GDP + 6P_{i} + 2NAD^{+}$</p>
+
+                    <div class="fragment">
+                        <p>Glycolysis:</p>
+                        <p>$glucose + 2ADP + 2P_{i} + 2NAD^{+} \rightarrow $</p>
+                        <p>$2\ pyruvate + 2NADH + 2ATP + 2H^{+} + 2H_{2}O$</p>
+                    </div>
+                </section> 
+
+                <section>
+                    <p>What is the difference in the energy released by glycolysis versus taken up by gluconeogenesis?</p>
+                    <small>$glucose + 2ADP + 2P_{i} + 2NAD^{+} \rightarrow $</small>
+                    <small>$2\ pyruvate + 2NADH + 2ATP + 2H^{+} + 2H_{2}O$</small>
+                    <p>vs.</p>
+                    <small>$2\ pyruvate + 4ATP + 2GTP + 2NADH + 2H^{+} + 4H_{2}O \rightarrow $</small>
+                    <small>$glucose + 4ADP + 2GDP + 6P_{i} + 2NAD^{+}$</small>
+                    <br/> <br/>
+                    <small style="color:red">$ATP \rightarrow ADP + P_{i} = -30.5\ kJ \cdot mol^{-1}$</small><br/>
+                    <small style="color:red">$NADH=3ATP$</small><br/>
+                    <small class="fragment" style="color:blue">-244 vs. +366 kJ/mol</small>
+                </section>
+
+                <section>
+                    <p>Why does it cost more to go backwards than forwards?</p>
+                    <h4 class="fragment">Entropy.</h4>
+                    <div class="fragment">
+                        <h4>Big idea:</h4>
+                        <p><em>Catabolic</em> pathways (breaking things down) generally release energy</p>
+                        <p><em>Anabolic</em> pathways (building things up) generally consume energy</p>
+                    </div>
+                </section>
+
+                <section>
+                    <p>Can gluconeogenesis just use the same enzymes as glycolysis, run in reverse?</p>
+                    <img src="presentation-data/21/img/energy-diagram.png" height="60%" width="60%"/>
+                    <p class="fragment" style="color:blue">No.  There are irreversible steps!</p>
+                </section>
+            
+                <section>
+                    <p>Gluconeogenesis uses three <em>bypass</em> reactions to reverse glycolysis.</p>
+                    <p>$pyruvate + ATP \rightarrow PEP + ADP$; <span style="color:red">$\Delta G = +16.7\ kJ\cdot mol^{-1}$</span></p>
+                    <p>$F1,6BP + ADP \rightarrow F6P + ATP$; <span style="color:red">$\Delta G = +22.2\ kJ\cdot mol^{-1}$</span></p>
+                    <p>$G6P + ADP \rightarrow glucose + ATP$; <span style="color:red">$\Delta G = +33.4\ kJ\cdot mol^{-1}$</span></p>
+                </section>
+
+                <section>
+                    <p>These guys are "easy": just lop off the phosphate.</p>
+                    <p>$F1,6BP + ADP \rightarrow F6P + ATP$; <span style="color:red">$\Delta G = +22.2\ kJ\cdot mol^{-1}$</span></p>
+                    <p class="fragment">$F1,6BP \rightarrow F6P + P_{i}$; <span style="color:blue">$\Delta G = -16.3\ kJ\cdot mol^{-1}$</span></p>
+                    <div class="fragment">
+                        <p>$G6P + ADP \rightarrow glucose + ATP$; <span style="color:red">$\Delta G = +33.4\ kJ\cdot mol^{-1}$</span></p>
+                        <p>$G6P \rightarrow glucose + P_{i}$; <span style="color:blue">$\Delta G = -13.8\ kJ\cdot mol^{-1}$</span></p>
+                    </div>
+                </section>
+
+                <section>
+                    <p>What about pyruvate to PEP?</p>
+                    <p>$pyruvate + ATP \rightarrow PEP + ADP$; <span style="color:red">$\Delta G = +16.7\ kJ\cdot mol^{-1}$</span></p>
+                    <img src="presentation-data/21/img/pepck.png" />
+                    <p><span style="color:blue">$\Delta G = 0.9\ kJ\cdot mol^{-1}$</span></p>
+                </section>
+
+                <section>
+                    <p>What would happen if a cell ran glycolysis and gluconeogenesis at the same time?</p>
+                    <p class="fragment" style="color:blue">Burn ATP and generate heat.</p>
+                </section>
+        
+                <section>
+                    <p>Glycolysis and gluconeogenesis are reciprocally regulated</p>
+                    <p>The same molecule that turns on glycolysis turns off gluconeogenesis (and vice versa)</p>
+                    <img src="presentation-data/21/img/recip.png" height="125%" width="125%"/>
+                </section>                   
+ 
+                <section>
+                    <p>Big point: metabolic pathways can transform one "metabolite" into another in a regulated fashion.</p>
+                    <img src="presentation-data/21/img/roche-metabolic_pathways_small.png" />
+                </section>
+                
+                <section>
+                    <p>Pathway summary</p>
+                    <ul>
+                        <li class="fragment">Fermentation is used to oxidize $NADH$ so glycolysis can continue</li>
+                        <li class="fragment">This is necessary if $NAD^{+}$ is depleted, but leaves energy "on the table"</li>
+                        <li class="fragment">Gluconeogenesis allows synthesis of glucose from pyruvate
+                            <ul>
+                                <li>This is energetically costly</li>
+                                <li>Requires "bypass" of irreversible steps in glycolysis</li>
+                                <li>Is "reciprocally-regulated" with glycolysis</li>
+                            </ul>
+                        </li>
+                    </ul>  
+                </section>
+
+                <section>
+                    <p>Big idea summary</p>
+                    <p><em>Catabolic</em> pathways (breaking things down) generally release energy</p>
+                    <p><em>Anabolic</em> pathways (building things up) generally consume energy</p>
+                    <p>Metabolic pathways can transform one "metabolite" into another in a regulated fashion.</p>
+                </section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+            var USE_LOCAL = false;
+
+            if (USE_LOCAL) {
+                var mathjax_location = 'MathJax-master/MathJax.js';
+                var jquery_location = 'presentation-data/js/jquery-2.1.4.min.js';
+                var bootstrap_location = 'presentation-data/js/bootstrap.min.js';
+                var d3_location = 'presentation-data/js/d3.min.js';
+            } else {
+                var mathjax_location = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js';
+                var jquery_location = 'https://code.jquery.com/jquery-2.1.4.min.js';
+                var bootstrap_location = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js';
+                var d3_location = 'https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js';
+            }
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+                // Add math, using local mathjax
+                math: {
+                    mathjax: mathjax_location,
+                    config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+                },
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/math/math.js', async: true },    // mathjax
+                    { src: jquery_location } ,
+                    { src: bootstrap_location } ,
+                    { src: d3_location } ,
+                    { src: 'presentation-data/js/test-stream.js'}
+				]
+			});
+
+
+
+		</script>
+
+	</body>
+</html>

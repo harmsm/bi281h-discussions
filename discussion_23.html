@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+        <!-- CUSTOMIZE METADATA HERE -->
+		<title>Presentation</title>
+		<meta name="description" content="BI281H Discussion">
+		<meta name="author" content="Michael J. Harms">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+        <link rel="stylesheet" href="presentation-data/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+        <!-- CUSTOMIZE STYLESHEET HERE -->
+		<link rel="stylesheet" href="presentation-data/css/override.css">
+	</head>
+
+	<body>
+
+        <!-- CUSTOMIZE SLIDES HERE -->
+		<div class="reveal">
+			<!-- Any section element inside of this container is a slide -->
+			<div class="slides">
+
+				<section>
+					<h2>The Citric Acid Cycle is a Roundabout</p>
+					<h4>2017-11-15</h4>
+					<br/>
+				</section>
+
+				<section>
+					<h4>Conceptual goals</h4>
+					<ul>
+						<li class="fragment">Understand how the pathways we've discussed thus far tie into the rest of metabolism</li>
+						<li class="fragment">Understand that most metabolites can be converted into one another by running through central metabolic pathways and intermediates</p>
+					</ul>
+
+					<h4>Skill goals</h4>
+					<ul>
+						<li class="fragment">Reason about metabolic energy extraction</li>
+						<li class="fragment">Reason about metabolic pathway regulation</li>
+					</ul>
+				</section>
+
+                <section>
+                    <img src="presentation-data/22/img/overview.png" height="35%" width="35%"/>
+                </section>
+
+                <section>
+                    <p>Citric Acid Cycle</p>
+                    <img src="presentation-data/22/img/tca.png" height="55%" width="55%" />
+                </section>
+
+                <section>
+                    <p>True or False</p>
+                    <p>The citric acid cycle is reduces carbons</p>
+                    <p class="fragment" style="color:blue">False.  </p>
+                    <p class="fragment">So what does it reduce?</p>
+                    <p class="fragment" style="color:blue">$NAD^{+} + H^{-} \rightarrow NADH$ and $Q + H^{+} + H^{-} \rightarrow QH_{2}$</p>
+                </section>
+
+                <section>
+                    <p>Which allows cells to extract more energy, glycolysis or the citric acid cycle?</p>
+                    <p class="fragment" style="color:blue">The citric acid cycle (yields ~30 ATP/glucose relative to 2 for glycolysis)</p>
+                    <p class="fragment">Why is its yield so much higher?</p>
+                    <p class="fragment" style="color:blue">It fully oxidizes glucose to $CO_{2}$</p>
+                </section>
+
+                <section>
+
+                    <p>Citric acid cyle summary</p>
+                    <ul>
+                        <li class="fragment">It's used for carbon oxidation</li>
+                        <li class="fragment">The reduced products it generates ($NADH$ and $QH_{2}$) can be oxidized by oxidative phosphorylation to yield $ATP$</li>
+                        <li class="fragment">Provides access to much higher energy yields for glucose than glycolysis...provided there is some "final $e^{-}$ acceptor" around.</li>
+                        <li class="fragment">Generates useful intermediates used throughout metabolism</li>
+                        <li class="fragment">It's a buffer for metabolites that assures a steady concentration of important precursor molecules</li>
+                    </ul>
+                </section> 
+
+                <section>
+                    <p>A "roundabout" is a good mental picture of the citric acid cycle</p>
+                    <img src="presentation-data/23/img/roundabout.png" />
+                </section>
+
+                <section>
+                    <p>The citric acid cycle acts as a "buffer" for all metabolism</p>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <img src="presentation-data/22/img/anabolic-tca.png" height="150%" width="150%" />
+                        </div>
+                        <div class="col-xs-6">
+                            <img src="presentation-data/22/img/incoming-tca.png" height="150%" width="150%" />
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <p>Citric acid cycle is <em>central</em> to all metabolism</p>
+                    <img src="presentation-data/21/img/roche-metabolic_pathways_small.png" />
+                </section>
+
+                <section>
+                    <p>Key points</p>
+                    <ul>
+                        <li class="fragment">The citric acid cycle can "buffer" metabolism by allowing free interchange between a vast number of metabolites</li>
+                        <li class="fragment">Metabolism is built on a key set of "core" metabolites (such as pyruvate, acetyl-coA and $\alpha$-ketoglutarate)</li>
+                        <li class="fragment">The citric acid cycle changes rates, but never turns off because of its role as a central "roundabout" in metabolism</li>
+                    </ul>
+                    <p class="fragment"><span style="color:red">IMPORTANT:</span> Do not worry about (or get lost in) details that follow.  Focus on the key points and how these examples <em>illustrate</em> these points.</p>
+                </section>
+    
+                <section data-transition="fade">
+                    <p>Most of our energy comes from three forms of fuel</p>
+                    <ul>
+                        <li>Sugar</li>
+                        <li>Fat</li>
+                        <li>Protein</li>
+                    </ul>
+                </section>
+
+                <section data-transition="fade">
+                    <p>Most of our energy comes from three forms of fuel</p>
+                    <ul>
+                        <li style="color:red">Sugar</li>
+                        <li>Fat</li>
+                        <li>Protein</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p>Sugar</p>
+                    <img src="presentation-data/23/img/sugar-complexity.png" height="40%" width="40%" />
+                </section>
+
+                <section>
+                    <p>Most of our energy comes from three forms of fuel</p>
+                    <ul>
+                        <li>Sugar</li>
+                        <li style="color:red">Fat</li>
+                        <li>Protein</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p>Fat is broken into a glycerol molecule and its acyl chains</p>
+                    <img src="presentation-data/23/img/fat-0.png" height="80%" width="80%" />
+                </section>
+   
+                <section>
+                    <p>Glycerol is converted to dihydroxyacetone phosphate</p>
+                    <p class="fragment">Sound familiar?  <span class="fragment" style="color:blue">It's a glycolysis intermediate</span></p>
+                </section>
+ 
+                <section>
+                    <p>Acyl chains are "activated" using conezyme A</p>
+                    <img src="presentation-data/23/img/fat-1.png" height="65%" width="65%" />
+                </section>
+
+                <section> 
+                    <p>Coenzyme A (coA) acts as a "handle" for cells to move around actetate in both catabolism and anabolism</p>
+                    <img src="presentation-data/22/img/coash.png" height="75%" width="75%" />
+                </section>
+
+                <section>
+                    <p>2 carbon units are sequentially chopped off</p>
+                    <img src="presentation-data/23/img/fat-2.png" height="55%" width="55%" />
+                </section>
+
+                <section>
+                    <p>Is the conversion of an acyl chain to acetyl-coA an oxidation or reduction?</p>
+                    <p class="fragment" style="color:blue">Oxidation.</p>
+                    <p>So what other reaction might be coupled to this one?</p>
+                    <p class="fragment" style="color:blue">Each round generates 1 $QH_{2}$ and 1 $NADH$</p>
+                </section>                   
+
+                <section>
+                    <p>Fatty acid oxidation produces an acetyl-coA molecule for every two carbons in the acyl chain</p>
+                    <p>What happens to the acetyl-coA?</p>
+                    <p class="fragment" style="color:blue">It enters the citric acid cycle (where it yields 3 $NADH$, 1 $QH_{2}$ and 1 $GTP$)</p>
+                </section>
+
+                <section>
+                    <p>Fats store a lot of energy</p>
+                    <p class="fragment">"Typical" triglyceride will have 3 acyl chains of 16 carbons</p>
+                    <p class="fragment">If you add up reduced $NADH$ and friends you get $\frac {13 \ ATP}{2 \ carbons}$</p>
+                    <p class="fragment">Total yield is $3 \ chains \times \frac{16\ carbons}{chain} \times \frac{13\ ATP}{2 \ carbons}$</p>
+                    <p class="fragment">$3 \times 16 \times 13/2 = 312 \ ATP$</p>
+                </section>
+
+                <section>
+                    <p>Fats have higher $ATP$ yield per carbon than glucose</p>
+                    <p>Fat: $312/48 = 6.5 ATP \cdot carbon^{-1}$</p>
+                    <p>Glucose: $32/6 = 5.3 ATP \cdot carbon^{-1}$</p>
+                    <p class="fragment"><em>Why is this the case?</em></p>
+                    <p class="fragment" style="color:blue">Glucose is already oxidized relative to an acyl chain</p>
+                    <p class="fragment">Gram per gram, fat has twice as much stored energy as sugar</p>
+                
+                </section>
+               
+                <section>
+                    <p>Fats can be synthesized starting from acetyl-coA, just like glucose can be synthesized from pyruvate by gluconeogenesis</p>
+                    <p class="fragment">Do you think this is a simple reversal of $\beta$-oxidation?  Why or why not?</p>
+                    <p class="fragment" style="color:blue">No.  Just like gluconeogenesis, irreversible steps must be bypassed.</p>
+                </section>
+
+                <section>
+                    <p>Big idea:</p>
+                    <p>There are lots of steps in fatty acid oxidation, but those steps all work to convert the material into the same bits that we saw sugar become ($DHAP$, $acetyl-coA$, $NADH$, $QH_{2}$)</p>
+                </section> 
+
+                <section>
+                    <p>Most of our energy comes from three forms of fuel</p>
+                    <ul>
+                        <li>Sugar</li>
+                        <li>Fat</li>
+                        <li style="color:red">Protein</li>
+                    </ul>
+                </section>
+        
+                <section>
+                    <p>How do you think cells deal with the complex structure and chemistry of proteins?</p>
+                    <p class="fragment" style="color:blue">They unfold the protein and chop it up into amino acids with proteases</p>
+                </section>
+
+                <section>
+                    <p>Free amino acids can be directly recycled to make more proteins</p>
+                    <p class="fragment">They can also be used for fuel or to make other biomolecules</p>
+                </section>
+                
+                <section>
+                    <p>Many amino acids can be directly converted to things like pyruvate or acetyl-coA</p>
+                    <img src="presentation-data/23/img/protein-0.png" height="45%" width="45%" />
+                    <img src="presentation-data/23/img/protein-1.png" height="45%" width="45%" />
+                    <img src="presentation-data/23/img/protein-2.png" height="85%" width="85%" />
+                </section>
+
+                <section>
+                    <p>Nitrogens get passed around a lot via <em>transamination</em></p>
+                    <p>$\alpha$-ketoglutarate can be combined with glutamine to make 2 glutamates</p>
+                    <img src="presentation-data/23/img/protein-3.png" height="85%" width="85%" />
+                    <p>Recognize $\alpha$-ketoglutarate?  <span class="fragment" style="color:blue">Citric acid cycle intermediate</span></p>
+                </section>
+
+                <section>
+                    <p>Glutamate and pyruvate can be converted to $\alpha$-ketoglutarate and alanine</p>
+                    <img src="presentation-data/23/img/protein-4.png" height="85%" width="85%" />
+                </section>
+
+                <section>
+                    <p>Amino acid catabolism is intimately tied into the citric acid cycle</p>
+                    <img src="presentation-data/23/img/protein-5.png" height="70%" width="70%" />
+                </section>
+        
+                <section>
+                    <p>Amino acids are made by many inter-conversions between amino acids and other metabolites...in their own metabolic cycles</p>
+                    <img src="presentation-data/23/img/protein-6.png" height="90%" width="90%" />
+                </section>
+                              
+                <section>
+                    <p>Key point: a dizzying array of molecules are made and processed in cells, but are tied together through several key metabolites.</p>
+                    <img src="presentation-data/21/img/roche-metabolic_pathways_small.png" />
+                </section>
+
+                <section>
+                    <p>Summary</p>
+                    <ul>
+                        <li class="fragment">Most metabolism ties directly into the citric acid cycle or glycolysis via a set of "core" metabolites (such as pyruvate, acetyl-coA and $\alpha$-ketoglutarate)</li>
+                        <li class="fragment">This allows cells to shift metabolites around to control processes in a coordinated fashion</li>
+                        <li class="fragment">The citric acid cycle changes rates, but never turns off because of its role as a central "roundabout" in metabolism</li>
+                    </ul>
+                </section>
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+            var USE_LOCAL = false;
+
+            if (USE_LOCAL) {
+                var mathjax_location = 'MathJax-master/MathJax.js';
+                var jquery_location = 'presentation-data/js/jquery-2.1.4.min.js';
+                var bootstrap_location = 'presentation-data/js/bootstrap.min.js';
+                var d3_location = 'presentation-data/js/d3.min.js';
+            } else {
+                var mathjax_location = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js';
+                var jquery_location = 'https://code.jquery.com/jquery-2.1.4.min.js';
+                var bootstrap_location = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js';
+                var d3_location = 'https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js';
+            }
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+                // Add math, using local mathjax
+                math: {
+                    mathjax: mathjax_location,
+                    config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+                },
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/math/math.js', async: true },    // mathjax
+                    { src: jquery_location } ,
+                    { src: bootstrap_location } ,
+                    { src: d3_location } ,
+                    { src: 'presentation-data/js/test-stream.js'}
+				]
+			});
+
+
+
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+        <!-- CUSTOMIZE METADATA HERE -->
+		<title>Presentation</title>
+		<meta name="description" content="BI281H Discussion">
+		<meta name="author" content="Michael J. Harms">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+        <link rel="stylesheet" href="presentation-data/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+        <!-- CUSTOMIZE STYLESHEET HERE -->
+		<link rel="stylesheet" href="presentation-data/css/override.css">
+	</head>
+
+	<body>
+
+        <!-- CUSTOMIZE SLIDES HERE -->
+		<div class="reveal">
+			<!-- Any section element inside of this container is a slide -->
+			<div class="slides">
+
+				<section>
+					<h2>Enzymes as catalysts</h2>
+					<h4>2017-10-16</h4>
+					<br/>
+				</section>
+
+                <section>
+                    <p>The next four classes</p>
+                    <ul>
+                        <li>Enzymes as catalysts</li>
+                        <li>Mechanism of serine protease</li>
+                        <li>Michaelis-Menten kinetics</li>
+                        <li>Enzyme regulation</li>
+                    </ul>
+
+                </section>
+
+                <section  data-background="#000000">
+                    <p><span style="color:cyan">Substrate</span> binds at <span style="color:green">enzyme</span> active site.</p> 
+                    <div class="row">
+                        <video class="video-responsive" data-autoplay mute loop height="40%" width="40%"/> 
+                            <source data-src="presentation-data/10/video/bpti-movie.mp4" />
+                        <video>
+                    </div>
+                    <p>Enzymes are <em>catalysts</em> that speed up reactions without being consumed themselves</p>
+                </section>
+
+                <section>
+                    <img src="presentation-data/10/img/hydrolysis-scheme.png" height="120%" width="120%"/>
+                    <p class="fragment">What determines how fast this reaction can go? (and why?)</p>
+                    <p class="fragment" style="color:blue">Getting to the transition state, because that is the most unfavorable (most unlikely) state in the reaction.</p>
+                </section>
+
+				<section>
+					<p>Hydrolysis of peptide bond has $\Delta G < 0$, but it's <em>slow</em></p>
+                    <p>rate constant = $k = 1.5 \times 10^{-9}\ s^{-1}$</p>
+                    <p class="fragment">$k = 0.05\ years^{-1}$.  That means 20 years to break a bond!</p>
+                    <div class="fragment">
+                        <img src="presentation-data/10/img/resonance-stabilized-peptide.png" /> 
+                        <p>(resonance structure stabilizes substrate structure)</p>
+                    </div>
+				</section>
+
+				<section>
+					<h4>Conceptual goals</h4>
+					<ul>
+						<li class="fragment">Understand the energetic basis for the rate increases achieved by enzymes (in terms of a free energy reaction coordinate).</li>
+					</ul>
+
+					<h4>Skill goals</h4>
+					<ul>
+						<li class="fragment">Reason about how changes in free energy reaction coordinate lead to altered reaction rates. </li>
+						<li class="fragment">Manipulate basic Arrhenius equation to quantitatively relate changes in $ E_{a} $ to changes in rate. </li>
+					</ul>
+				</section>
+
+				<section>
+                    <p>Peptide hydrolysis goes from $k = 1.5 \times 10^{-9}\ s^{-1}$ in water (pH 7) to $k = 120\ s^{-1}$ with enzyme</p>
+                    <p class="fragment">A <em>100-billion-fold</em> speed up.  Once every 20 years to 120 times per second!</p>
+
+                    <div class="fragment">
+                        <p>How much does the enzyme lower the energy barrier for this reaction?</p>
+                        <p>This is an important step for figuring out <em>how</em> the enzyme works</p>
+                    </div>
+				</section>
+
+                <section>
+                    <p>You are given a single, six-sided dice.</p>
+                    <ul>
+                        <li>What is the rate at which you roll sixes?</li>
+                        <li>What determines the rate?</li> 
+                        <li>How can you increase the rate?</li>
+                    </ul>
+                </section>
+
+                <section>
+
+                    <div>
+                        <p>Rate of rolling sixes:</p>
+                        <p>$k_{6} = k_{rolling} \times P_{6}$</p>
+                        <p>If you roll a fair dice once per second, you get a rate of:</p>
+                        <p>$k_{6} = 1\ s^{-1} \times \frac{1}{6} = 0.167\ s^{-1}$</p>
+                    </div>
+                    <p class="fragment" style="color:blue">Rate is determined by rolling rate and probability of 6</p>
+                    <p class="fragment" style="color:blue">To speed up the rate, roll faster or weight the dice</p>
+ 
+                </section>
+
+                <section>
+    
+                    <p>For the reaction $E + S \rightleftarrows E \cdot S \rightleftarrows E + P$:</p>
+                    <p>If the rate-limiting step is formation of $E \cdot S$, then we're interested in the left side </p>
+                    <p>$k_{E\cdot S} = k_{try} \times P_{E+S\rightarrow E\cdot S}$</p>
+                </section> 
+
+                <section>
+                    <h4>Big point:</h4>
+                    <p>A small change in the transition state free energy can lead to large change in rate</p>
+                    <p class="fragment">(A change worth a few hydrogen bonds gives a 100-billion fold speed up)</p>
+                </section>
+
+                <section>
+                    <h4>How this is done mechanistically:</h4>
+                    <p>Construct a "path" of low energy intermediates to overcome the energy barrier</p>
+                </section>
+
+                <section>
+                    <img src="presentation-data/10/img/serine-protease-mechanism.png" height="50%" width="50%"/>
+                </section> 
+                
+				<section>
+					<h4>Key points</h4>
+					<ul>
+						<li>Reaction rates are limited by the transition state free energy</li>
+                        <li>Enzymes speed up rates by lowering the energy barrier (small change in $E_{a}$, big change in rate)</li>
+                        <li>Transition states are high energy because they are chemically "wacky"</li>
+                        <li>Enzymes stabilize the transition state, lowering the energy barrier and increasing the rate</li>
+						<li>Enzymes can only speed up spontaneous ($\Delta G < 0$) reactions</li>
+					</ul>
+				</section>
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+            var USE_LOCAL = false;
+
+            if (USE_LOCAL) {
+                var mathjax_location = 'MathJax-master/MathJax.js';
+                var jquery_location = 'presentation-data/js/jquery-2.1.4.min.js';
+                var bootstrap_location = 'presentation-data/js/bootstrap.min.js';
+                var d3_location = 'presentation-data/js/d3.min.js';
+            } else {
+                var mathjax_location = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js';
+                var jquery_location = 'https://code.jquery.com/jquery-2.1.4.min.js';
+                var bootstrap_location = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js';
+                var d3_location = 'https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js';
+            }
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+                // Add math, using local mathjax
+                math: {
+                    mathjax: mathjax_location,
+                    config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+                },
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/math/math.js', async: true },    // mathjax
+                    { src: jquery_location } ,
+                    { src: bootstrap_location } ,
+                    { src: d3_location } ,
+                    { src: 'presentation-data/js/test-stream.js'}
+				]
+			});
+
+
+
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+        <!-- CUSTOMIZE METADATA HERE -->
+		<title>Presentation</title>
+		<meta name="description" content="BI281H Discussion">
+		<meta name="author" content="Michael J. Harms">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+        <link rel="stylesheet" href="presentation-data/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+        <!-- CUSTOMIZE STYLESHEET HERE -->
+		<link rel="stylesheet" href="presentation-data/css/override.css">
+	</head>
+
+	<body>
+
+        <!-- CUSTOMIZE SLIDES HERE -->
+		<div class="reveal">
+			<!-- Any section element inside of this container is a slide -->
+			<div class="slides">
+
+                <section>
+                    <p>Midterm #2: 7-9 pm on Wednesday, November 8, McKenzie 240C</p>
+                    <p>Review Session: 7-9 pm on Thursday, November 2 (tomorrow), Lawrence 115</p>
+                </section>
+
+				<section>
+					<h2>Membrane proteins</h2>
+					<h4>2017-11-01</h4>
+					<br/>
+				</section>
+
+				<section>
+					<h4>Conceptual goals</h4>
+					<ul>
+                        <li>Understand how membrane proteins can act as gatekeepers to move material in and out of the cell</li>
+                        <li>Understand the basic molecular mechanisms by which it achieves this function</li>
+					</ul>
+
+                    <h4>Skill goals</h4>
+                    <ul>
+                        <li>Predict whether a protein will be able transport a molecule based on the structure of the membrane protein and the molecule</li>
+                        <li>Reason about passive versus active transport</li>
+                    </ul>
+                        
+				</section>
+
+                <section>
+                    <p>Membrane design features</p>
+                    <ul>
+                        <li>Spontaneous assembly</li>
+                        <li>Flexible</li>
+                        <li>Divisible</li>
+                        <li>Selectively permeable</li>
+                        <li>Can "host" other molecules</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p>Phospholipid has 4 basic parts: lipid tails, glycerol, phosphate, head group</p>
+                    <img src="presentation-data//09/img/phospholipid.jpg" height="75%" width="75%"/>
+                    <p><small>Credit: <a href="http://homepage.smc.edu/wissmann_paul/anatomy2textbook/phospholipids.html">smc.edu</a></small></p>
+                </section>
+
+                <section>
+                    <p>Phospholipids form bilayers</p>
+                    <img src="presentation-data//09/img/pasted-image-124.png" height="70%" width="70%"/>
+                    <p><small>Credit: Goodsell</small></p>
+                </section>
+
+                <section>
+                    <p><em>Selective permeability: </em>Only some molecules can pass through the bilayer</p>
+                    <p><img src="presentation-data//09/img/pasted-image-104.png" class="img-responsive"/></p>
+                </section>
+                <section>
+                    <p>Which molecules would be able to pass through a bilayer?</p>
+                    <ul>
+                        <li>$Na^{+}$ <span style="color:red" class="fragment">No.</span></li>
+                        <li>steroid (estrogen, testosterone) <span style="color:blue" class="fragment">Yes.</span></li>
+                        <li>A protein molecule <span style="color:red" class="fragment">No.</span></li>
+                        <li>$H_{2}O$ <span style="color:blue" class="fragment">Yes.</span></li>
+                    </ul>
+                    <p class="fragment">Only small, uncharged molecules can diffuse across a membrane</p>
+                </section>
+
+
+                <section>
+                    <p>Membranes host proteins and sugars for diverse functions in transport, signaling, and molecular recognition</p>
+                    <img src="presentation-data//09/img/membrane-proteins.png" height="120%" width="120%" />
+                    <small>Credit: <a href="https://teaching.ncl.ac.uk/bms/wiki/index.php/Membrane_protein">https://teaching.ncl.ac.uk/</a></small>
+                </section>
+
+                <section>
+                    <p>Focus today on integral membrane proteins that move material across it</p>
+                </section>
+
+                <section>
+                    <ul>
+                        <li>Why are transport membrane proteins needed?</li>
+                        <li>Transport selectivity</li>
+                        <li>Passive versus active transport</li>
+                        <li>Nerve signal transmission</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p>Why are transport proteins needed?</p>
+                    <p>Permeability: some stuff can't pass the bilayer</p>
+                    <img src="presentation-data/17/img/permeability.png" height="100%" width="100%"/>
+                </section>
+
+                <section>
+                    <p>Why are transport proteins needed?</p>
+                    <p>Moving a potassium ion ($K^{+}$) across a bilayer is hard because:</p>
+                    <ol>
+                        <li>It can't fit through the bilayer</li>
+                        <li>Removing hydrogen bonds from charged atom is unfavorable</li>
+                        <li>It gets stuck interacting with the lipid tails</li>
+                    </ol>
+                
+                    <p class="fragment">Answer: <span style="color:blue">2</span></p>
+                </section>
+
+                <section>
+                    <p>Why are transport proteins needed?</p>
+                    <p>Control.  If transport proteins only open and close in certain circumstances, this leads to regulated behavior.</p>
+                </section>
+                
+                <section>
+                    <ul>
+                        <li>Why are transport membrane proteins needed? <span style="color:blue">(permeability and control)</span></li>
+                        <li>Transport selectivity</li>
+                        <li>Passive versus active transport</li>
+                        <li>Nerve signal transmission</li>
+                    </ul>
+                </section>
+               
+                <section>
+                    <p>Selectivity: the case of <em>aquaporin</em></p>
+                </section>
+
+                <section>
+                    <p>Water <em>can</em> get across a bilayer, but it's slow</p>
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/ePGqRaQiBfc" frameborder="0" allowfullscreen></iframe>
+                    <p>There are cases where this needs to go <em>faster</em> and be controlled.  Where might this be?</p>
+                    <p class="fragment" style="color:blue">Kidneys, "epithelial" cells exposed to environment...</p>
+                </section>
+
+                <section>
+                    <p>How would you build something that would letter water through but not these other molecules?</p>
+                    <ul>
+                        <li>sodium ion ($Na+$)</li>
+                        <li>glucose ($C_{6}H_{12}O_{6}$)</li>
+                        <li>chloride ion ($Cl^{-}$)</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p>Answer: make it so only water can fit and be satisfied.  </p>
+                    <img src="presentation-data/17/img/goodsell-aquaporin.png" />
+                </section>
+
+                <section>
+                    <p>Water goes single-file and has to pass by positively charged residues in the channel.</p>
+				    <video class="stretch" data-autoplay mute loop height="100%" width="100%">
+				        <source data-src="presentation-data/17/video/aquaporin.mp4" />
+					</video>
+                </section>
+              
+                <section>
+                    <p>How does aquaporin filter the following molecules?</p>
+                    <ul>
+                        <li class="fragment">water ($H_{2}O$) <span class="fragment" style="color:blue">lets through</span></li>
+                        <li class="fragment">sodium ion ($Na+$) <span class="fragment" style="color:blue">positive charge</span></li>
+                        <li class="fragment">glucose ($C_{6}H_{12}O_{6}$) <span class="fragment" style="color:blue">size</span></li>
+                        <li class="fragment">chloride ion ($Cl^{-}$) <span class="fragment" style="color:blue">size</span></li>
+                    </ul>
+                </section>                   
+
+                <section>
+                    <p>Chloride ion is much larger than water</li>
+                    <img src="presentation-data/17/img/hydrated-chloride.png" height="70%" width="70%"/>
+                </section>
+
+                <section>
+                    <p>Selectivity can also involve an allosteric conformational change</p>
+                    <img src="presentation-data/17/img/glucose-transport.png" height="100%" width="100%"/>
+                </section>
+
+                <section>
+                    <p>Can this protein move glucose against a concentration gradient?<p>
+                    <p class="fragment" style="color:blue">No.  Can only go <em>with</em> a gradient</p>
+                </section>
+
+
+                <section>
+                    <ul>
+                        <li>Why are transport membrane proteins needed? <span style="color:blue">(permeability and control)</span></li>
+                        <li>Transport selectivity <span style="color:blue">(selection based on chemical features)</span></li>
+                        <li>Passive versus active transport</li>
+                        <li>Nerve signal transmission</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p>Channels and carriers move molecules with a concentration gradient</p>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <img src="presentation-data/17/img/glucose-transport_90.png" />
+                        </div>
+                        <div class="col-xs-8">
+                            <img src="presentation-data/17/img/carrier-vs-channel.png" height="60%" width="60%"/>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <p>Pumps move molecules against concentration gradients</p>
+                </section>
+
+                <section>
+                    <p>How does a cell move something against a concentration gradient?</p>
+                    <div class="fragment">
+                        <h4 style="color:blue">Active transport</h4>
+                        <img src="presentation-data/17/img/active-transport.png" height="100%" width="100%"/>
+                    </div>
+                </section>
+                <section>
+                    <p>Channels and carriers move molecules with a concentration gradient</p>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <img src="presentation-data/17/img/glucose-transport_90.png" />
+                        </div>
+                        <div class="col-xs-8">
+                            <img src="presentation-data/17/img/carrier-vs-channel.png" height="60%" width="60%"/>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <p>In active transport, an unfavorable reaction (going against a concentration gradient) is coupled to a favorable reaction ($ATP \rightarrow ADP+P_{i}$).</p>
+                    <p>$\Delta G_{transport} = \Delta G_{conc} + \Delta G_{ATP}$</p>
+                </section>
+
+                <section>
+                    <p>Coupling between $ATP \rightarrow ADP + P_{i}$ and transport is allosteric conformational change</p> 
+                    <img src="presentation-data/17/img/active-transport.png" height="100%" width="100%"/>
+                </section>
+
+                <section>
+                    <ul>
+                        <li>Why are transport membrane proteins needed? <span style="color:blue">(permeability and control)</span></li>
+                        <li>Transport selectivity <span style="color:blue">(selection based on chemical features)</span></li>
+                        <li>Passive versus active transport <span style="color:blue">(active transport requires energy expenditure)</span></li>
+                        <li>Nerve signal transmission</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p>How do signals cross <em>meters</em> in our body when even motor proteins would take hours to get that far?</p>
+                </section>
+
+                <section>
+                    <p>Na+/K+ pumps create electrical potential across the bilayer</p>
+                    <img src="presentation-data/17/img/membrane-potential.png" height="50%" width="50%"/>
+   
+                    <br/><small>Credit: <a href="https://en.wikipedia.org/wiki/Membrane_potential#/media/File:Basis_of_Membrane_Potential2.png">wikimedia.org</a></small>
+                </section>
+
+                <section>
+                    <p>What happens if I open a Na+ specific channel (not pump)?</p>
+                    <img src="presentation-data/17/img/membrane-potential.png" height="50%" width="50%"/>
+   
+                    <br/><small>Credit: <a href="https://en.wikipedia.org/wiki/Membrane_potential#/media/File:Basis_of_Membrane_Potential2.png">wikimedia.org</a></small>
+                </section>
+
+                <section>
+                    <p>What happens if I open a Na+ specific channel (not pump)?</p>
+                    <img src="presentation-data/17/img/membrane-potential.png" height="30%" width="30%"/>
+                    <p>Na+ ions will rush in, potential difference will drop</p>
+   
+                </section>
+
+                <section>
+                    <p>Gated ion channels respond to changes in electrical potential (voltage)</p>
+                    <img src="presentation-data/17/img/gated-channel-struct.png" height="60%" width="60%"/>
+                </section>
+
+                <section>
+                    <p>Gated ion channels respond to changes in electrical potential (voltage)</p>
+                    <img src="presentation-data/17/img/gated-channel-schem.png" height="60%" width="60%"/>
+                </section>
+
+                <section>
+                    <p>Gated ion channels respond to changes in electrical potential (voltage)</p>
+                    <img src="presentation-data/17/img/volt-mech.jpg" height="80%" width="80%"/>
+                </section>
+
+                <section>
+                    <p>Action potential propagates along the nerve</p> 
+                    <img src="presentation-data/17/img/action-potential-propagation.png" height="40%" width="40%"/>
+                </section>
+
+                <section>
+                    <p>Action potential propagates along the nerve</p> 
+                    <p>Resting</p>
+                    <img src="presentation-data/17/img/action-potential-propagation_rest.png"/>
+                </section>
+
+                <section>
+                    <p>Action potential propagates along the nerve</p> 
+                    <p>Propagation</p>
+                    <img src="presentation-data/17/img/action-potential-propagation_prop.png"/>
+                </section>
+
+                <section>
+                    <p>After signal, Na+/K+ pumps restore action potential</p>
+                </section>
+
+                <section>
+                    <ul>
+                        <li>Why are transport membrane proteins needed? <span style="color:blue">(permeability and control)</span></li>
+                        <li>Transport selectivity <span style="color:blue">(selection based on chemical features)</span></li>
+                        <li>Passive versus active transport <span style="color:blue">(active transport requires energy expenditure)</span></li>
+                        <li>Nerve signal transmission <span style="color:blue">(is built on moving ions across membranes in a concerted way)</span></li>
+                    </ul>
+                </section>
+
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+            var USE_LOCAL = false;
+
+            if (USE_LOCAL) {
+                var mathjax_location = 'MathJax-master/MathJax.js';
+                var jquery_location = 'presentation-data/js/jquery-2.1.4.min.js';
+                var bootstrap_location = 'presentation-data/js/bootstrap.min.js';
+                var d3_location = 'presentation-data/js/d3.min.js';
+            } else {
+                var mathjax_location = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js';
+                var jquery_location = 'https://code.jquery.com/jquery-2.1.4.min.js';
+                var bootstrap_location = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js';
+                var d3_location = 'https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js';
+            }
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+                // Add math, using local mathjax
+                math: {
+                    mathjax: mathjax_location,
+                    config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+                },
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/math/math.js', async: true },    // mathjax
+                    { src: jquery_location } ,
+                    { src: bootstrap_location } ,
+                    { src: d3_location } ,
+                    { src: 'presentation-data/js/test-stream.js'}
+				]
+			});
+
+
+
+		</script>
+
+	</body>
+</html>

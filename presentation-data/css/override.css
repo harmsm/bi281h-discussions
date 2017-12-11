@@ -15,3 +15,11 @@
   text-transform: none;
 }
 
+
+.lecture-given {
+    visibility:visible;
+}
+
+.lecture-not-given {
+    visibility:hidden;
+}

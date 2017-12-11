@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+        <!-- CUSTOMIZE METADATA HERE -->
+		<title>Presentation</title>
+		<meta name="description" content="BI281H Discussion 1">
+		<meta name="author" content="Michael J. Harms">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="presentation-data/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+        <!-- CUSTOMIZE STYLESHEET HERE -->
+		<link rel="stylesheet" href="presentation-data/css/override.css">
+	</head>
+
+	<body>
+
+        <!-- CUSTOMIZE SLIDES HERE -->
+		<div class="reveal">
+			<!-- Any section element inside of this container is a slide -->
+			<div class="slides">
+
+				<section>
+					<h3>What is life?</h3>
+					<h4>Biology 281H</h4>
+					<h4>09-25-2017</h4>
+				</section>
+
+				<section>
+					<h4>Concept Goals</h4>
+					<ul>
+						<li class="fragment">Begin to appreciate how bizarrely cool life is.</li>
+						<li class="fragment">Understand the intellectual and practical framework for this class.</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Discuss with your neighbor</h3>
+					<ul>
+						<li>What is life?</li>
+						<li>What differentiates life from non-life?</li>
+					</ul>
+				</section>
+
+				<section>
+					<h4>What is life?</h4>
+					<ul>
+						<li>Living Things are Composed of Cells</li>
+						<li>Living Things Have Different levels of organization</li>
+						<li>Living Things Use Energy</li>
+						<li>Living Things Respond To Their Environment</li>
+						<li>Living Things Grow</li>
+						<li>Living Things Reproduce</li>
+						<li>Living Things Adapt To Their Environment</li>
+					</ul>
+				</section>
+
+				<section>
+					<iframe width="420" height="315" src="https://www.youtube.com/embed/VAhM9OxZDkU?start=9&rel=0&autoplay=0" frameborder="0" allowfullscreen></iframe>
+				</section>
+
+				<section>
+					<h3>Schroedinger's dilemma: how can a small number of molecules behave in an ordered way?</h3>
+					<h2 class="fragment">$PV = nRT$</h2>
+				</section>
+
+				<section>
+					<img height="75%" width="75%" src="presentation-data/01/img/cell-division.jpg" />
+				</section>
+
+				<section>
+					<h4>Course Goals</h4>
+					<ul>
+						<li class="fragment">Survey the key molecular and cellular features shared by all organisms on earth, revealing how life can be understood in physical and chemical terms.</li>
+					  <li class="fragment">Begin to develop intuition and analytical tools to think about life quantitatively and molecularly.</li>
+						<li class="fragment">Introduce several key, universal systems that are shared across organisms</li>
+					</ul>
+
+				</section>
+
+				<section>
+					<p>Easy to get lost in details...</p>
+					<a href="presentation-data/01/img/roche-metabolic_pathways.png"><img src="presentation-data/01/img/roche-metabolic_pathways_small.png" /></a>
+					<small color="gray" align="left">Gerhard Michal, Roche</small>
+
+				</section>
+
+				<section>
+					<h4>Focus on <em>how</em> and <em>why</em> rather than memorizing facts!</h4>
+				</section>
+
+				<section>
+					<h4>Implementation</h4>
+					<ul>
+						<li>In-class discussions</li>
+						<li>Reading/Prep<ul><li>Pre-discussion quizzes</li></ul></li>
+						<li>Homework sets</li>
+						<li>Labs</li>
+					</ul>
+
+
+					<h4><a href="https://canvas.uoregon.edu/courses/90463">https://canvas.uoregon.edu/courses/90463</a></h4>
+				</section>
+
+				<section>
+					<h4>Looking forward to the term!</h4>
+				</section>
+
+			</div>
+
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+            var USE_LOCAL = false;
+
+            if (USE_LOCAL) {
+                var mathjax_location = 'MathJax-master/MathJax.js';
+                var jquery_location = 'presentation-data/js/jquery-2.1.4.min.js';
+                var bootstrap_location = 'presentation-data/js/bootstrap.min.js';
+                var d3_location = 'presentation-data/js/d3.min.js';
+            } else {
+                var mathjax_location = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js';
+                var jquery_location = 'https://code.jquery.com/jquery-2.1.4.min.js';
+                var bootstrap_location = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js';
+                var d3_location = 'https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js';
+            }
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+                // Add math, using local mathjax
+                math: {
+                    mathjax: mathjax_location,
+                    config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+                },
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/math/math.js', async: true },    // mathjax
+                    { src: jquery_location } ,
+                    { src: bootstrap_location } ,
+                    { src: d3_location } ,
+                    { src: 'presentation-data/js/test-stream.js'}
+				]
+			});
+
+
+
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+        <!-- CUSTOMIZE METADATA HERE -->
+		<title>Presentation</title>
+		<meta name="description" content="BI281H Discussion">
+		<meta name="author" content="Michael J. Harms">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+        <link rel="stylesheet" href="presentation-data/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+        <!-- CUSTOMIZE STYLESHEET HERE -->
+		<link rel="stylesheet" href="presentation-data/css/override.css">
+	</head>
+
+	<body>
+
+        <!-- CUSTOMIZE SLIDES HERE -->
+		<div class="reveal">
+			<!-- Any section element inside of this container is a slide -->
+			<div class="slides">
+
+                <section>
+                    <h4>Review session this Wednesday 10/11 from 7-9 pm in Lawrence 115</h4>
+                </section>
+
+                <section>
+                    <h4>Some cleanup</h4>
+                </section>
+
+                <section>
+                    <h4>The stability of a structure is determined by many offsetting terms</h4>
+                    <ul>
+                        <li>Folding is driven by: 
+                            <ul class="fragment">
+                                <li>Favorable hydrogen bonds (helix makes hydrogen bonds) (enthalpy)</li>
+                                <li>Hydrophobic effect (a helix has a surface area less than that of the unfolded state) (entropy)</li>
+                            </ul>
+                        </li>
+                        <li>Folding is opposed by:
+                            <ul class="fragment">
+                                <li>Competing hydrogen bonds with water (enthalpy)</li>
+                                <li>Loss of conformational entropy</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </section>
+
+                <section>
+                    <p>The experimental value for $\Delta H^{\circ\prime}$ is $-41\ kJ\cdot mol^{-1}$. Assuming $8$ hydrogen bonds actually form and that the hydrogen bonds are the main contribution to $\Delta H^{\circ\prime}$, what is each hydrogen bond “worth” in the helix? Why might this be different from the value we used above? </p>
+                    <p class="fragment" style="color:blue">$-41/8 = -5.1\ kJ\cdot mol^{-1}$</p>
+                    <p class="fragment" style="color:blue">Less than $-20\ kJ \cdot mol^{-1}$ because these hydrogen bonds compete with water hydrogen bonds</p>
+                </section>
+
+                <section>
+                    <h4>Key point.  You have to consider both unfolded and folded</h4>
+                    <p>$\Delta H^{\circ \prime} = \color{blue}{H^{\circ \prime}_{prot-prot}} - \color{red}{H^{\circ \prime}_{prot-water}}$ </p>
+                    <p class="fragment">$\Delta H^{\circ \prime} = \color{blue}{8 \times -25.1} \color{red}{-8 \times -20.0} = -41 \ kJ\cdot mol^{-1}$</p>
+                    <p class="fragment" style="color:blue">$-41 \ kJ\cdot mol^{-1}$ is correct enthalpy to use, not $-5.1$ like I did Friday</p>
+                </section>
+
+                <section>
+                    <h4>How does this play out for $\Delta S$?</h4>
+                </section>
+
+                <section>
+                    <h4>From calculation</h4>
+                    <p>$\Delta S^{\circ \prime} = Rln(N_{helix}/N_{unfolded})$</p>
+                    <p class="fragment">$\Delta S^{\circ \prime} = -0.22\ kJ \cdot mol^{-1} K^{-1}$</p>
+                </section>                                      
+
+                <section>
+                    <h4>From experiment</h4>
+                    <p>$\Delta G^{\circ \prime} = \Delta H^{\circ \prime} - T \Delta S^{\circ \prime}$</p>
+                    <p class="fragment">$\Delta G^{\circ \prime} - \Delta H^{\circ \prime} =  -T \Delta S^{\circ \prime}$</p>
+                    <p class="fragment">$\frac{\Delta G^{\circ \prime} - \Delta H^{\circ \prime}}{-T} = \Delta S^{\circ \prime}$</p>
+                    <p class="fragment">$\Delta S^{\circ \prime} = \frac{-3.5 --41}{-300} = -0.125\ kJ \cdot mol^{-1} \cdot K^{-1}$</p>
+                </section>
+
+                <section>
+                    <p>It is less entropically unfavorable to collapse helix than you might expect because of the hydrophobic effect</p>
+                </section>
+
+
+                <section>
+                    <h4>Key point.  You have to consider both water and protein</h4>
+                    <p>$\Delta S^{\circ \prime}_{helix} = \color{blue}{S^{\circ \prime}_{helix}} - \color{red}{S^{\circ \prime}_{unfolded}}$ </p>
+                    <p>$\Delta S^{\circ \prime}_{hphobe} = \color{blue}{S^{\circ \prime}_{folded\ surface}} - \color{red}{S^{\circ \prime}_{unfolded \ surface}}$ </p>
+                    <p class="fragment">$\Delta S^{\circ \prime} = \Delta S^{\circ \prime}_{helix} + \Delta S^{\circ \prime}_{hphobe}$</p>
+                    <p class="fragment">$-0.125 = -0.22 + \Delta S^{\circ \prime}_{hphobe}$</p>
+                    <p class="fragment">$0.095 \ kJ \cdot mol^{-1} \cdot K^{-1}= \Delta S^{\circ \prime}_{hphobe}$</p>
+                    <p class="fragment" style="color:blue">Hydrophobic effect makes favorable entropic contribution to folding</p>
+                </section>
+
+                <section>
+                    <p>Where does $S = Rln(N)$ come from, anyway?</p>
+                </section>
+
+                <section>
+                    <p>Proline and glycine are both known as "secondary structure breakers"</p>
+                    <p>Why might this be the case?</p>
+                    <p class="fragment" style="color:blue">Proline uses the backbone nitrogen as part of its R-group.  No hydrogen bonds + kink</p>
+                    <p class="fragment" style="color:blue">Glycine has a H for an R-group.  It's floppy and entropically expensive to immobilize</p>
+                </section>
+
+                <section>
+                    <p>Disulfide bonds form between ___________ residues.  These _________ [covalent|ionic|hydrogen bond] interactions ____________ [stabilize|destabilize] protein structure</p>
+                    <p class="fragment">Disulfide bonds form between <span style="color:blue">cysteine</span> residues.  These <span style="color:blue">covalent</span> interactions <span style="color:blue">stabilize</span> protein structure</p>
+                </section>
+
+				<section>
+					<h2>The Protein Folding Problem</h2>
+					<h4>2017-10-09</h4>
+					<br/>
+				</section>
+				<section>
+					<h4>Conceptual goals</h4>
+
+					<ul>
+                        <li class="fragment">Understand that the folded structure of the protein is the free energy minimum for the chain</li>
+					</ul>
+
+					<h4>Skill goals</h4>
+					<ul>
+                        <li class="fragment">Manipulate thermodynamic equations describing protein stability to calculate contributions of different forces</li>
+                        <li class="fragment">Reason correctly about interactions by thinking correctly about both sides of a reaction coordinate</li>
+					</ul>
+				</section>
+
+                <section>
+                    
+                    <ul>
+                        <li>A 100 amino acid protein will have 198 peptide bonds.  If each bond can take 3 possible conformations, how many conformations are there?</li>
+                        <li>If each bond rotates every nanosecond, how long would it take for the protein to sample all possible structures?</li>
+                    </ul>
+
+                    <ul>
+                        <li class="fragment" style="color:blue">$3^{198} = 3\times 10^{94}$ conformations</li>
+                        <li class="fragment" style="color:blue">$3\times 10^{94}\ conf \times \frac{1 \times 10^{-9} \ s}{conf} = 3 \times 10^{89} \ s$</li>
+                        <li class="fragment" style="color:blue">$9 \times 10^{77} years$</li>
+                    </ul>
+    
+                </section>
+
+                <section>
+                    <p>Real proteins fold in milliseconds</p>
+                    <p>What does this tell us about protein folding?</p>
+                    <p class="fragment" style="color:blue">Folding does <em>not</em> proceed by random search.</p>
+                </section>
+
+                <section>
+                    <p>Proteins fold by a <em>biased</em> search.</p>
+                    <img height="50%" width="50%" src="https://www.learner.org/courses/physics/visual/img_lrg/funnel.jpg"  />
+                </section>
+
+                <section>
+                    <h4>Previous steps set up next steps</h4>
+                    <ul>
+                        <li class="fragment">Local elements fold (like secondary structure) fold</li>
+                        <li class="fragment">These folded elements change environment of rest of chain</li>
+                        <li class="fragment">Other local parts of the structure fold</li>
+                        <li class="fragment">Settles in to a final 3D fold</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p>This is known as a "folding funnel"</p>
+                    <img class="fragment" height="50%" width="50%" src="https://ae01.alicdn.com/kf/HTB1J3P8KpXXXXb2XpXXq6xXFXXX3/Portable-Bar-Tools-Silicone-font-b-Funnel-b-font-font-b-Folding-b-font-font-b.jpg" />
+                </section>
+
+                <section>
+                    <p>We can follow folding directly with Hydrogen-Deuterium Exchange Mass Spectrometry</p>
+                    <img class="img-responsive" height="85%" width="85%" src="presentation-data/07/img/folding-pathways.png">
+                    <small><a href="http://www.pnas.org/content/114/31/8253.abstract">Walter Englander </a></small>
+                </section>
+
+                <section>
+                    <p>We can follow structural intermdiates with molecular dynamics simulations</p>
+                    <img class="img-responsive" height="85%" width="85%" src="presentation-data/07/img/msm-folding.png">
+                    <small><a href="http://www.sciencedirect.com/science/article/pii/S1046202310001568">Vijay Pande</a></small>
+                </section>
+
+                <section>
+                    <p>We can design proteins from scratch</p>
+                    <img class="img-responsive" height="85%" width="85%" src="presentation-data/07/img/folded-protein-design.png">
+                    <small><a href="http://science.sciencemag.org/content/302/5649/1364" />Brian Kuhlmann</a></small>
+                </section>
+
+                <section>
+                    <p>George Rose is a well-known protein folder at Johns Hopkins</p>
+                    <p class="fragment">He is giving a seminar at 2 pm today, in Willamette 240.  </p>
+                    <p class="fragment">Fun fact: cookies and coffee at 1:45</p>
+                    <p class="fragment">Fun other fact: George calls funnels the F-word</p>
+                </section>
+
+                <section>
+                    <h4>Summary</h4>
+                    <ul>
+                        <li>To understand biochemical reactions, you need to account for both sides of the reaction</li>
+                        <li>To understand biochemical reactions, you need to account for biomolecules <em>and</em> water</li>
+                        <li>Proline, Glycine and Cysteine are special amino acids, altering secondary structure (Pro,Gly) or forming covalent bonds (Cys)</li>
+                        <li>Proteins do not fold randomly, but follow a "folding funnel" to the lowest energy state</li>
+                    </ul>
+                </section>
+
+        
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+            var USE_LOCAL = false;
+
+            if (USE_LOCAL) {
+                var mathjax_location = 'MathJax-master/MathJax.js';
+                var jquery_location = 'presentation-data/js/jquery-2.1.4.min.js';
+                var bootstrap_location = 'presentation-data/js/bootstrap.min.js';
+                var d3_location = 'presentation-data/js/d3.min.js';
+            } else {
+                var mathjax_location = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js';
+                var jquery_location = 'https://code.jquery.com/jquery-2.1.4.min.js';
+                var bootstrap_location = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js';
+                var d3_location = 'https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js';
+            }
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+                // Add math, using local mathjax
+                math: {
+                    mathjax: mathjax_location,
+                    config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+                },
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/math/math.js', async: true },    // mathjax
+                    { src: jquery_location } ,
+                    { src: bootstrap_location } ,
+                    { src: d3_location } ,
+                    { src: 'presentation-data/js/test-stream.js'}
+				]
+			});
+
+
+
+		</script>
+
+	</body>
+</html>

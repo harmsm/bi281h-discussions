@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+        <!-- CUSTOMIZE METADATA HERE -->
+		<title>Presentation</title>
+		<meta name="description" content="BI281H Discussion">
+		<meta name="author" content="Michael J. Harms">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+        <link rel="stylesheet" href="presentation-data/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+        <!-- CUSTOMIZE STYLESHEET HERE -->
+		<link rel="stylesheet" href="presentation-data/css/override.css">
+	</head>
+
+	<body>
+
+        <!-- CUSTOMIZE SLIDES HERE -->
+		<div class="reveal">
+			<!-- Any section element inside of this container is a slide -->
+			<div class="slides">
+
+                <section>
+                    <p>Midterm #2: 7-9 pm on Wednesday, November 8, McKenzie 240C</p>
+                    <p>Review Session: 7-9 pm on Thursday, November 2, Lawrence 115</p>
+                </section>
+
+				<section>
+					<h2>Cytoskeleton and motor proteins</h2>
+					<h4>2017-10-30</h4>
+					<br/>
+				</section>
+
+				<section>
+					<h4>Conceptual goals</h4>
+					<ul>
+						<li class="fragment">Understand that the cytoskeleton give structure and dynamics to the cell</li>
+						<li class="fragment">Understand how the cytoskeleton is dynamically assembled</li>
+                        <li class="fragment">Understand how motor proteins work and allow movement in cell</li>
+					</ul>
+
+				</section>
+
+                <section>
+                    <p>Cells are spatially and temporally organized</p>
+                    <img src="presentation-data/16/img/eukaryotic-cell-113.jpg" />
+                    <br/>
+                </section> 
+              
+                <section>
+                    <p>How do cells get this organized, despite random thermal motion?</li>
+                    <img src="presentation-data/16/img/pasted-image-42.png" />
+                </section>
+                    
+                <section  data-background="#000000" data-transition="fade">
+                    <!--<iframe width="420" height="315" src="https://www.youtube.com/embed/2UdPsVSWwrE" frameborder="0" allowfullscreen></iframe>-->
+				    <video class="stretch" data-autoplay mute loop height="100%" width="100%">
+				        <source data-src="presentation-data/16/video/kinesin-moving-beads-123.mp4" />
+					</video>
+                    <br/>
+                    <small><a href="https://youtu.be/2UdPsVSWwrE">Ron Vale, UCSF</a></small>
+                </section> 
+
+                <section>
+                    <p>What are the "rails?"</p>
+                    <ul class="fragment">
+                        <li>Actin</li>
+                        <li>Microtubules</li>   
+                    </ul>
+                    <p>What are the motors?</p>
+                    <ul class="fragment">
+                        <li>Kinesin</li>
+                        <li>Myosin</li>
+                        <li>Dynein</li>
+                    </ul>
+                </section>
+ 
+                <section  data-background="#000000" data-transition="fade">
+                    <p>Cells are laced with a cytoskeleton made of <span style="color:red">actin</span> and <span style="color:green">microtubules</span></p>
+                    <img src="presentation-data/16/img/fluorescent-cytoskeleton.jpg" />
+                    <br/>
+                </section> 
+
+                <section data-background="#000000" data-transition="fade">
+                    <p>The cytoskeleton has exquisite 3D structure</p>
+                    <!--<iframe width="420" height="315" src="https://www.youtube.com/embed/ITvkbY12OGs" frameborder="0" allowfullscreen></iframe>-->
+				    <video class="stretch" data-autoplay mute loop height="100%" width="100%">
+				        <source data-src="presentation-data/16/video/cyto-z-stack-48.mp4" />
+					</video>
+                </section> 
+    
+                <section  data-background="#000000" data-transition="fade">
+                    <p>The cytoskeleton has exquisite 3D structure</p>
+				    <video class="stretch" data-autoplay mute loop height="100%" width="100%">
+				        <source data-src="presentation-data/16/video/3d-cyto-62.mp4" />
+					</video>
+                </section> 
+
+                <section>
+                    <p>The cytoskeleton:</p>
+                    <ul>
+                        <li class="fragment">Gives the cell structure and allows cell movement</li>
+                        <li class="fragment">Is built from monomeric subunits</li>
+                        <li class="fragment">Polymerizes in an energy-dependent manner</li>
+                        <li class="fragment">Has a "-" and a "+" end</li>
+                        <li class="fragment">Dynamically breaks down</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p>Actin filaments assemble double-stranded filaments from actin monomers</p>
+                    <img src="presentation-data/16/img/actin-polymerization_schematic.png" />
+                    <br/>
+                </section>
+
+                <section>
+                    <p>A conformational change in G-actin leads to polymerization</p><br/>
+                    <img src="presentation-data/16/img/actin-polymerization_structure.png" />
+                    <br/>
+                    <small><a href="http://www.nature.com/nature/journal/v457/n7228/pdf/457389a.pdf">Holmes (2009) Nature 457:22</a></small>
+                </section>                  
+
+                <section data-transition="fade">
+                    <p>Monomeric actin is in equilibrium between G and F forms</p>
+                    <p style="color:white">F, but not G, catalyzes ATP to ADP hydrolysis (a favorable reaction)</p>
+                    <img src="presentation-data/16/img/act-pol-0.png" /><br/>
+                </section>
+
+                <section data-transition="fade">
+                    <p>Monomeric actin is in equilibrium between G and F forms</p>
+                    <p>F, but not G, catalyzes ATP to ADP hydrolysis (a favorable reaction)</p>
+                    <img src="presentation-data/16/img/act-pol-1.png" /><br/>
+                </section>
+ 
+                <section  data-background="#000000" data-transition="fade">
+                    <p>Other molecules can control polymerization</p>
+                    <div class="row">
+                        <div class="col-xs-6">
+					        <video class="stretch" controls mute loop height="100%" width="100%">
+						        <source data-src="presentation-data/16/video/actin-polymerization_minimal-branching.m4v" />
+					        </video>
+                        </div>
+                        <div class="col-xs-6">
+					        <video class="stretch" controls mute loop height="100%" width="100%">
+						        <source data-src="presentation-data/16/video/actin-polymerization_branching.m4v" />
+					        </video>
+                        </div>
+                    </div>
+
+                    <small>Polymerizing actin on a slide.  50x real time.  Branching occurs when protein Arp2/3 incorporated into chain</small>
+                    <small>Credit: <a href="http://molbio.uoregon.edu/nolen/">Brad Nolen</a> (reseracher at UO)</small>
+                </section>
+    
+                <section>
+                    <p>Microtubules assemble tube structure from $\alpha$ and $\beta$-tubulin</p>
+                    <img src="presentation-data/16/img/microtubule-assembly_schematic.png" /><br/>
+                </section>
+
+                <section>
+                    <p>Microtubules dynamically assemble and break down</p>
+                    <!--<p>Video <a href="https://en.wikipedia.org/wiki/File:MicrotubuleDynamicInstability.ogv">here</a>.</p>-->
+
+				    <video class="stretch" data-autoplay mute loop height="100%" width="100%">
+				        <source data-src="presentation-data/16/video/microtubule-instability.m4v" />
+					</video>
+
+                    <small>Credit: <a href="https://en.wikipedia.org/wiki/File:MicrotubuleDynamicInstability.ogv">Eva Nogales, UC Berkeley</a></small>
+                </section>
+
+                <section  data-background="#000000">
+                    <p>Regulated assembly/dissassembly of cytoskeleton leads to movement.</p>
+                    <div class="row">
+                        <div class="col-xs-6"><img height="90%" width="90%" class="img-responsive" src="presentation-data/16/video/crawling.gif"/></div>
+                        <div class="col-xs-6"><img height="50%" width="50%" class="img-responsive" src="presentation-data/16/video/vesicles.gif"/></div>
+                    </div>
+        
+                </section>
+
+                <section  data-background="#000000">
+                    <p>Regulated assembly/dissassembly of cytoskeleton leads to movement.</p>
+				    <video class="stretch" data-autoplay mute loop height="100%" width="100%">
+				        <source data-src="presentation-data/16/video/comets.mp4" />
+				        <source data-src="presentation-data/16/video/comets.mov" />
+					</video>
+
+                    <!--<iframe width="420" height="315" src="https://www.youtube.com/v/714fbRqA4UM?loop=1&playlist=714fbRqA4UM" frameborder="0" allowfullscreen></iframe>-->
+                </section>
+
+                <section>
+                    <p>The cytoskeleton:</p>
+                    <ul>
+                        <li>Gives the cell structure and allows cell movement</li>
+                        <li>Is built from monomeric subunits</li>
+                        <li>Polymerizes in an energy-dependent manner</li>
+                        <li>Has a "-" and a "+" end</li>
+                        <li>Dynamically breaks down</li>
+                    </ul>
+                    <p class="fragment">That explains the rails; what about the motors?</p>
+
+                </section>
+
+                <section data-background="#000000" data-transition="fade">
+                    <p>Kinesin is an archetypical motor protein</p>
+				    <video class="stretch" controls mute loop height="100%" width="100%">
+				        <source data-src="presentation-data/16/video/vesical-walking-101.mp4" />
+					</video>
+                    <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/7sRZy9PgPvg" frameborder="0" allowfullscreen></iframe>-->
+                </section> 
+
+                <section>
+                    <p>Molecular motors:</p>
+                    <ul>
+                        <li class="fragment">"Walk" along microtubules and actin</li>
+                        <li class="fragment">Take steps in an energy-dependent fashion</li>
+                        <li class="fragment">Can usually only walk one way down a filament
+                            <ul>
+                                <li>Kinesin walks - to + on microtubules</li>
+                                <li>Dynein walks + to - on microtubules</li>
+                            </ul>
+                        </li>
+                        <li class="fragment">Move cargo <em>fast</em> relative to diffusion</li>
+                    </ul>
+
+                </section>
+
+                <section data-background="#000000" data-transition="fade">
+                    <p>Kinesin walks along the microtubule</p>
+                    <!--<iframe width="420" height="315" src="https://www.youtube.com/embed/4TGDPotbJV4" frameborder="0" allowfullscreen></iframe>-->
+				    <video class="stretch" data-autoplay mute loop height="100%" width="100%">
+				        <source data-src="presentation-data/16/video/wiki-walker-146.mp4" />
+					</video>
+                </section> 
+                
+                <section data-background="#000000" data-transition="fade">
+                    <p>Kinesin walks like a drunkard</p>
+				    <video class="stretch" controls mute loop height="100%" width="100%">
+				        <source data-src="presentation-data/16/video/drunken-step-137.mp4" />
+					</video>
+                    <!--<iframe width="420" height="315" src="https://www.youtube.com/embed/JckOUrl3aes" frameborder="0" allowfullscreen></iframe>-->
+                </section> 
+
+                <section>
+                    <p>Kinesin goes <em>fast</em>: 5 $\mu m\ s^{-1}$.</p>
+                    <p>For a 1 cm neuron, this means a vesicle can be moved in 5.5 hr.</p>
+                    <p class="fragment">With just diffusion, this would take roughly 6 days</p>
+                </section>
+
+                <section>
+                    <p>The cytoskeleton:</p>
+                    <ul>
+                        <li>Gives the cell structure and allows cell movement</li>
+                        <li>Is built from monomeric subunits</li>
+                        <li>Polymerizes in an energy-dependent manner</li>
+                        <li>Has a "-" and a "+" end</li>
+                        <li>Dynamically breaks down</li>
+                    </ul>
+
+                </section>
+                <section>
+                    <p>Motor proteins</p>
+                    <ul>
+                        <li>Transport materials, move cells, and give muscle contraction</li>
+                        <li>"Walk" along microtubules and actin</li>
+                        <li>Take steps in an energy-dependent fashion</li>
+                        <li>Can usually only walk one way down a filament
+                        <li>Move cargo <em>fast</em> relative to diffusion</li>
+                    </ul>
+
+                </section>              
+ 
+                <section>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/tMKlPDBRJ1E" frameborder="0" allowfullscreen></iframe>
+                </section>
+ 
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+            var USE_LOCAL = false;
+
+            if (USE_LOCAL) {
+                var mathjax_location = 'MathJax-master/MathJax.js';
+                var jquery_location = 'presentation-data/js/jquery-2.1.4.min.js';
+                var bootstrap_location = 'presentation-data/js/bootstrap.min.js';
+                var d3_location = 'presentation-data/js/d3.min.js';
+            } else {
+                var mathjax_location = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js';
+                var jquery_location = 'https://code.jquery.com/jquery-2.1.4.min.js';
+                var bootstrap_location = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js';
+                var d3_location = 'https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js';
+            }
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+                // Add math, using local mathjax
+                math: {
+                    mathjax: mathjax_location,
+                    config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+                },
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/math/math.js', async: true },    // mathjax
+                    { src: jquery_location } ,
+                    { src: bootstrap_location } ,
+                    { src: d3_location } ,
+                    { src: 'presentation-data/js/test-stream.js'}
+				]
+			});
+
+
+
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+        <!-- CUSTOMIZE METADATA HERE -->
+		<title>Presentation</title>
+		<meta name="description" content="BI281H Discussion 4">
+		<meta name="author" content="Michael J. Harms">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+        <link rel="stylesheet" href="presentation-data/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+        <!-- CUSTOMIZE STYLESHEET HERE -->
+		<link rel="stylesheet" href="presentation-data/css/override.css">
+	</head>
+
+	<body>
+
+        <!-- CUSTOMIZE SLIDES HERE -->
+		<div class="reveal">
+			<!-- Any section element inside of this container is a slide -->
+			<div class="slides">
+
+				<section>
+					<h2>Proteins and Amino Acids</h2>
+					<h4>2017-10-02</h4>
+					<br/>
+				</section>
+
+
+                <section>
+                    <p>What kinds of materials go into building a factory?</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Wolfsburg_VW-Werk.jpg" height="70%" width="70%"/>
+                    <br/>
+                    <small><a href="https://en.wikipedia.org/wiki/Factory">wikipedia</a></small>
+                </section>
+
+                <section>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <img class="img-responsive" src="presentation-data/04/img/protein-diversity/2.png" />
+                        </div>
+                        <div class="col-xs-4">
+                            <img class="img-responsive" src="presentation-data/04/img/protein-diversity/4.png" />
+                        </div>
+                        <div class="col-xs-4">
+                            <img class="img-responsive" src="presentation-data/04/img/protein-diversity/0.png" />
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <img class="img-responsive" src="presentation-data/04/img/protein-diversity/3.png" />
+                        </div>
+                        <div class="col-xs-4">
+                            <img class="img-responsive" src="presentation-data/04/img/protein-diversity/5.png" />
+                        </div>
+                        <div class="col-xs-4">
+                            <img class="img-responsive" src="presentation-data/04/img/protein-diversity/1.png" />
+                        </div>
+                    </div>
+
+                </section>
+
+                <section>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <img class="img-responsive" src="http://jcs.biologists.org/content/joces/122/10/1607/F1.medium.gif" height="100%" width="100%" />
+                        </div>
+                        <div class="col-xs-6">
+                            <img class="fragment img-responsive" src="https://dm5migu4zj3pb.cloudfront.net/manuscripts/38000/38277/medium/JCI38277.f2.jpg" height="100%" width="100%" />
+                        </div>
+                    </div>
+
+                    <small><a href="http://jcs.biologists.org/content/122/10/1607">Shi et al. (2009) JCS</a>, <a href="https://www.jci.org/articles/view/38277/figure/2"> Song et al. (2009)</a></small>
+                </section>
+
+                <section>
+                    <img src="https://www.seeintl.org/wp-content/uploads/2013/12/cataracts-1.jpg" height="100%" width="100%" />
+                    <small><a href="https://www.seeintl.org/cataracts/">See International</a></small>
+                </section>
+
+                <section>
+
+                    <p>How does one chemical (protein) achieve such a vast array of functions?</p>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <img class="img-responsive" src="presentation-data/04/img/protein-diversity/2.png" />
+                        </div>
+                        <div class="col-xs-4">
+                            <img class="img-responsive" src="presentation-data/04/img/protein-diversity/4.png" />
+                        </div>
+                        <div class="col-xs-4">
+                            <img class="img-responsive" src="presentation-data/04/img/protein-diversity/0.png" />
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <img class="img-responsive" src="presentation-data/04/img/protein-diversity/3.png" />
+                        </div>
+                        <div class="col-xs-4">
+                            <img class="img-responsive" src="presentation-data/04/img/protein-diversity/5.png" />
+                        </div>
+                        <div class="col-xs-4">
+                            <img class="img-responsive" src="presentation-data/04/img/protein-diversity/1.png" />
+                        </div>
+                    </div>
+
+                </section>
+				
+                <section>
+					<h4>Conceptual goals</h4>
+					<ul>
+						<li class="fragment">The sequence of a protein determines is structure, which determines its function</li>
+						<li class="fragment">Understand how concatenating relatively few amino acids can lead to a huge diversity of possible functional proteins. </li>
+					</ul>
+
+					<h4>Skill goals</h4>
+					<ul>
+						<li class="fragment">Identify the amino acids based on their chemical structure. </li>
+						<li class="fragment">Reason about how their individual chemistry leads to distinct biological roles. </li>
+					</ul>
+				</section>
+
+                <section>
+
+                    <p>The power of combinatorics!</p>
+                    <img src="http://www.planetdiecast.com/hwdphotos/originals/9141/1232/brio_010.jpg" height="100%" width="100%" />
+                    <ul class="fragment">
+                        <li>Directional (has front and back)</li>
+                        <li>You can make it as long as you want</li>
+                        <li>You can swap in any car at any point in the train</li>
+                    </ul>
+
+                    <small><a href="http://www.planetdiecast.com/index.php?%26option=com_content%26view=article%26id=86337:wooden-track-trains-part-1%26catid=13">Planet Diecast</a></small>
+                </section>
+
+                <section>
+                    <h4>On your handout, circle amino acids whose <em>sidechain</em> participates in:</h4>
+                    <ul>
+                        <li>hydrophobic effect</li>
+                        <li>Van der Waal's</li>
+                        <li>hydrogen bonds</li>
+                        <li>ionic interactions</li>
+                        <li>covalent bonds (without enzymatic help)</li>
+                    </ul>
+                </section>
+
+                <section data-transition="fade">
+                    <img src="presentation-data/04/img/amino-acid-structures_0.png" />
+                </section>
+
+                <section data-transition="fade">
+                    <img src="presentation-data/04/img/amino-acid-structures_1.png" />
+                </section>
+
+                <section data-transition="fade">
+                    <img src="presentation-data/04/img/amino-acid-structures_2.png" />
+                </section>
+
+                <section data-transition="fade">
+                    <img src="presentation-data/04/img/amino-acid-structures_3.png" />
+                </section>
+
+                <section data-transition="fade">
+                    <img src="presentation-data/04/img/amino-acid-structures_4.png" />
+                </section>
+
+                <section data-transition="fade">
+                    <img src="presentation-data/04/img/amino-acid-structures_5.png" />
+                </section>
+
+				<section>
+					<h3>Amino acids fill a large volume of "property space"</h3>
+                    <div class="row">
+                        <video data-autoplay mute loop height="55%" width="55%" loop>
+                            <source src="presentation-data/04/video/amino-acid-properties.mp4" />
+                            <source src="presentation-data/04/video/amino-acid-properties.mp4" />
+                        </video>
+                    </div>
+				</section>
+
+                <section>
+                    <h4>Key points:</h4>
+                    <ul>
+                        <li>Proteins are formed from amino acids, arranged into a chain</li>
+                        <li>Chain is formed by a series of peptide bonds</li>
+                        <li>Because there are 20 naturally-occuring amino acids, a vast number of sequences are possible</li>
+                        <li>These 20 amino acids cover a wide range of chemical properties</li>
+                    </ul>
+                </section> 
+
+                <section>
+                    <h3>Big ideas</h3>
+                    <h4 class="fragment">Amphipathic molecules lead to large-scale structure</h4>
+                    <h4 class="fragment">Combinatorial polymers allow creation of a vast number of molecules</h4>
+                </section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+            var USE_LOCAL = false;
+
+            if (USE_LOCAL) {
+                var mathjax_location = 'MathJax-master/MathJax.js';
+                var jquery_location = 'presentation-data/js/jquery-2.1.4.min.js';
+                var bootstrap_location = 'presentation-data/js/bootstrap.min.js';
+                var d3_location = 'presentation-data/js/d3.min.js';
+            } else {
+                var mathjax_location = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js';
+                var jquery_location = 'https://code.jquery.com/jquery-2.1.4.min.js';
+                var bootstrap_location = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js';
+                var d3_location = 'https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js';
+            }
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+                // Add math, using local mathjax
+                math: {
+                    mathjax: mathjax_location,
+                    config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+                },
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/math/math.js', async: true },    // mathjax
+                    { src: jquery_location } ,
+                    { src: bootstrap_location } ,
+                    { src: d3_location } ,
+                    { src: 'presentation-data/js/test-stream.js'}
+				]
+			});
+
+
+
+		</script>
+
+	</body>
+</html>
