@@ -21,7 +21,7 @@ in Fall, 2017.
 
 ### View currently hosted material:
 
-[View visuals](https://github.com/harmsm/bi281h-discussions)
+[View visuals](https://harmsm.github.io/bi281h-discussions/)
 
 ### Download and host locally:
  + Fork the project on github and then clone it locally.
