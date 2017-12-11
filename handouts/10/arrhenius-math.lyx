@@ -1,0 +1,435 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{braket}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+The uncatalyzed rate of peptide bond hydrolysis is 
+\begin_inset Formula $k_{non}=1.5\times10^{-9}\ s^{-1}$
+\end_inset
+
+.
+ Addition of an enzyme can give a rate of 
+\begin_inset Formula $k_{enzyme}=120\ s^{-1}$
+\end_inset
+
+.
+ How much did the enzyme lower the transition state energy barrier?
+\end_layout
+
+\begin_layout Subsection*
+Reaction rate in terms of barrier height:
+\end_layout
+
+\begin_layout Standard
+In the absence of enzyme, the reaction is:
+\begin_inset Formula 
+\[
+S\rightleftarrows TS\rightarrow P
+\]
+
+\end_inset
+
+The rate-limiting step is accessing the transition state, so we're only
+ going to think about the 
+\begin_inset Formula $S\rightleftarrows TS$
+\end_inset
+
+ part of the reaction.
+ The rate of this reaction is given by:
+\begin_inset Formula 
+\begin{equation}
+k_{S\rightarrow TS}=k_{try}P_{TS}.\label{eq:reactiondice}
+\end{equation}
+
+\end_inset
+
+This is just like rolling a dice.
+ The rate of seeing sixes depends on how often you roll (
+\begin_inset Formula $k_{try}$
+\end_inset
+
+) times the probability of getting a six on a given roll (
+\begin_inset Formula $P_{TS}$
+\end_inset
+
+).
+ We're going to ignore 
+\begin_inset Formula $k_{try}$
+\end_inset
+
+ because it is going to disappear later.
+ The probability we're in 
+\begin_inset Formula $TS$
+\end_inset
+
+ (
+\begin_inset Formula $P_{TS}$
+\end_inset
+
+) is just the fraction of the population in 
+\begin_inset Formula $TS$
+\end_inset
+
+ rather than 
+\begin_inset Formula $S$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+We're actually being rather tricky here and making a couple of assumptions.
+ First, we're saying the 
+\begin_inset Formula $S\rightleftarrows TS$
+\end_inset
+
+ reaction is at 
+\begin_inset Quotes eld
+\end_inset
+
+equilibrium
+\begin_inset Quotes erd
+\end_inset
+
+ (not always a great assumption).
+ Second, we're assuming that there is no 
+\begin_inset Quotes eld
+\end_inset
+
+momentum
+\begin_inset Quotes erd
+\end_inset
+
+ in the reaction.
+ A molecule that hops up to 
+\begin_inset Formula $TS$
+\end_inset
+
+ could just as likely fall back to 
+\begin_inset Formula $S$
+\end_inset
+
+ than 
+\begin_inset Formula $P$
+\end_inset
+
+.
+ This quickly gets into deep weeds, but the basic exponential relationship
+ we'll derive holds even when we relax these assumptions.
+ 
+\end_layout
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+P_{TS}=\frac{[TS]}{[S]+[TS]}.
+\]
+
+\end_inset
+
+If the transition state is much less stable than the starting state (as
+ it usually is), 
+\begin_inset Formula $[S]\gg[TS]$
+\end_inset
+
+.
+ This means that:
+\begin_inset Formula 
+\[
+P_{TS}\approx\frac{[TS]}{[S]}.
+\]
+
+\end_inset
+
+This looks a lot like an equilibrium constant for the 
+\begin_inset Formula $S\rightleftarrows TS$
+\end_inset
+
+ reaction.
+ If we treat it as such, we can describe this in terms of free energy:
+\begin_inset Formula 
+\[
+P_{TS}\approx\frac{[TS]}{[S]}=K_{S\rightarrow TS}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta G_{S\rightarrow TS}=-RTln(K_{S\rightarrow TS}).
+\]
+
+\end_inset
+
+Now, rearrange:
+\begin_inset Formula 
+\[
+\frac{-\Delta G_{S\rightarrow TS}}{RT}=ln(K_{S\rightarrow TS})
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+e^{-\Delta G_{S\rightarrow TS}/RT}=K_{S\rightarrow TS}\approx P_{TS}.
+\]
+
+\end_inset
+
+Finally, substitute this back into equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:reactiondice"
+
+\end_inset
+
+ to obtain:
+\begin_inset Formula 
+\begin{equation}
+k_{S\rightarrow TS}=k_{try}e^{-\Delta G_{S\rightarrow TS}/RT}.\label{eq:arrhenius}
+\end{equation}
+
+\end_inset
+
+This says that the rate of a reaction depends 
+\emph on
+exponentially
+\emph default
+ on the free energy difference between the starting and transition states.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Comparing rates
+\end_layout
+
+\begin_layout Standard
+Okay, we now want to understand how much the enzyme stabilized the transition
+ state to give the observed rate increase.
+ This is basically:
+\begin_inset Formula 
+\[
+\Delta\Delta G=\Delta G_{S\rightarrow TS,enzyme}-\Delta G_{S\rightarrow TS,non}.
+\]
+
+\end_inset
+
+Let's start by thinking about the ratio of rates.
+ The speed up is given by:
+\begin_inset Formula 
+\[
+\frac{k_{enzyme}}{k_{non}}.
+\]
+
+\end_inset
+
+We can substitute our result from equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:arrhenius"
+
+\end_inset
+
+ in to obtain:
+\begin_inset Formula 
+\[
+\frac{k_{enzyme}}{k_{non}}=\frac{k_{try}e^{-\Delta G_{S\rightarrow TS,enzyme}/RT}}{k_{try}e^{-\Delta G_{S\rightarrow TS,non}/RT}}.
+\]
+
+\end_inset
+
+
+\begin_inset Formula $k_{try}$
+\end_inset
+
+ cancels:
+\begin_inset Formula 
+\[
+\frac{k_{enzyme}}{k_{non}}=\frac{e^{-\Delta G_{S\rightarrow TS,enzyme}/RT}}{e^{-\Delta G_{S\rightarrow TS,non}/RT}}.
+\]
+
+\end_inset
+
+Using the log rule that 
+\begin_inset Formula $x^{-y}=1/x^{y}$
+\end_inset
+
+ we can write:
+\begin_inset Formula 
+\[
+\frac{k_{enzyme}}{k_{non}}=e^{-\Delta G_{S\rightarrow TS,enzyme}/RT}e^{\Delta G_{S\rightarrow TS,non}/RT}.
+\]
+
+\end_inset
+
+Using the log rule that 
+\begin_inset Formula $x^{a}x^{b}=x^{a+b}$
+\end_inset
+
+ we can write:
+\begin_inset Formula 
+\[
+\frac{k_{enzyme}}{k_{non}}=e^{-\Delta G_{S\rightarrow TS,enzyme}/RT+\Delta G_{S\rightarrow TS,non}/RT}.
+\]
+
+\end_inset
+
+Now, factor and rearrange:
+\begin_inset Formula 
+\[
+\frac{k_{enzyme}}{k_{non}}=e^{(\Delta G_{S\rightarrow TS,non}-\Delta G_{S\rightarrow TS,enzyme})/RT}.
+\]
+
+\end_inset
+
+We're interested in 
+\begin_inset Formula 
+\[
+\Delta\Delta G=\Delta G_{S\rightarrow TS,enzyme}-\Delta G_{S\rightarrow TS,non},
+\]
+
+\end_inset
+
+so substitute this in:
+\begin_inset Formula 
+\[
+\frac{k_{enzyme}}{k_{non}}=e^{-\Delta\Delta G/RT}.
+\]
+
+\end_inset
+
+This is a cool result.
+ It says that the rate speed up of an enzyme depends 
+\emph on
+exponentially
+\emph default
+ on the amount is lowers the transition state energy.
+ Now, solve for 
+\begin_inset Formula $\Delta\Delta G$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+ln\left(\frac{k_{enzyme}}{k_{non}}\right)=-\Delta\Delta G/RT
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+-RTln\left(\frac{k_{enzyme}}{k_{non}}\right)=-\Delta\Delta G,
+\]
+
+\end_inset
+
+and put in numbers:
+\begin_inset Formula 
+\[
+-0.0083\ kJ\cdot mol^{-1}\cdot K^{-1}\times300\ K\times ln\left(\frac{120\ s^{-1}}{1.5\times10^{-9}\ s^{-1}}\right)=-62.5\ kJ\cdot mol^{-1}.
+\]
+
+\end_inset
+
+This tells us that lowering the transition state energy by 
+\begin_inset Formula $-62.5\ kJ\cdot mol^{-1}$
+\end_inset
+
+—about 3 hydrogen bonds—gives a 100-billion fold speed up in rate.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\emph on
+Small
+\emph default
+ perturbations to the transition state can lead to 
+\emph on
+large
+\emph default
+ changes in rate.
+ 
+\end_layout
+
+\end_body
+\end_document
