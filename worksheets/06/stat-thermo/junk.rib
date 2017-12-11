@@ -1,0 +1,12 @@
+TITLE JUNK
+default helix
+res ala phi 120.0 psi 120.0
+res ala phi 360.0 psi 360.0
+res ala phi 0.0 psi 60.0
+res ala phi -240.0 psi 120.0
+res ala phi -480.0 psi -120.0
+res ala phi 240.0 psi -300.0
+res ala phi -840.0 psi -420.0
+res ala phi 420.0 psi 0.0
+res ala phi -60.0 psi -240.0
+res ala phi 360.0 psi -180.0

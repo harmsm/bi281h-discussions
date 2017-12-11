@@ -39,10 +39,17 @@ If you have a `gh-pages` branch, github will host this material directory.
    with your own user name.
 
 ## Organization:
-The base directory has `discussion_xx.html` that are (basically) a slideshow 
-for that class session.  The material that goes into that discussion -- images,
-videos, etc. -- are all in the `presentation-data/xx/` directory for that 
-discussion.
+
+Four main types of content:
+ 
+ + Visuals (material I showed as slides).  The base directory has 
+   `discussion_xx.html` that hold this material. The material for each 
+   discussion -- images, videos, etc. -- are all in the `presentation-data/xx/`
+   directory for that discussion.
+ + Board work: material I scribbled on the board.  These are a bit chaotic, but
+   live in the `board-work` directory.
+ + Handouts: material I handed out in class.
+ + Worksheets: worksheets I handed out that we worked through during class. 
 
 ## License:
 Course material is made available under the [unlicense](unlicense.org). I have 

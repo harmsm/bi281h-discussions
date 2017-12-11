@@ -1,0 +1,500 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{braket}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Subsection*
+Arrhenius to Michaelis-Menten
+\end_layout
+
+\begin_layout Standard
+We found previously that the rate of a reaction is determined by how often
+ you try the reaction times the probability of the reaction proceeding per
+ try.
+ We used the example of a dice.
+ The rate of rolling sixes is determined by how often you roll (try) and
+ how probable a six is (1/6 for a fair dice).
+ For chemical reactions, we came up with the following:
+\begin_inset Formula 
+\begin{equation}
+k_{obs}=k_{try}\cdot e^{-\Delta G/RT}\label{eq:arrhenisus}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $k_{obs}$
+\end_inset
+
+ is the observed reaction rate,
+\emph on
+ 
+\emph default
+
+\begin_inset Formula $k_{try}$
+\end_inset
+
+ is how often the reactant tries to reach the transition state and 
+\begin_inset Formula $e^{-\Delta G/RT}$
+\end_inset
+
+ is the probability of reaching a transition state that is 
+\begin_inset Formula $\Delta G$
+\end_inset
+
+ 
+\begin_inset Formula $kJ\cdot mol^{-1}$
+\end_inset
+
+ higher in energy than the reactant.
+ 
+\end_layout
+
+\begin_layout Standard
+To this point, we have treated 
+\begin_inset Formula $k_{try}$
+\end_inset
+
+ as a constant.
+ Changing the reaction conditions, however, can alter 
+\begin_inset Formula $k_{try}$
+\end_inset
+
+.
+ For example, adding more reactant increase 
+\begin_inset Formula $k_{try}$
+\end_inset
+
+—just like rolling more dice simultaneously would increase the rate of observing
+ sixes.
+\end_layout
+
+\begin_layout Standard
+Today, we're going to unpack it more.
+ For an enzymatic reaction, 
+\begin_inset Formula $k_{try}$
+\end_inset
+
+ describes the behavior of substrate molecules bound to enzyme.
+ If more substrate is bound to enzyme, 
+\begin_inset Formula $k_{try}$
+\end_inset
+
+ will be higher; if less substrate is bound to enzyme, 
+\begin_inset Formula $k_{try}$
+\end_inset
+
+ will be lower.
+ We can write this as:
+\begin_inset Formula 
+\begin{equation}
+k_{try}=[E\cdot S]k_{try,ES}\label{eq:ktry}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $[E\cdot S]$
+\end_inset
+
+ is the concentration of enzyme:substrate complex and 
+\begin_inset Formula $k_{try,ES}$
+\end_inset
+
+ is the rate at which the substrate 
+\begin_inset Quotes eld
+\end_inset
+
+tries
+\begin_inset Quotes erd
+\end_inset
+
+ to jump over the energy barrier when bound to the enzyme.
+ 
+\end_layout
+
+\begin_layout Standard
+Now, substitute this back into Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:arrhenisus"
+
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\begin{equation}
+V_{obs}=[E\cdot S]k_{try,ES}e^{-\Delta G/RT}\label{eq:arr2}
+\end{equation}
+
+\end_inset
+
+The second half of this equation (
+\begin_inset Formula $k_{try,ES}e^{-\Delta G/RT}$
+\end_inset
+
+) describes the rate of the reaction once substrate is bound.
+ For simplicity, we're going to give this the special name 
+\begin_inset Formula $k_{cat}$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\[
+V_{obs}=[E\cdot S]k_{cat}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now, lets deal with that 
+\begin_inset Formula $[E\cdot S]$
+\end_inset
+
+ term.
+ Cells have no direct control of 
+\begin_inset Formula $[E\cdot S]$
+\end_inset
+
+, but they can often control total enzyme concentration (
+\begin_inset Formula $[E]_{T}$
+\end_inset
+
+) and substrate concentration (
+\begin_inset Formula $[S]$
+\end_inset
+
+).
+ By conservation of mass, the concentration of 
+\begin_inset Formula $E\cdot S$
+\end_inset
+
+ is the fraction of enzyme with 
+\begin_inset Formula $S$
+\end_inset
+
+ bound (
+\begin_inset Formula $\theta_{E\cdot S}$
+\end_inset
+
+) times the total enzyme concentration.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+[E\cdot S]=\theta_{E\cdot S}[E]_{T}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula 
+\[
+\theta_{E\cdot S}=\frac{[E\cdot S]}{[E]+[E\cdot S]}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can unpack this further by thinking about binding of substrate to enzyme
+ as a 
+\begin_inset Quotes eld
+\end_inset
+
+near equilibrium
+\begin_inset Quotes erd
+\end_inset
+
+ process:
+\begin_inset Formula 
+\[
+E\cdot S\stackrel{K_{M}}{\rightleftarrows}E+S
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $K_{M}$
+\end_inset
+
+ is the 
+\begin_inset Quotes eld
+\end_inset
+
+Michaelis constant.
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+If this was real, rather than near, equilibrium, we could just use 
+\begin_inset Formula $K_{D}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+ Now, let's do some algebra to write 
+\begin_inset Formula $[E\cdot S]$
+\end_inset
+
+ in terms of 
+\begin_inset Formula $[E]_{T}$
+\end_inset
+
+, 
+\begin_inset Formula $[S]$
+\end_inset
+
+, and 
+\begin_inset Formula $K_{M}$
+\end_inset
+
+.
+ The fractional saturation of 
+\begin_inset Formula $E\cdot S$
+\end_inset
+
+ is: where 
+\begin_inset Formula $[E]$
+\end_inset
+
+ is the concentration of free enzyme.
+ From our 
+\begin_inset Quotes eld
+\end_inset
+
+near equilibrium
+\begin_inset Quotes erd
+\end_inset
+
+ definition, we can write:
+\begin_inset Formula 
+\[
+K_{M}=\frac{[E][S]}{[E\cdot S]}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+K_{M}[E\cdot S]=[E][S]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+[E\cdot S]=\frac{[E][S]}{K_{M}}
+\]
+
+\end_inset
+
+and then substitute:
+\begin_inset Formula 
+\[
+\theta_{E\cdot S}=\frac{[E][S]/K_{M}}{[E]+[E][S]/K_{M}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\theta_{E\cdot S}=\frac{[E][S]/K_{M}}{[E](1+[S]/K_{M})}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\theta_{E\cdot S}=\frac{[S]/K_{M}}{1+[S]/K_{M}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\theta_{E\cdot S}=\frac{[S]}{K_{M}+[S]}
+\]
+
+\end_inset
+
+This might look scary, but this is 
+\emph on
+exactly
+\emph default
+ the same as our ligand dissociation constant (
+\begin_inset Formula $K_{D}$
+\end_inset
+
+).
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Remember: 
+\begin_inset Formula $\theta_{L}=1/(1+K_{D}/[L])$
+\end_inset
+
+.
+ If you multiply this by 
+\begin_inset Formula $[L]/[L]$
+\end_inset
+
+, you get 
+\begin_inset Formula $\theta_{L}=[L]/([L]+K_{D})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+The concentration of enzyme bound to substrate is simply the fractional
+ saturation of that enzyme times the total concentration of enzyme:
+\begin_inset Formula 
+\[
+[E\cdot S]=\theta_{E\cdot S}[E]_{T}
+\]
+
+\end_inset
+
+which is:
+\begin_inset Formula 
+\[
+[E\cdot S]=\frac{[S]}{K_{M}+[S]}[E]_{t}.
+\]
+
+\end_inset
+
+Finally, substitute this relationship in for 
+\begin_inset Formula $[E\cdot S]$
+\end_inset
+
+ in Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:arr2"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+V_{obs}=\frac{[S]}{K_{M}+[S]}[E]_{t}k_{cat}.
+\]
+
+\end_inset
+
+This equation says that the rate of an enzymatic reaction is determined
+ by two things: how many enzyme-substrate complexes are in solution (
+\begin_inset Formula $\frac{[S]}{K_{M}+[S]}[E]_{t}$
+\end_inset
+
+) and how fast the reaction proceeds once the substrate is bound (
+\begin_inset Formula $k_{cat}$
+\end_inset
+
+).
+ 
+\end_layout
+
+\end_body
+\end_document

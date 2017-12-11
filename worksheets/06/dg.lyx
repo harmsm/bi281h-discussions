@@ -1,0 +1,970 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{braket}
+\usepackage{adjustbox}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2.5cm
+\rightmargin 2.5cm
+\bottommargin 2.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Itemize
+
+\series bold
+Set up: 
+\series default
+What is the 
+\begin_inset Quotes eld
+\end_inset
+
+equilibrium constant
+\begin_inset Quotes erd
+\end_inset
+
+ for the 
+\begin_inset Quotes eld
+\end_inset
+
+reaction
+\begin_inset Quotes erd
+\end_inset
+
+ we're studying? 
+\begin_inset Formula 
+\[
+inside\rightleftarrows out
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 2cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Predict: 
+\series default
+what is the ratio of the time the robot spends inside versus outside the
+ circle (
+\begin_inset Formula $t_{inside}/t_{outside}$
+\end_inset
+
+)? The circle's radius is 
+\begin_inset Formula $20\ in$
+\end_inset
+
+ and the square's sides are 
+\begin_inset Formula $200\ in$
+\end_inset
+
+.
+ Once you have an answer, raise your hand and one of us will check it.
+ 
+\begin_inset VSpace 3cm
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{t_{inside}}{t_{outside}}=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Interpret: 
+\series default
+Circle an answer and be prepared to defend it.
+ We think 
+\begin_inset Formula $t_{inside}/t_{outside}$
+\end_inset
+
+ is determined by:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustbox}{center} 
+\end_layout
+
+\end_inset
+
+
+\series bold
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ENTROPY
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+or
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ENTHALPY
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\series default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustbox}
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace 3cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Predict: 
+\series default
+What do you predict would happen if we introduced a 
+\begin_inset Quotes eld
+\end_inset
+
+hole
+\begin_inset Quotes erd
+\end_inset
+
+ of depth 
+\begin_inset Formula $d$
+\end_inset
+
+ inside the circle?
+\begin_inset VSpace 3cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Observation
+\series default
+.
+ Plot 
+\begin_inset Formula $t_{in}/t_{out}$
+\end_inset
+
+ against 
+\begin_inset Formula $d$
+\end_inset
+
+ in a spreadsheet program.
+ Fit a trend line to the data, choosing the model that best fits the data.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustbox}{center} 
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand*
+\backslash
+arraystretch{1.5}
+\end_layout
+
+\end_inset
+
+
+\series bold
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="4cm">
+<column alignment="center" valignment="top" width="4cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $t_{in}/t_{out}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\series default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustbox}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Combine the fit you just did with the equation you found in the top part.
+ What do you think each of the terms of your fit mean?
+\begin_inset VSpace 3cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Circle an answer and be prepared to defend it.
+ We think the hole adds:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustbox}{center} 
+\end_layout
+
+\end_inset
+
+
+\series bold
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ENTROPY
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+or
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ENTHALPY
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\series default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustbox}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+to the robot system.
+\begin_inset VSpace 3cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Imagine, instead of a robot exploring a plane, we have a peptide chain exploring
+ arrangements of bonds (conformations).
+ (See the video on the screen).
+ Draw a plane with a hole below.
+ Can you label different conformations from the video on the drawing? What
+ is the 
+\begin_inset Formula $in$
+\end_inset
+
+ state? What is the 
+\begin_inset Formula $out$
+\end_inset
+
+ state?
+\series bold
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Our final relationship is:
+\series bold
+
+\begin_inset Formula 
+\[
+\frac{t_{inside}}{t_{outside}}=\frac{A_{inside}}{A_{outside}}\cdot e^{d/C}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\begin_inset Formula $A_{inside}/A_{outside}$
+\end_inset
+
+
+\series default
+ is 
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="4cm">
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+: the amount of time a robot spends in a region depends on the region's
+ area.
+ 
+\emph on
+The amount of time a molecule spends in a 
+\begin_inset Quotes eld
+\end_inset
+
+state
+\begin_inset Quotes erd
+\end_inset
+
+ (region) depends on the number of microstates (area) within that state.
+
+\emph default
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\begin_inset Formula $d$
+\end_inset
+
+ 
+\series default
+is 
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="4cm">
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+: a region is more favorable for the robot, so it will spend more time there.
+ 
+\emph on
+The amount of time a molecule spends in a state depends on how favorable
+ interactions are in that state (the depth of the hole).
+
+\emph default
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $C$
+\end_inset
+
+ is 
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="4cm">
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+: at higher 
+\begin_inset Formula $C$
+\end_inset
+
+, the robot is less likely to get stuck.
+ If 
+\begin_inset Formula $C$
+\end_inset
+
+ is large, the robot can always climb out (as 
+\begin_inset Formula $C\rightarrow\infty$
+\end_inset
+
+, 
+\begin_inset Formula $e^{d/C}\rightarrow1$
+\end_inset
+
+).
+ If 
+\begin_inset Formula $C$
+\end_inset
+
+ is small, the robot is stuck (as 
+\begin_inset Formula $C\text{\rightarrow}0$
+\end_inset
+
+, 
+\begin_inset Formula $e^{d/c}\rightarrow\infty$
+\end_inset
+
+).
+ 
+\emph on
+A molecule can break favorable interactions if the temperature is high enough.
+ 
+\end_layout
+
+\begin_layout Standard
+Using simple algebra, we can turn our equation into 
+\begin_inset Formula $\Delta G=\Delta H-T\Delta S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Take the natural log of both sides:
+\series bold
+
+\begin_inset Formula 
+\[
+ln\left(\frac{t_{inside}}{t_{outside}}\right)=ln\left(\frac{A_{inside}}{A_{outside}}\cdot e^{d/C}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Use the log rule 
+\begin_inset Formula $log(A\cdot B)=log(A)+log(B)$
+\end_inset
+
+:
+\series bold
+
+\begin_inset Formula 
+\[
+ln\left(\frac{t_{inside}}{t_{outside}}\right)=ln\left(\frac{A_{inside}}{A_{outside}}\right)+ln\left(e^{d/C}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Simplify using the log rule 
+\begin_inset Formula $ln(e^{x})=x$
+\end_inset
+
+:
+\series bold
+
+\begin_inset Formula 
+\[
+ln\left(\frac{t_{inside}}{t_{outside}}\right)=ln\left(\frac{A_{inside}}{A_{outside}}\right)+\frac{d}{C}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Multiply both sides by 
+\begin_inset Formula $-C$
+\end_inset
+
+:
+\series bold
+
+\begin_inset Formula 
+\[
+-C\cdot ln\left(\frac{t_{inside}}{t_{outside}}\right)=-C\cdot ln\left(\frac{A_{inside}}{A_{outside}}\right)-d
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+From above, 
+\begin_inset Formula $C=RT.$
+\end_inset
+
+ Substitute this in:
+\series bold
+
+\begin_inset Formula 
+\[
+-RT\cdot ln\left(\frac{t_{inside}}{t_{outside}}\right)=-RT\cdot ln\left(\frac{A_{inside}}{A_{outside}}\right)-d
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Now we just give all of the terms in our equation special names:
+\begin_inset Formula 
+\[
+\Delta G\equiv-RTln\left(\frac{t_{inside}}{t_{outside}}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta S\equiv Rln\left(\frac{A_{inside}}{A_{outside}}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta H\equiv-d
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Finally, we're left with:
+\begin_inset Formula 
+\[
+\Delta G=-T\Delta S+\Delta H
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
