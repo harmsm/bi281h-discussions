@@ -42,235 +42,13 @@
 			<div class="slides">
 
                 <section>
-                    <h4>Review session on Wednesday 10/11 from 7-9 pm in Lawerence 115</h4>
-                </section>
-
-				<section>
-					<h2>Why do proteins fold?</h2>
-					<h4>2017-10-06</h4>
-					<br/>
-				</section>
-				<section>
-					<h4>Conceptual goals</h4>
-
-					<ul>
-                        <li class="fragment">Understand that folding is a tight balance between enthalpic and entropic terms</li>
-					</ul>
-
-					<h4>Skill goals</h4>
-					<ul>
-                        <li class="fragment">Manipulate thermodynamic equations describing protein stability to calculate contributions of different forces</li>
-                        <li class="fragment">Reason correctly about interactions by thinking correctly about both sides of a reaction coordinate</li>
-					</ul>
-				</section>
-
-                <section data-background="#000000">
-
-                    <p>$$U \rightleftarrows F$$</p>
-                    <div class="row">
-
-                        <div class="col-xs-6">
-                            <video class="video-responsive" data-autoplay mute loop>
-                                <source data-src="presentation-data/06/video/dynamic-helix.mp4" /> 
-                                <source data-src="http://spock.uoregon.edu/presentation-data/06/video/dynamic-helix.mp4" /> 
-                            <video>
-                        </div>
-                        <div class="col-xs-6">
-                            <video class="video-responsive" data-autoplay mute loop>
-                                <source data-src="presentation-data/06/video/fixed-helix.mp4" /> 
-                                <source data-src="http://spock.uoregon.edu/presentation-data/06/video/fixed-helix.mp4" /> 
-                            </video>
-                        </div>
-
-                    </div>
-
-                    <ul class="fragment">
-                        <li>What changes between $U$ and $F$?</li>
-                    </ul>                   
- 
-                </section>
-
-                <section data-background="#000000">
-                    <p>Twelve alanine chain in water, sampled every 12.5 ps</p> 
-                    <video class="video-responsive" controls mute height="85%" width="85%">
-                        <source data-src="presentation-data/06/video/chain-collapse.mp4" /> 
-                                <source data-src="http://spock.uoregon.edu/presentation-data/06/video/chain-collapse.mp4" /> 
-                    <video>
-                </section>
-
-                <section data-background="#000000">
-                    <p>Twelve alanine chain in water, sampled every 12.5 ps.  Smoothed.</p> 
-                    <video class="video-responsive" controls mute loop height="85%" width="85%">
-                        <source data-src="presentation-data/06/video/chain-collapse_smoothed.mp4" /> 
-                        <source data-src="http://spock.uoregon.edu/presentation-data/06/video/chain-collapse_smoothed.mp4" /> 
-                    <video>
+                    <h4>Review session this Wednesday 10/11 from 7-9 pm in Lawrence 115</h4>
                 </section>
 
                 <section>
-                    <p>I'll leave the video up -- now work through the handout in class</p>
+                    <h4>Some cleanup</h4>
                 </section>
 
-                <section>
-                    <p>After watching the simulation: is formation of a helix thermodynamically favorable or unfavorable?</p>
-                    <p class="fragment" style="color:blue">Favorable (helix forms without outside help)</p>
-                </section>
-
-                <section>
-                    <p>$\Delta H^{\circ\prime}$: A 12-alanine helix forms 8 backbone hydrogen bonds. If, on average, a protein hydrogen bonds contributes $-20\ kJ\cdot mol^{-1}$ to the enthalpy, what is enthalpy due to hydrogen bonds in the helical state? </p>
-                    <p class="fragment" style="color:blue">$8 \times -20 \ kJ\cdot mol^{-1} = -160 \ kJ \cdot mol^{-1}$</p>
-                </section>
-
-                <section>
-                    <p>$\Delta S^{\circ\prime}$: The 12-alanine peptide has 24 rotatable bonds (the $^{+}H_{3}N-C_{\alpha}$ and $C_{\alpha}-COO-$ bonds). How many conformations are possible for a 12-alanine peptide?</p>
-                    <p class="fragment" style="color:blue">$3^{24} = 282,429,536,481$</p>
-                    <p>What is the entropy change on folding? </p>
-                    <p class="fragment" style="color:blue">$\Delta S^{\circ \prime} = Rln \Big (\frac{N_{helix}}{N_{unfolded}} \Big )$</p>
-                    <p class="fragment" style="color:blue">$\Delta S^{\circ \prime} = Rln \Big (\frac{1}{282,429,536,481} \Big )$</p>
-                    <p class="fragment" style="color:blue">$\Delta S^{\circ \prime} = -0.22 \ kJ \cdot mol^{-1} \cdot K^{-1}$</p>
-                </section>
-
-                <section>
-                    <p>$\Delta G^{\circ\prime}$: From these calculations, what would you predict $\Delta G_{unf\rightarrow helix}^{\circ\prime}$ to be? </p>
-                    <p class="fragment" style="color:blue">$\Delta G^{\circ\prime} = \Delta H ^{\circ\prime} - T \Delta S^{\circ\prime}$</p>
-                    <p class="fragment" style="color:blue">$\Delta G^{\circ\prime} = -160 - 300 \times -0.22$</p>
-                    <p class="fragment" style="color:blue">$\Delta G^{\circ\prime} = -94 \ kJ \cdot mol^{-1}$</p>
-                </section>
-
-                <section data-background="#000000">
-                    <p>Let's look at the simulations one more time</p>
-                </section>
-
-                <section data-transition="fade">
-                    <p>What happens to the number of hydrogen bonds over folding?</p>
-                    <div class="row">
-                        <img class="img-responsive fragment" height="85%" width="85%" src="http://spock.uoregon.edu/presentation-data/06/img/follow-hbonds.png">
-                    </div>
-                </section>
-
-                <section data-transition="fade">
-
-                    <p>Number of chain hydrogen bonds is about the same between the folded and unfolded states</p>
-                    <div class="row" align="center">
-                        <div class="col-xs-6">
-                            <img class="img-responsive" height="65%" width="65%" src="http://spock.uoregon.edu/presentation-data/06/img/unfolded-and-water.png" />
-                        </div>
-                        <div class="col-xs-6">
-                            <img class="img-responsive" height="55%" width="55%" src="http://spock.uoregon.edu/presentation-data/06/img/folded-and-water.png" />
-                        </div>
-                    </div>
-
-                </section>
-
-                <section data-transition="fade">
-                    <p>What happens to the water-exposed surface area on folding?</p>
-                    <div class="row">
-                        <img class="img-responsive" src="http://spock.uoregon.edu/presentation-data/06/img/follow-sasa-0.png">
-                    </div>
-                </section>
-
-                <section data-transition="fade">
-                    <p class="fragment">Folded state has less surface area interacting with water</p>
-                    <div class="row">
-                        <img class="img-responsive" src="http://spock.uoregon.edu/presentation-data/06/img/follow-sasa-1.png">
-                    </div>
-                </section>
-
-                <section data-transition="fade">
-
-                    <p>Folded state has less surface area interacting with water</p>
-                    <div class="row">
-                        <div class="col-xs-6">
-                            <img class="img-responsive" src="http://spock.uoregon.edu/presentation-data/06/img/unfolded-and-water_sasa.png" />
-                        </div>
-                        <div class="col-xs-6">
-                            <img class="img-responsive" src="http://spock.uoregon.edu/presentation-data/06/img/folded-and-water_sasa.png" />
-                        </div>
-                    </div>
-
-                </section>
-
-                <section>
-                    <p>Hand out #2!</p>
-                </section>
-
-                <section>
-                    <p>Experimental $\Delta G^{\circ\prime}$: If you make a solution of peptides made of 12 alanines at $300\ K$, $80\%$ of the molecules are $\alpha$-helices, $20\%$ are unfolded. What is $\Delta G_{unf\rightarrow helix}^{\circ\prime}$?</p>
-                    <p class="fragment" style="color:blue">$\Delta G^{\circ\prime} = -RTln(K)$</p>
-                    <p class="fragment" style="color:blue">$\Delta G^{\circ\prime} = -RTln\Big ( \frac{helix}{unfolded} \Big )$</p>
-                    <p class="fragment" style="color:blue">$\Delta G^{\circ\prime} = -0.0083 \times 300 \times ln \Big ( \frac{0.8}{0.2} \Big ) $</p>
-                    <p class="fragment" style="color:blue">$\Delta G^{\circ\prime} = -3.5 \ kJ \cdot mol^{-1}$</p>
-                </section>
-
-                <section>
-                    <p>How does this number compare to your predicted $\Delta G^{\circ\prime}$?</p>
-                    <p class="fragment" style="color:blue">Much worse ($-3.5$ vs. $-94 \ kJ \cdot \ mol^{-1}$)</p>
-                </section>
-
-                <section>
-                    <p>The experimental value for $\Delta H^{\circ\prime}$ is $-41\ kJ\cdot mol^{-1}$. Assuming $8$ hydrogen bonds actually form and that the hydrogen bonds are the main contribution to $\Delta H^{\circ\prime}$, what is each hydrogen bond “worth” in the helix? Why might this be different from the value we used above? </p>
-                    <p class="fragment" style="color:blue">$-41/8 = -5.1\ kJ\cdot mol^{-1}$</p>
-                    <p class="fragment" style="color:blue">Less than $-20\ kJ \cdot mol^{-1}$ because these hydrogen bonds compete with water hydrogen bonds</p>
-                </section>
-
-                <section>
-                    <p>Now you know $\Delta G^{\circ\prime}$ and $\Delta H^{\circ\prime}$. What is the contribution of entropy ($T\Delta S^{\circ\prime}$) to the free energy of helix formation? Does entropy favor or disfavor helix formation?</p>
-                    <p class="fragment" style="color:blue">$\Delta G^{\circ \prime} = \Delta H^{\circ \prime} - T\Delta S^{\circ \prime}$</p>
-                    <p class="fragment" style="color:blue">$-3.5 = -5.1 - T\Delta S^{\circ \prime}$</p>
-                    <p class="fragment" style="color:blue">$ 1.6 = - T\Delta S^{\circ \prime}$</p>
-                </section>
-
-                <section>
-                    <p>Is it bigger or smaller than your prediction?</p>
-                    <p class="fragment" style="color:blue">Smaller.</p>
-                    <p class="fragment" style="color:blue">From calculation: $-300\times-0.22 = 66\ kJ \cdot mol^{-1}$ </p>
-                    <p class="fragment" style="color:blue">From experiment:  $-1.6 kJ \cdot mol^{-1}$</p>
-                </section>
-
-                <section>
-                    <p>Minimizing surface area interacting with water favorable releases waters and creates favorable (positive) $\Delta S$.</p>
-                </section>
-
-                <section data-transition="fade">
-
-                    <p>Folded state has less surface area interacting with water</p>
-                    <div class="row">
-                        <div class="col-xs-6">
-                            <img class="img-responsive" src="http://spock.uoregon.edu/presentation-data/06/img/unfolded-and-water_sasa.png" />
-                        </div>
-                        <div class="col-xs-6">
-                            <img class="img-responsive" src="http://spock.uoregon.edu/presentation-data/06/img/folded-and-water_sasa.png" />
-                        </div>
-                    </div>
-
-                </section>
-
-                <section>
-                    <h4>Hydrogen bonds</h4> 
-                    <p>$\Delta H^{\circ \prime} = \color{blue}{H^{\circ \prime}_{prot-prot}} - \color{red}{H^{\circ \prime}_{prot-water}}$ </p>
-                    <p>$\Delta H^{\circ \prime} = \color{blue}{-25.1 \times 8} - \color{red}{-20.0 \times 8} = -41 \ kJ \cdot mol^{-1}$</p>
-                </section>
-            
-                <section>
-                    <h4>Conformational entropy</h4>
-                    <p>$\Delta S^{\circ \prime}_{helix} = \color{blue}{S^{\circ \prime}_{helix}} - \color{red}{S^{\circ \prime}_{unfolded}}$ </p>
-                    <p>$\Delta S^{\circ \prime}_{helix} = \color{blue}{Rln(1)} - \color{red}{Rln(3^{24})}  = -0.22 \ kJ \cdot mol^{-1} \cdot K^{-1}$</p>
-                    <p>$T \Delta S^{\circ \prime}_{helix} = -65.7 \ kJ \cdot mol^{-1}$</p>
-                </section>
-                
-                <section>
-                    <h4>Hydrophobic effect</h4>
-                    <p>Loss of exposed area increases disorder of water</p>
-                    <p>$\Delta S^{\circ \prime}_{hphobe} = 0.094 \ kJ \cdot mol^{-1} \cdot K^{-1}$ (water release)</p>
-                    <p>$T \Delta S^{\circ \prime}_{hphobe} = 28.1 \ kJ \cdot mol^{-1}$</p>
-                </section>
-
-                <section>
-
-                    <p>$\Delta G^{\circ \prime} = \Delta H^{\circ \prime}_{hbond} - T (\Delta S^{\circ \prime}_{helix} + \Delta S^{\circ \prime}_{hphobe})$</p>
-                    <p>$-3.5 = -41.0 - 300(-0.22 + 0.09)$</p>
-
-                </section>
- 
                 <section>
                     <h4>The stability of a structure is determined by many offsetting terms</h4>
                     <ul>
@@ -287,8 +65,166 @@
                             </ul>
                         </li>
                     </ul>
+
                 </section>
+
+                <section>
+                    <p>The experimental value for $\Delta H^{\circ\prime}$ is $-41\ kJ\cdot mol^{-1}$. Assuming $8$ hydrogen bonds actually form and that the hydrogen bonds are the main contribution to $\Delta H^{\circ\prime}$, what is each hydrogen bond “worth” in the helix? Why might this be different from the value we used above? </p>
+                    <p class="fragment" style="color:blue">$-41/8 = -5.1\ kJ\cdot mol^{-1}$</p>
+                    <p class="fragment" style="color:blue">Less than $-20\ kJ \cdot mol^{-1}$ because these hydrogen bonds compete with water hydrogen bonds</p>
+                </section>
+
+                <section>
+                    <h4>Key point.  You have to consider both unfolded and folded</h4>
+                    <p>$\Delta H^{\circ \prime} = \color{blue}{H^{\circ \prime}_{prot-prot}} - \color{red}{H^{\circ \prime}_{prot-water}}$ </p>
+                    <p class="fragment">$\Delta H^{\circ \prime} = \color{blue}{8 \times -25.1} \color{red}{-8 \times -20.0} = -41 \ kJ\cdot mol^{-1}$</p>
+                    <p class="fragment" style="color:blue">$-41 \ kJ\cdot mol^{-1}$ is correct enthalpy to use, not $-5.1$ like I did Friday</p>
+                </section>
+
+                <section>
+                    <h4>How does this play out for $\Delta S$?</h4>
+                </section>
+
+                <section>
+                    <h4>From calculation</h4>
+                    <p>$\Delta S^{\circ \prime} = Rln(N_{helix}/N_{unfolded})$</p>
+                    <p class="fragment">$\Delta S^{\circ \prime} = -0.22\ kJ \cdot mol^{-1} K^{-1}$</p>
+                </section>                                      
+
+                <section>
+                    <h4>From experiment</h4>
+                    <p>$\Delta G^{\circ \prime} = \Delta H^{\circ \prime} - T \Delta S^{\circ \prime}$</p>
+                    <p class="fragment">$\Delta G^{\circ \prime} - \Delta H^{\circ \prime} =  -T \Delta S^{\circ \prime}$</p>
+                    <p class="fragment">$\frac{\Delta G^{\circ \prime} - \Delta H^{\circ \prime}}{-T} = \Delta S^{\circ \prime}$</p>
+                    <p class="fragment">$\Delta S^{\circ \prime} = \frac{-3.5 --41}{-300} = -0.125\ kJ \cdot mol^{-1} \cdot K^{-1}$</p>
+                </section>
+
+                <section>
+                    <p>It is less entropically unfavorable to collapse helix than you might expect because of the hydrophobic effect</p>
+                </section>
+
+
+                <section>
+                    <h4>Key point.  You have to consider both water and protein</h4>
+                    <p>$\Delta S^{\circ \prime}_{helix} = \color{blue}{S^{\circ \prime}_{helix}} - \color{red}{S^{\circ \prime}_{unfolded}}$ </p>
+                    <p>$\Delta S^{\circ \prime}_{hphobe} = \color{blue}{S^{\circ \prime}_{folded\ surface}} - \color{red}{S^{\circ \prime}_{unfolded \ surface}}$ </p>
+                    <p class="fragment">$\Delta S^{\circ \prime} = \Delta S^{\circ \prime}_{helix} + \Delta S^{\circ \prime}_{hphobe}$</p>
+                    <p class="fragment">$-0.125 = -0.22 + \Delta S^{\circ \prime}_{hphobe}$</p>
+                    <p class="fragment">$0.095 \ kJ \cdot mol^{-1} \cdot K^{-1}= \Delta S^{\circ \prime}_{hphobe}$</p>
+                    <p class="fragment" style="color:blue">Hydrophobic effect makes favorable entropic contribution to folding</p>
+                </section>
+
+                <section>
+                    <p>Where does $S = Rln(N)$ come from, anyway?</p>
+                </section>
+
+                <section>
+                    <p>Proline and glycine are both known as "secondary structure breakers"</p>
+                    <p>Why might this be the case?</p>
+                    <p class="fragment" style="color:blue">Proline uses the backbone nitrogen as part of its R-group.  No hydrogen bonds + kink</p>
+                    <p class="fragment" style="color:blue">Glycine has a H for an R-group.  It's floppy and entropically expensive to immobilize</p>
+                </section>
+
+                <section>
+                    <p>Disulfide bonds form between ___________ residues.  These _________ [covalent|ionic|hydrogen bond] interactions ____________ [stabilize|destabilize] protein structure</p>
+                    <p class="fragment">Disulfide bonds form between <span style="color:blue">cysteine</span> residues.  These <span style="color:blue">covalent</span> interactions <span style="color:blue">stabilize</span> protein structure</p>
+                </section>
+
+				<section>
+					<h2>The Protein Folding Problem</h2>
+					<h4>2017-10-09</h4>
+					<br/>
+				</section>
+				<section>
+					<h4>Conceptual goals</h4>
+
+					<ul>
+                        <li class="fragment">Understand that the folded structure of the protein is the free energy minimum for the chain</li>
+					</ul>
+
+					<h4>Skill goals</h4>
+					<ul>
+                        <li class="fragment">Manipulate thermodynamic equations describing protein stability to calculate contributions of different forces</li>
+                        <li class="fragment">Reason correctly about interactions by thinking correctly about both sides of a reaction coordinate</li>
+					</ul>
+				</section>
+
+                <section>
                     
+                    <ul>
+                        <li>A 100 amino acid protein will have 198 peptide bonds.  If each bond can take 3 possible conformations, how many conformations are there?</li>
+                        <li>If each bond rotates every nanosecond, how long would it take for the protein to sample all possible structures?</li>
+                    </ul>
+
+                    <ul>
+                        <li class="fragment" style="color:blue">$3^{198} = 3\times 10^{94}$ conformations</li>
+                        <li class="fragment" style="color:blue">$3\times 10^{94}\ conf \times \frac{1 \times 10^{-9} \ s}{conf} = 3 \times 10^{89} \ s$</li>
+                        <li class="fragment" style="color:blue">$9 \times 10^{77} years$</li>
+                    </ul>
+    
+                </section>
+
+                <section>
+                    <p>Real proteins fold in milliseconds</p>
+                    <p>What does this tell us about protein folding?</p>
+                    <p class="fragment" style="color:blue">Folding does <em>not</em> proceed by random search.</p>
+                </section>
+
+                <section>
+                    <p>Proteins fold by a <em>biased</em> search.</p>
+                    <img height="50%" width="50%" src="https://www.learner.org/courses/physics/visual/img_lrg/funnel.jpg"  />
+                </section>
+
+                <section>
+                    <h4>Previous steps set up next steps</h4>
+                    <ul>
+                        <li class="fragment">Local elements fold (like secondary structure) fold</li>
+                        <li class="fragment">These folded elements change environment of rest of chain</li>
+                        <li class="fragment">Other local parts of the structure fold</li>
+                        <li class="fragment">Settles in to a final 3D fold</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p>This is known as a "folding funnel"</p>
+                    <img class="fragment" height="50%" width="50%" src="https://ae01.alicdn.com/kf/HTB1J3P8KpXXXXb2XpXXq6xXFXXX3/Portable-Bar-Tools-Silicone-font-b-Funnel-b-font-font-b-Folding-b-font-font-b.jpg" />
+                </section>
+
+                <section>
+                    <p>We can follow folding directly with Hydrogen-Deuterium Exchange Mass Spectrometry</p>
+                    <img class="img-responsive" height="85%" width="85%" src="http://spock.uoregon.edu/presentation-data/07/img/folding-pathways.png">
+                    <small><a href="http://www.pnas.org/content/114/31/8253.abstract">Walter Englander </a></small>
+                </section>
+
+                <section>
+                    <p>We can follow structural intermdiates with molecular dynamics simulations</p>
+                    <img class="img-responsive" height="85%" width="85%" src="http://spock.uoregon.edu/presentation-data/07/img/msm-folding.png">
+                    <small><a href="http://www.sciencedirect.com/science/article/pii/S1046202310001568">Vijay Pande</a></small>
+                </section>
+
+                <section>
+                    <p>We can design proteins from scratch</p>
+                    <img class="img-responsive" height="85%" width="85%" src="http://spock.uoregon.edu/presentation-data/07/img/folded-protein-design.png">
+                    <small><a href="http://science.sciencemag.org/content/302/5649/1364" />Brian Kuhlmann</a></small>
+                </section>
+
+                <section>
+                    <p>George Rose is a well-known protein folder at Johns Hopkins</p>
+                    <p class="fragment">He is giving a seminar at 2 pm today, in Willamette 240.  </p>
+                    <p class="fragment">Fun fact: cookies and coffee at 1:45</p>
+                    <p class="fragment">Fun other fact: George calls funnels the F-word</p>
+                </section>
+
+                <section>
+                    <h4>Summary</h4>
+                    <ul>
+                        <li>To understand biochemical reactions, you need to account for both sides of the reaction</li>
+                        <li>To understand biochemical reactions, you need to account for biomolecules <em>and</em> water</li>
+                        <li>Proline, Glycine and Cysteine are special amino acids, altering secondary structure (Pro,Gly) or forming covalent bonds (Cys)</li>
+                        <li>Proteins do not fold randomly, but follow a "folding funnel" to the lowest energy state</li>
+                    </ul>
+                </section>
+
         
 			</div>
 
