@@ -9,6 +9,7 @@ in Fall, 2017.
  + Fork the project on github and then clone it locally.
  + Make any changes you want to the files.
  + Install [grunt](https://stackoverflow.com/questions/15703598/how-to-install-grunt-and-how-to-build-script-with-it)
+   in the main repo directory.
  + In the cloned directory, type `grunt serve`.  This should load `index.html`
    in your default browser.
 
